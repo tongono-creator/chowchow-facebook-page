@@ -223,13 +223,13 @@ def main():
     content_type             = random.choice(CONTENT_TYPES)
     print(f"Topic: {topic_name} | Type: {content_type}")
 
-    # 1. ลองดึงรูปจาก Reddit ก่อน
-    img_url, credit = get_reddit_image()
+    # 1. ดึงรูปจาก Pexels ก่อน (keyword ตรง)
+    img_url, credit = get_pexels_image(pexels_query)
 
-    # 2. fallback → Pexels
+    # 2. fallback → Reddit
     if not img_url:
-        print("Falling back to Pexels...")
-        img_url, credit = get_pexels_image(pexels_query)
+        print("Falling back to Reddit...")
+        img_url, credit = get_reddit_image()
 
     if not img_url:
         print("No image found, aborting")
