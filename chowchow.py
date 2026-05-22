@@ -6,6 +6,7 @@ import requests
 import tempfile
 import xml.etree.ElementTree as ET
 from google import genai
+from google.genai import types
 
 # ── Config ───────────────────────────────────────────────────────────
 PAGE_ID           = "102319399434080"
@@ -18,7 +19,23 @@ TEXT_MODELS = ["gemini-2.5-flash", "gemini-3.5-flash"]
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; ChowChowBot/1.0; +github)"}
 
-# ── Reddit Subreddits ─────────────────────────────────────────────────
+IMAGE_EXTS = (".jpg", ".jpeg", ".png", ".gif", ".webp")
+
+# ── Pexels queries ────────────────────────────────────────────────────
+PEXELS_QUERIES = [
+    "chow chow dog",
+    "fluffy dog cute",
+    "dog pet cute",
+    "puppy dog fluffy",
+    "dog playing",
+    "golden retriever dog",
+    "husky dog",
+    "dog portrait",
+    "cute dog outdoor",
+    "dog sleeping",
+]
+
+# ── Reddit Subreddits (fallback) ──────────────────────────────────────
 SUBREDDITS = [
     "chowchow",
     "dogs",
@@ -29,61 +46,10 @@ SUBREDDITS = [
     "AnimalsBeingBros",
 ]
 
-IMAGE_EXTS = (".jpg", ".jpeg", ".png", ".gif", ".webp")
-
-# ── Knowledge Topics ──────────────────────────────────────────────────
-DOG_TOPICS = [
-    ("การเลี้ยง Chow Chow",      "chow chow dog care"),
-    ("อาหารที่สุนัขกินได้",       "dog safe food"),
-    ("อาหารที่สุนัขกินไม่ได้",    "toxic food for dogs"),
-    ("โรคที่พบบ่อยในสุนัข",       "common dog diseases"),
-    ("วัคซีนสุนัข",               "dog vaccination"),
-    ("การดูแลขนสุนัข",            "dog grooming fluffy"),
-    ("พฤติกรรมสุนัข",             "dog behavior"),
-    ("การฝึกสุนัข",               "dog training tips"),
-    ("ดูแลฟันสุนัข",              "dog dental care"),
-    ("สุนัขกับอากาศร้อน",         "dog heat safety summer"),
-    ("Chow Chow นิสัย",          "chow chow personality"),
-    ("การออกกำลังกายสุนัข",       "dog exercise tips"),
-]
-
-CONTENT_TYPES = ["ความรู้", "tips", "เตือนภัย", "น่ารู้"]
+CONTENT_TYPES = ["ความรู้", "tips", "น่ารู้", "เตือนภัย"]
 
 
-# ── Reddit ────────────────────────────────────────────────────────────
-def get_reddit_image():
-    subreddit = random.choice(SUBREDDITS)
-    url = f"https://www.reddit.com/r/{subreddit}/hot.rss"
-    try:
-        resp = requests.get(url, headers=HEADERS, timeout=10)
-        resp.raise_for_status()
-        root    = ET.fromstring(resp.content)
-        ns      = {"atom": "http://www.w3.org/2005/Atom"}
-        entries = root.findall("atom:entry", ns)
-
-        image_posts = []
-        for entry in entries:
-            title   = entry.findtext("atom:title", "", ns).strip()
-            content = entry.findtext("atom:content", "", ns)
-            img_urls  = re.findall(r'https?://[^\s"<>]+\.(?:jpg|jpeg|png|gif|webp)', content or "")
-            good_imgs = [u for u in img_urls if "i.redd.it" in u or "imgur.com" in u]
-            if good_imgs and title:
-                image_posts.append({"url": good_imgs[0], "subreddit": subreddit})
-
-        if not image_posts:
-            print(f"[{subreddit}] no image posts")
-            return None, None
-
-        post = random.choice(image_posts[:10])
-        print(f"Reddit: r/{subreddit} | {post['url'][:60]}")
-        return post["url"], f"r/{subreddit}"
-
-    except Exception as e:
-        print(f"Reddit error ({subreddit}): {e}")
-        return None, None
-
-
-# ── Pexels fallback ───────────────────────────────────────────────────
+# ── Pexels ────────────────────────────────────────────────────────────
 def get_pexels_image(query):
     try:
         resp = requests.get(
@@ -105,7 +71,33 @@ def get_pexels_image(query):
         return None, None
 
 
-# ── Download image ────────────────────────────────────────────────────
+# ── Reddit (fallback) ─────────────────────────────────────────────────
+def get_reddit_image():
+    subreddit = random.choice(SUBREDDITS)
+    url = f"https://www.reddit.com/r/{subreddit}/hot.rss"
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=10)
+        resp.raise_for_status()
+        root    = ET.fromstring(resp.content)
+        ns      = {"atom": "http://www.w3.org/2005/Atom"}
+        entries = root.findall("atom:entry", ns)
+        image_posts = []
+        for entry in entries:
+            content   = entry.findtext("atom:content", "", ns)
+            img_urls  = re.findall(r'https?://[^\s"<>]+\.(?:jpg|jpeg|png|gif|webp)', content or "")
+            good_imgs = [u for u in img_urls if "i.redd.it" in u or "imgur.com" in u]
+            if good_imgs:
+                image_posts.append({"url": good_imgs[0], "subreddit": subreddit})
+        if not image_posts:
+            return None, None
+        post = random.choice(image_posts[:10])
+        return post["url"], f"📷 via r/{subreddit}"
+    except Exception as e:
+        print(f"Reddit error ({subreddit}): {e}")
+        return None, None
+
+
+# ── Download ──────────────────────────────────────────────────────────
 def download_image(url):
     MAX_BYTES = 4 * 1024 * 1024
     try:
@@ -115,7 +107,7 @@ def download_image(url):
         for chunk in resp.iter_content(chunk_size=65536):
             data += chunk
             if len(data) > MAX_BYTES:
-                print("Image too large, skipping")
+                print("Image too large")
                 return None
         suffix = ".jpg"
         for ext in IMAGE_EXTS:
@@ -131,14 +123,44 @@ def download_image(url):
         return None
 
 
-# ── Gemini Caption ────────────────────────────────────────────────────
-def make_caption(topic_name, content_type):
+# ── Gemini Vision — วิเคราะห์รูป ─────────────────────────────────────
+def analyze_image(img_path):
+    """ดูรูปว่าเป็นสุนัขสายพันธุ์อะไร"""
+    with open(img_path, "rb") as f:
+        img_data = f.read()
+
     prompt = (
-        f"เขียน Facebook caption ภาษาไทย สำหรับเพจสุนัข Chow Chow\n"
-        f"หัวข้อ: {content_type}เรื่อง{topic_name}\n"
-        "บรรทัด 1: หัวข้อดึงดูด ไม่เกิน 40 ตัวอักษร\n"
-        "บรรทัด 2-3: เนื้อหาสั้นกระชับ มีประโยชน์\n"
-        "บรรทัด 4: hashtag 3-4 อัน (#ChowChow #สุนัข)\n"
+        "ดูรูปนี้แล้วตอบสั้นๆ ว่าเป็นสุนัขสายพันธุ์อะไร ชื่อภาษาไทยหรืออังกฤษ 1-4 คำ "
+        "เช่น 'Chow Chow', 'Golden Retriever', 'ลาบราดอร์' "
+        "ถ้าไม่ใช่รูปสุนัข ตอบว่า 'ไม่ใช่สุนัข'"
+    )
+
+    for model in TEXT_MODELS:
+        try:
+            resp = client.models.generate_content(
+                model=model,
+                contents=[
+                    types.Part.from_bytes(data=img_data, mime_type="image/jpeg"),
+                    types.Part.from_text(text=prompt),
+                ],
+            )
+            result = resp.text.strip()
+            print(f"Vision: {result}")
+            return result
+        except Exception as e:
+            print(f"[{model}] vision failed: {e}")
+    return None
+
+
+# ── Gemini Caption ────────────────────────────────────────────────────
+def make_caption(dog_breed, content_type):
+    prompt = (
+        f"เขียน Facebook caption ภาษาไทย สำหรับเพจความรู้เรื่องสุนัข\n"
+        f"สุนัขในรูป: {dog_breed}\n"
+        f"รูปแบบ content: {content_type}\n"
+        "บรรทัด 1: หัวข้อดึงดูดเกี่ยวกับสุนัขสายพันธุ์นี้ ไม่เกิน 40 ตัวอักษร\n"
+        "บรรทัด 2-3: เนื้อหาสั้นกระชับ มีประโยชน์ เกี่ยวกับสายพันธุ์นี้\n"
+        "บรรทัด 4: hashtag 3-4 อัน (#สุนัข #หมา ใส่ชื่อสายพันธุ์ด้วย)\n"
         "ห้ามใช้ ** markdown ตอบแค่ caption เลย"
     )
     for model in TEXT_MODELS:
@@ -147,7 +169,7 @@ def make_caption(topic_name, content_type):
             return clean_text(resp.text.strip())
         except Exception as e:
             print(f"[{model}] caption failed: {e}")
-    return f"{topic_name}\n#ChowChow #สุนัข #เลี้ยงหมา"
+    return f"{dog_breed}\n#สุนัข #หมา #เลี้ยงหมา"
 
 
 def clean_text(text):
@@ -219,33 +241,42 @@ def add_comment(post_id):
 def main():
     print("=== Chow Chow Bot ===")
 
-    topic_name, pexels_query = random.choice(DOG_TOPICS)
-    content_type             = random.choice(CONTENT_TYPES)
-    print(f"Topic: {topic_name} | Type: {content_type}")
+    for attempt in range(3):
+        content_type = random.choice(CONTENT_TYPES)
+        query        = random.choice(PEXELS_QUERIES)
+        print(f"Query: {query} | Type: {content_type} | Attempt {attempt+1}")
 
-    # 1. ดึงรูปจาก Pexels ก่อน (keyword ตรง)
-    img_url, credit = get_pexels_image(pexels_query)
+        # Pexels primary
+        img_url, credit = get_pexels_image(query)
 
-    # 2. fallback → Reddit
-    if not img_url:
-        print("Falling back to Reddit...")
-        img_url, credit = get_reddit_image()
+        # Reddit fallback
+        if not img_url:
+            print("Falling back to Reddit...")
+            img_url, credit = get_reddit_image()
 
-    if not img_url:
-        print("No image found, aborting")
+        if not img_url:
+            continue
+
+        img_path = download_image(img_url)
+        if not img_path:
+            continue
+
+        # Vision วิเคราะห์ว่าเป็นสุนัขอะไร
+        dog_breed = analyze_image(img_path)
+        if not dog_breed or "ไม่ใช่สุนัข" in dog_breed:
+            print("Not a dog image, retrying...")
+            os.unlink(img_path)
+            continue
+
+        caption = make_caption(dog_breed, content_type)
+        if credit:
+            caption += f"\n{credit}"
+        print(f"Caption:\n{caption}\n")
+
+        post_photo(caption, img_path)
         return
 
-    img_path = download_image(img_url)
-    if not img_path:
-        print("Download failed, aborting")
-        return
-
-    caption = make_caption(topic_name, content_type)
-    if credit:
-        caption += f"\n{credit}"
-    print(f"Caption:\n{caption}\n")
-
-    post_photo(caption, img_path)
+    print("Failed after 3 attempts")
 
 
 if __name__ == "__main__":
