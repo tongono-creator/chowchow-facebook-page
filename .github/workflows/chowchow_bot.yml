@@ -1,0 +1,28 @@
+name: Chow Chow Bot
+
+on:
+  schedule:
+    - cron: "0 2 * * *"   # 09:00 น. ไทย
+    - cron: "0 8 * * *"   # 15:00 น. ไทย
+    - cron: "0 13 * * *"  # 20:00 น. ไทย
+  workflow_dispatch:
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install google-genai requests openpyxl
+
+      - name: Run bot
+        env:
+          CHOWCHOW_PAGE_ACCESS_TOKEN: ${{ secrets.CHOWCHOW_PAGE_ACCESS_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: python chowchow.py
