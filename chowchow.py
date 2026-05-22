@@ -14,8 +14,9 @@ PAGE_ACCESS_TOKEN = os.environ["CHOWCHOW_PAGE_ACCESS_TOKEN"]
 GEMINI_API_KEY    = os.environ.get("GEMINI_API_KEY", "")
 PEXELS_API_KEY    = os.environ["PEXELS_API_KEY"]
 
-client      = genai.Client(api_key=GEMINI_API_KEY)
-TEXT_MODELS = ["gemini-2.5-flash", "gemini-3.5-flash"]
+client       = genai.Client(api_key=GEMINI_API_KEY)
+TEXT_MODELS  = ["gemini-2.5-flash", "gemini-3.5-flash"]
+ACCENT_COLOR = (255, 215, 0)  # เหลือง #FFD700
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; ChowChowBot/1.0; +github)"}
 
@@ -153,6 +154,25 @@ def analyze_image(img_path):
 
 
 # ── Gemini Caption ────────────────────────────────────────────────────
+def generate_hook(dog_breed, content_type):
+    prompt = (
+        f"สุนัขในรูป: {dog_breed} | เนื้อหา: {content_type}\n"
+        "เขียน hook text สั้นๆ ภาษาไทย สำหรับใส่บนรูป\n"
+        "บรรทัด 1: hook 3-5 คำ น่ารัก/น่าสนใจ หยุดนิ้วได้\n"
+        "บรรทัด 2: ความรู้/คำถามสั้น 4-7 คำ\n"
+        "ตอบแค่ 2 บรรทัด ไม่มี hashtag ไม่มี **"
+    )
+    for model in TEXT_MODELS:
+        try:
+            resp = client.models.generate_content(model=model, contents=prompt)
+            lines = clean_text(resp.text.strip()).split("\n")
+            lines = [l.strip() for l in lines if l.strip()]
+            return lines[0] if lines else dog_breed[:20], lines[1] if len(lines) > 1 else ""
+        except Exception as e:
+            print(f"[{model}] hook failed: {e}")
+    return dog_breed[:20], ""
+
+
 def make_caption(dog_breed, content_type):
     prompt = (
         f"เขียน Facebook caption ภาษาไทย สำหรับเพจความรู้เรื่องสุนัข\n"
@@ -267,6 +287,17 @@ def main():
             print("Not a dog image, retrying...")
             os.unlink(img_path)
             continue
+
+        line1, line2 = generate_hook(dog_breed, content_type)
+        print(f"Hook: {line1} | {line2}")
+
+        try:
+            from overlay_utils import add_overlay
+            overlaid = add_overlay(img_path, line1, line2, ACCENT_COLOR)
+            os.unlink(img_path)
+            img_path = overlaid
+        except Exception as e:
+            print(f"Overlay failed (using original): {e}")
 
         caption = make_caption(dog_breed, content_type)
         if credit:
