@@ -137,18 +137,22 @@ def download_image(url):
 
 # ── Gemini Vision — verify + vibe ────────────────────────────────────
 def analyze_image(img_path, expected_breed):
-    """ยืนยันว่ารูปมีสุนัขจริง + จับ personality/vibe"""
+    """ยืนยันว่ารูปมีสุนัขจริง + detect actual breed + จับ personality/vibe
+    คืน (has_dog: bool, actual_breed: str, vibe: str)
+    """
     with open(img_path, "rb") as f:
         img_data = f.read()
 
     prompt = (
-        f"รูปนี้ควรจะเป็น {expected_breed}\n"
-        "ตอบ 2 อย่าง แยกด้วย | :\n"
+        f"รูปนี้คาดว่าเป็น {expected_breed}\n"
+        "ตอบ 3 อย่าง แยกด้วย | :\n"
         "1. มีสุนัขในรูปไหม? ตอบ yes หรือ no\n"
-        "2. personality/vibe ของสุนัขในรูปนี้ เหมือนคนไทยนึกถึง เช่น: "
-        "'เจ้าของบ้าน vibes', 'เด็กดื้อที่แม่รัก', 'rich kid', 'นักกีฬา', 'พนักงานออฟฟิศที่เบื่องาน', 'เด็กติดแม่', 'หัวหน้าที่ดูน่ากลัวแต่ดีจริง'\n"
-        "ตัวอย่าง: yes|เจ้าหน้าที่ที่ดูน่าเชื่อถือมาก\n"
-        "ถ้าไม่มีสุนัข: no|ไม่มีสุนัข"
+        "2. สายพันธุ์จริงในรูปคืออะไร ตอบชื่อภาษาอังกฤษ เช่น Golden Retriever, Chow Chow, Husky, Samoyed\n"
+        "   ถ้าไม่แน่ใจ ตอบว่า Mixed หรือ Unknown\n"
+        "3. personality/vibe ของสุนัขในรูปนี้ เหมือนคนไทยนึกถึง เช่น: "
+        "'เจ้าของบ้าน vibes', 'เด็กดื้อที่แม่รัก', 'rich kid', 'นักกีฬา', 'พนักงานออฟฟิศที่เบื่องาน', 'เด็กติดแม่'\n"
+        "ตัวอย่าง: yes|Golden Retriever|เด็กดื้อที่แม่รัก\n"
+        "ถ้าไม่มีสุนัข: no|none|ไม่มีสุนัข"
     )
 
     for model in TEXT_MODELS:
@@ -162,13 +166,17 @@ def analyze_image(img_path, expected_breed):
             )
             result = resp.text.strip()
             print(f"Vision: {result}")
-            parts = result.split("|", 1)
-            has_dog = parts[0].strip().lower() == "yes"
-            vibe    = parts[1].strip() if len(parts) > 1 else ""
-            return has_dog, vibe
+            parts = [p.strip() for p in result.split("|")]
+            has_dog      = parts[0].lower() == "yes" if parts else False
+            actual_breed = parts[1] if len(parts) > 1 else expected_breed
+            vibe         = parts[2] if len(parts) > 2 else ""
+            # ถ้า Vision บอกไม่มีสุนัข หรือ breed = none → return early
+            if not has_dog or actual_breed.lower() in ("none", ""):
+                return False, expected_breed, ""
+            return has_dog, actual_breed, vibe
         except Exception as e:
             print(f"[{model}] vision failed: {e}")
-    return False, ""
+    return False, expected_breed, ""
 
 
 # ── Gemini Caption ────────────────────────────────────────────────────
@@ -298,9 +306,11 @@ def main():
         img_url, credit = get_pexels_image(pexels_query)
 
         # Reddit fallback (ถ้า Pexels ไม่มีผล)
+        from_reddit = False
         if not img_url:
             print("Falling back to Reddit...")
             img_url, credit = get_reddit_image()
+            from_reddit = True
 
         if not img_url:
             continue
@@ -309,14 +319,20 @@ def main():
         if not img_path:
             continue
 
-        # 2. Vision ยืนยันว่ามีสุนัขจริง + จับ personality/vibe
-        has_dog, vibe = analyze_image(img_path, breed_name)
+        # 2. Vision ยืนยัน + detect actual breed + จับ personality/vibe
+        has_dog, actual_breed, vibe = analyze_image(img_path, breed_name)
         if not has_dog:
             print("No dog in image, retrying...")
             os.unlink(img_path)
             continue
 
-        print(f"Vibe: {vibe}")
+        # ถ้าเป็น Reddit fallback → ใช้ breed ที่ Vision detect จริง
+        # (ป้องกัน caption พูดถึง Chow Chow แต่รูปเป็น Golden Retriever)
+        if from_reddit and actual_breed and actual_breed.lower() not in ("unknown", "mixed"):
+            print(f"Reddit fallback: switching breed {breed_name} → {actual_breed}")
+            breed_name = actual_breed
+
+        print(f"Breed (final): {breed_name} | Vibe: {vibe}")
         line1, line2 = generate_hook(breed_name, vibe, content_type)
         print(f"Hook: {line1} | {line2}")
 
