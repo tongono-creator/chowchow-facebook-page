@@ -22,19 +22,30 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; ChowChowBot/1.0; +github)"}
 
 IMAGE_EXTS = (".jpg", ".jpeg", ".png", ".gif", ".webp")
 
-# ── Pexels queries ────────────────────────────────────────────────────
-PEXELS_QUERIES = [
-    "chow chow dog",
-    "fluffy dog cute",
-    "dog pet cute",
-    "puppy dog fluffy",
-    "dog playing",
-    "golden retriever dog",
-    "husky dog",
-    "dog portrait",
-    "cute dog outdoor",
-    "dog sleeping",
-]
+# ── Dog breeds + Pexels queries ──────────────────────────────────────
+# breed → Pexels query ที่ให้รูปตรงสายพันธุ์ที่สุด
+DOG_BREEDS = {
+    "Chow Chow":          "chow chow dog",
+    "Golden Retriever":   "golden retriever dog",
+    "Husky":              "husky dog",
+    "Shiba Inu":          "shiba inu dog",
+    "Corgi":              "corgi dog",
+    "Pomeranian":         "pomeranian dog",
+    "French Bulldog":     "french bulldog dog",
+    "Labrador":           "labrador retriever dog",
+    "Beagle":             "beagle dog",
+    "Border Collie":      "border collie dog",
+    "Dachshund":          "dachshund dog",
+    "Poodle":             "poodle dog",
+    "Samoyed":            "samoyed dog",
+    "Maltese":            "maltese dog",
+    "Shih Tzu":           "shih tzu dog",
+    "Australian Shepherd":"australian shepherd dog",
+    "Akita":              "akita dog",
+    "Great Dane":         "great dane dog",
+    "Dalmatian":          "dalmatian dog",
+    "Doberman":           "doberman dog",
+}
 
 # ── Reddit Subreddits (fallback) ──────────────────────────────────────
 SUBREDDITS = [
@@ -51,7 +62,7 @@ CONTENT_TYPES = ["ความรู้", "tips", "น่ารู้", "เต�
 
 
 # ── Pexels ────────────────────────────────────────────────────────────
-def get_pexels_image(query):
+def get_pexels_image(query):  # query = ชื่อสายพันธุ์ตรงๆ
     try:
         resp = requests.get(
             "https://api.pexels.com/v1/search",
@@ -124,16 +135,20 @@ def download_image(url):
         return None
 
 
-# ── Gemini Vision — วิเคราะห์รูป ─────────────────────────────────────
-def analyze_image(img_path):
-    """ดูรูปว่าเป็นสุนัขสายพันธุ์อะไร"""
+# ── Gemini Vision — verify + vibe ────────────────────────────────────
+def analyze_image(img_path, expected_breed):
+    """ยืนยันว่ารูปมีสุนัขจริง + จับ personality/vibe"""
     with open(img_path, "rb") as f:
         img_data = f.read()
 
     prompt = (
-        "ดูรูปนี้แล้วตอบสั้นๆ ว่าเป็นสุนัขสายพันธุ์อะไร ชื่อภาษาไทยหรืออังกฤษ 1-4 คำ "
-        "เช่น 'Chow Chow', 'Golden Retriever', 'ลาบราดอร์' "
-        "ถ้าไม่ใช่รูปสุนัข ตอบว่า 'ไม่ใช่สุนัข'"
+        f"รูปนี้ควรจะเป็น {expected_breed}\n"
+        "ตอบ 2 อย่าง แยกด้วย | :\n"
+        "1. มีสุนัขในรูปไหม? ตอบ yes หรือ no\n"
+        "2. personality/vibe ของสุนัขในรูปนี้ เหมือนคนไทยนึกถึง เช่น: "
+        "'เจ้าของบ้าน vibes', 'เด็กดื้อที่แม่รัก', 'rich kid', 'นักกีฬา', 'พนักงานออฟฟิศที่เบื่องาน', 'เด็กติดแม่', 'หัวหน้าที่ดูน่ากลัวแต่ดีจริง'\n"
+        "ตัวอย่าง: yes|เจ้าหน้าที่ที่ดูน่าเชื่อถือมาก\n"
+        "ถ้าไม่มีสุนัข: no|ไม่มีสุนัข"
     )
 
     for model in TEXT_MODELS:
@@ -147,19 +162,26 @@ def analyze_image(img_path):
             )
             result = resp.text.strip()
             print(f"Vision: {result}")
-            return result
+            parts = result.split("|", 1)
+            has_dog = parts[0].strip().lower() == "yes"
+            vibe    = parts[1].strip() if len(parts) > 1 else ""
+            return has_dog, vibe
         except Exception as e:
             print(f"[{model}] vision failed: {e}")
-    return None
+    return False, ""
 
 
 # ── Gemini Caption ────────────────────────────────────────────────────
-def generate_hook(dog_breed, content_type):
+def generate_hook(dog_breed, vibe, content_type):
+    vibe_line = f"personality ที่เห็นในรูป: {vibe}" if vibe else ""
     prompt = (
-        f"สุนัขในรูป: {dog_breed} | เนื้อหา: {content_type}\n"
+        f"สุนัข: {dog_breed}\n"
+        f"{vibe_line}\n"
         "เขียน hook text สั้นๆ ภาษาไทย สำหรับใส่บนรูป\n"
-        "บรรทัด 1: hook 3-5 คำ น่ารัก/น่าสนใจ หยุดนิ้วได้\n"
-        "บรรทัด 2: ความรู้/คำถามสั้น 4-7 คำ\n"
+        "เขียนเหมือนคนพิมพ์เองใน Facebook ไม่ใช่นักการตลาด\n"
+        "ภาษาพูดธรรมดา ความคิดแรกที่นึกได้ ไม่ประดิษฐ์\n"
+        "บรรทัด 1: hook 3-5 คำ เล่นกับ personality ของหมาตัวนี้\n"
+        "บรรทัด 2: คำถาม/ประโยคสั้น 4-7 คำ\n"
         "ตอบแค่ 2 บรรทัด ไม่มี hashtag ไม่มี **"
     )
     for model in TEXT_MODELS:
@@ -173,15 +195,20 @@ def generate_hook(dog_breed, content_type):
     return dog_breed[:20], ""
 
 
-def make_caption(dog_breed, content_type):
+def make_caption(dog_breed, vibe, content_type):
+    vibe_line = f"personality ที่เห็นในรูป: {vibe}" if vibe else ""
     prompt = (
-        f"เขียน Facebook caption ภาษาไทย สำหรับเพจความรู้เรื่องสุนัข\n"
-        f"สุนัขในรูป: {dog_breed}\n"
-        f"รูปแบบ content: {content_type}\n"
-        "บรรทัด 1: หัวข้อดึงดูดเกี่ยวกับสุนัขสายพันธุ์นี้ ไม่เกิน 40 ตัวอักษร\n"
-        "บรรทัด 2-3: เนื้อหาสั้นกระชับ มีประโยชน์ เกี่ยวกับสายพันธุ์นี้\n"
+        f"สุนัข: {dog_breed}\n"
+        f"{vibe_line}\n"
+        f"รูปแบบ content: {content_type}\n\n"
+        "เขียนเหมือนคนพิมพ์เองใน Facebook ไม่ใช่นักการตลาด\n"
+        "ภาษาพูดธรรมดา ไม่ประดิษฐ์ ไม่คำคม\n"
+        "เล่นกับ personality ของหมาตัวนี้ ให้คนอ่านแล้วนึกถึงหมาที่บ้านตัวเอง\n\n"
+        "เขียน Facebook caption สำหรับเพจ 'Chow Chow' (ความรู้/ความน่ารักของหมา):\n"
+        "บรรทัด 1: hook ที่ตรงใจคนเลี้ยงหมา ไม่เกิน 40 ตัวอักษร\n"
+        "บรรทัด 2-3: ข้อมูล/สิ่งที่น่ารู้เกี่ยวกับสายพันธุ์นี้ สั้นกระชับ\n"
         "บรรทัด 4: hashtag 3-4 อัน (#สุนัข #หมา ใส่ชื่อสายพันธุ์ด้วย)\n"
-        "ห้ามใช้ ** markdown ตอบแค่ caption เลย"
+        "ห้ามใช้ ** markdown ตอบแค่ caption"
     )
     for model in TEXT_MODELS:
         try:
@@ -261,15 +288,16 @@ def add_comment(post_id):
 def main():
     print("=== Chow Chow Bot ===")
 
-    for attempt in range(3):
+    for attempt in range(4):
         content_type = random.choice(CONTENT_TYPES)
-        query        = random.choice(PEXELS_QUERIES)
-        print(f"Query: {query} | Type: {content_type} | Attempt {attempt+1}")
 
-        # Pexels primary
-        img_url, credit = get_pexels_image(query)
+        # 1. เลือก breed ก่อน → search Pexels ด้วย breed นั้น (รูปตรงกับ caption การันตี)
+        breed_name, pexels_query = random.choice(list(DOG_BREEDS.items()))
+        print(f"Breed: {breed_name} | Type: {content_type} | Attempt {attempt+1}")
 
-        # Reddit fallback
+        img_url, credit = get_pexels_image(pexels_query)
+
+        # Reddit fallback (ถ้า Pexels ไม่มีผล)
         if not img_url:
             print("Falling back to Reddit...")
             img_url, credit = get_reddit_image()
@@ -281,14 +309,15 @@ def main():
         if not img_path:
             continue
 
-        # Vision วิเคราะห์ว่าเป็นสุนัขอะไร
-        dog_breed = analyze_image(img_path)
-        if not dog_breed or "ไม่ใช่สุนัข" in dog_breed:
-            print("Not a dog image, retrying...")
+        # 2. Vision ยืนยันว่ามีสุนัขจริง + จับ personality/vibe
+        has_dog, vibe = analyze_image(img_path, breed_name)
+        if not has_dog:
+            print("No dog in image, retrying...")
             os.unlink(img_path)
             continue
 
-        line1, line2 = generate_hook(dog_breed, content_type)
+        print(f"Vibe: {vibe}")
+        line1, line2 = generate_hook(breed_name, vibe, content_type)
         print(f"Hook: {line1} | {line2}")
 
         try:
@@ -299,7 +328,7 @@ def main():
         except Exception as e:
             print(f"Overlay failed (using original): {e}")
 
-        caption = make_caption(dog_breed, content_type)
+        caption = make_caption(breed_name, vibe, content_type)
         if credit:
             caption += f"\n{credit}"
         print(f"Caption:\n{caption}\n")
@@ -307,7 +336,7 @@ def main():
         post_photo(caption, img_path)
         return
 
-    print("Failed after 3 attempts")
+    print("Failed after 4 attempts")
 
 
 if __name__ == "__main__":
