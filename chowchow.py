@@ -113,24 +113,27 @@ MEME_SUBREDDITS = [
 
 # ── Pexels ────────────────────────────────────────────────────────────
 def get_pexels_image(query):  # query = ชื่อสายพันธุ์ตรงๆ
+    page = random.randint(1, 10)
     try:
         resp = requests.get(
             "https://api.pexels.com/v1/search",
             headers={"Authorization": PEXELS_API_KEY},
-            params={"query": query, "per_page": 15, "orientation": "landscape"},
+            params={"query": query, "per_page": 15, "page": page},
             timeout=10,
         )
         resp.raise_for_status()
         photos = resp.json().get("photos", [])
         if not photos:
-            print(f"Pexels: no results for '{query}'")
-            return None, None
-        photo = random.choice(photos)
-        print(f"Pexels: {photo['src']['large'][:60]}")
-        return photo["src"]["large"], f"📷 Photo by {photo.get('photographer','Pexels')} via Pexels"
+            print(f"Pexels: no results for '{query}' page {page}")
+            return None, None, None
+        photo   = random.choice(photos)
+        img_url = photo["src"].get("large2x") or photo["src"]["large"]
+        alt     = photo.get("alt", query)
+        print(f"Pexels: alt='{alt[:60]}'")
+        return img_url, f"📷 Photo by {photo.get('photographer','Pexels')} via Pexels", alt
     except Exception as e:
         print(f"Pexels error: {e}")
-        return None, None
+        return None, None, None
 
 
 # ── Reddit (fallback / meme) ──────────────────────────────────────────
@@ -211,13 +214,12 @@ def analyze_image(img_path, reddit_title=""):
 
     for model in TEXT_MODELS:
         try:
-            resp = client.models.generate_content(
-                model=model,
-                contents=[
-                    types.Part.from_bytes(data=img_data, mime_type="image/jpeg"),
-                    types.Part.from_text(text=prompt),
-                ],
-            )
+            contents = []
+            if reddit_title:
+                contents.append(types.Part.from_text(text=f'Photo title: "{reddit_title}"'))
+            contents.append(types.Part.from_bytes(data=img_data, mime_type="image/jpeg"))
+            contents.append(types.Part.from_text(text=prompt))
+            resp = client.models.generate_content(model=model, contents=contents)
             result = resp.text.strip()
             print(f"Vision: {result}")
             parts        = [p.strip() for p in result.split("|")]
@@ -498,13 +500,13 @@ def main():
         pexels_query = random.choice(CHOWCHOW_PEXELS_QUERIES)
         print(f"Topic: {topic_key} ({topic_data['topic']}) | Attempt {attempt+1}")
 
-        img_url, credit = get_pexels_image(pexels_query)
+        img_url, credit, reddit_title = get_pexels_image(pexels_query)
 
         # Reddit fallback — ใช้ chowchow subreddit เท่านั้น (ไม่ให้รูปผิดสายพันธุ์)
-        reddit_title = ""
         if not img_url:
             print("Falling back to Reddit (chowchow)...")
             img_url, credit, reddit_title = get_reddit_image(subreddit_pool=["chowchow", "chowchow", "chowchow", "dogs"])
+            reddit_title = reddit_title or ""
 
         if not img_url:
             continue
