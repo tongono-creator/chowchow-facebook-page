@@ -239,6 +239,28 @@ def analyze_image(img_path, reddit_title=""):
 
 
 # ── Gemini Caption ────────────────────────────────────────────────────
+def clean_hook_lines(raw_text):
+    text = clean_text(raw_text)
+    
+    # Check if we should split by pipe or newline
+    if "|" in text:
+        parts = text.split("|")
+    else:
+        parts = text.split("\n")
+        
+    # Pattern to strip prefixes like "บรรทัด 1: ", "ข้อความในโพสต์ Facebook: ", "1. ", etc.
+    label_pattern = r'^(ข้อความในโพสต์\s*Facebook|ข้อความบนรูป|ข้อความในรูป|ข้อความ|คำบรรยาย|คำอธิบาย|บรรทัดที่\s*\d+|บรรทัด\s*\d+|ประโยคที่\s*\d+|ประโยค\s*\d+|Hook\s*text|Hook|Line\s*\d+|[L|l]ine\s*\d+|\d+)\s*[:\-\.\s]\s*'
+    
+    cleaned_lines = []
+    for part in parts:
+        cleaned = re.sub(label_pattern, '', part, flags=re.IGNORECASE).strip()
+        cleaned = cleaned.strip('"\'“”‘’')
+        if cleaned:
+            cleaned_lines.append(cleaned)
+            
+    return cleaned_lines
+
+
 def generate_hook(vibe, topic_data, reddit_title=""):
     """hook text สำหรับ knowledge mode — ใช้ topic_data ให้ตรงหัวข้อ"""
     vibe_line  = f"personality ที่เห็นในรูป: {vibe}" if vibe else ""
@@ -254,13 +276,13 @@ def generate_hook(vibe, topic_data, reddit_title=""):
         "ภาษาพูดธรรมดา ความคิดแรกที่นึกได้ ไม่ประดิษฐ์\n"
         "บรรทัด 1: hook 3-5 คำ เล่นกับหัวข้อ+สไตล์ที่กำหนด\n"
         "บรรทัด 2: คำถาม/ประโยคสั้น 4-7 คำ ให้คนอยากอ่านต่อ\n"
-        "ตอบแค่ 2 บรรทัด ไม่มี hashtag ไม่มี **"
+        "ตอบแค่ 2 บรรทัด ไม่มี hashtag ไม่มี **\n"
+        "ห้ามเขียนคำนำ ห้ามเขียนสรุป ห้ามใส่ป้ายกำกับใดๆ เช่น 'บรรทัด 1:' หรือ 'Hook:' เด็ดขาด"
     )
     for model in TEXT_MODELS:
         try:
             resp = client.models.generate_content(model=model, contents=prompt)
-            lines = clean_text(resp.text.strip()).split("\n")
-            lines = [l.strip() for l in lines if l.strip()]
+            lines = clean_hook_lines(resp.text)
             return lines[0] if lines else "Chow Chow", lines[1] if len(lines) > 1 else ""
         except Exception as e:
             print(f"[{model}] hook failed: {e}")
@@ -342,13 +364,13 @@ def generate_meme_hook(subject, vibe):
         "เหมือนคนพิมพ์มุกเองใน Facebook ไม่ใช่นักการตลาด\n"
         "บรรทัด 1: มุก/hook 3-5 คำ ตรงๆ ไม่ประดิษฐ์\n"
         "บรรทัด 2: ต่อมุก/ชวนคอมเม้น 4-6 คำ\n"
-        "ตอบแค่ 2 บรรทัด ไม่มี hashtag ไม่มี **"
+        "ตอบแค่ 2 บรรทัด ไม่มี hashtag ไม่มี **\n"
+        "ห้ามเขียนคำนำ ห้ามเขียนสรุป ห้ามใส่ป้ายกำกับใดๆ เช่น 'บรรทัด 1:' หรือ 'Hook:' เด็ดขาด"
     )
     for model in TEXT_MODELS:
         try:
             resp = client.models.generate_content(model=model, contents=prompt)
-            lines = clean_text(resp.text.strip()).split("\n")
-            lines = [l.strip() for l in lines if l.strip()]
+            lines = clean_hook_lines(resp.text)
             return lines[0] if lines else subject[:20], lines[1] if len(lines) > 1 else ""
         except Exception as e:
             print(f"[{model}] meme hook failed: {e}")
