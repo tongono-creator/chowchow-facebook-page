@@ -1,4 +1,4 @@
-﻿name: Chow Chow Bot
+name: Chow Chow Bot
 
 on:
   schedule:
@@ -10,8 +10,12 @@ on:
 jobs:
   post:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -23,3 +27,18 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: python chowchow.py
+
+      - name: Commit and push if history updated
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -f posted_history.txt ]; then
+            git add posted_history.txt
+            if git diff --cached --quiet; then
+              echo "No changes in posted_history.txt"
+            else
+              git commit -m "chore: update posted_history.txt history [skip ci]"
+              git pull --rebase
+              git push
+            fi
+          fi

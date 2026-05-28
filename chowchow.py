@@ -111,8 +111,33 @@ MEME_SUBREDDITS = [
 ]
 
 
+# ── History Helper ───────────────────────────────────────────────────
+HISTORY_FILE = "posted_history.txt"
+
+def load_history():
+    if os.path.exists(HISTORY_FILE):
+        try:
+            with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+                return [line.strip() for line in f if line.strip()]
+        except Exception:
+            return []
+    return []
+
+def save_to_history(item):
+    items = load_history()
+    items.append(item)
+    items = items[-500:] # Cap history
+    try:
+        with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+            for it in items:
+                f.write(it + "\n")
+    except Exception as e:
+        print(f"Error saving history: {e}")
+
+
 # ── Pexels ────────────────────────────────────────────────────────────
 def get_pexels_image(query):  # query = ชื่อสายพันธุ์ตรงๆ
+    history = set(load_history())
     page = random.randint(1, 10)
     try:
         resp = requests.get(
@@ -126,7 +151,13 @@ def get_pexels_image(query):  # query = ชื่อสายพันธุ์�
         if not photos:
             print(f"Pexels: no results for '{query}' page {page}")
             return None, None, None
-        photo   = random.choice(photos)
+        
+        new_photos = [p for p in photos if (p["src"].get("large2x") or p["src"]["large"]) not in history]
+        if not new_photos:
+            print(f"Pexels: all photos on page {page} for query '{query}' already posted")
+            return None, None, None
+
+        photo   = random.choice(new_photos)
         img_url = photo["src"].get("large2x") or photo["src"]["large"]
         alt     = photo.get("alt", query)
         print(f"Pexels: alt='{alt[:60]}'")
@@ -138,6 +169,7 @@ def get_pexels_image(query):  # query = ชื่อสายพันธุ์�
 
 # ── Reddit (fallback / meme) ──────────────────────────────────────────
 def get_reddit_image(subreddit_pool=None):
+    history = set(load_history())
     subreddit = random.choice(subreddit_pool or SUBREDDITS)
     url = f"https://www.reddit.com/r/{subreddit}/hot.rss"
     try:
@@ -151,7 +183,7 @@ def get_reddit_image(subreddit_pool=None):
             title_r   = entry.findtext("atom:title", "", ns).strip()
             content   = entry.findtext("atom:content", "", ns)
             img_urls  = re.findall(r'https?://[^\s"<>]+\.(?:jpg|jpeg|png|gif|webp)', content or "")
-            good_imgs = [u for u in img_urls if "i.redd.it" in u or "imgur.com" in u]
+            good_imgs = [u for u in img_urls if ("i.redd.it" in u or "imgur.com" in u) and u not in history]
             if good_imgs:
                 image_posts.append({"url": good_imgs[0], "subreddit": subreddit, "title": title_r})
         if not image_posts:
@@ -434,7 +466,9 @@ def handle_meme():
             caption += f"\n{credit}"
         print(f"Caption:\n{caption}\n")
 
-        post_photo(caption, img_path)
+        success = post_photo(caption, img_path)
+        if success:
+            save_to_history(img_url)
         return
 
     print("Meme mode: no suitable image after 5 attempts")
@@ -559,7 +593,9 @@ def main():
             caption += f"\n{credit}"
         print(f"Caption:\n{caption}\n")
 
-        post_photo(caption, img_path)
+        success = post_photo(caption, img_path)
+        if success:
+            save_to_history(img_url)
         return
 
     print("Failed after 4 attempts")
