@@ -14,7 +14,7 @@ PAGE_ACCESS_TOKEN = os.environ["CHOWCHOW_PAGE_ACCESS_TOKEN"]
 GEMINI_API_KEY    = os.environ.get("GEMINI_API_KEY", "")
 PEXELS_API_KEY    = os.environ["PEXELS_API_KEY"]
 
-client       = genai.Client(api_key=GEMINI_API_KEY)
+client       = genai.Client(api_key=GEMINI_API_KEY, http_options={'timeout': 90.0})
 TEXT_MODELS  = ["gemini-2.5-flash", "gemini-3.5-flash"]
 ACCENT_COLOR = (255, 215, 0)  # เหลือง #FFD700
 
@@ -529,6 +529,7 @@ def add_comment(post_id, caption=None, img_path=None):
         resp = requests.post(
             f"https://graph.facebook.com/v21.0/{post_id}/comments",
             data=data,
+            timeout=60,
         )
         result = resp.json()
         if "id" in result:
