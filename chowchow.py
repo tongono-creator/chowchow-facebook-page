@@ -7,6 +7,7 @@ import tempfile
 import xml.etree.ElementTree as ET
 from google import genai
 from google.genai import types
+from google.genai.types import HttpOptions
 
 # ── Config ───────────────────────────────────────────────────────────
 PAGE_ID           = "102319399434080"
@@ -14,7 +15,7 @@ PAGE_ACCESS_TOKEN = os.environ["CHOWCHOW_PAGE_ACCESS_TOKEN"]
 GEMINI_API_KEY    = os.environ.get("GEMINI_API_KEY", "")
 PEXELS_API_KEY    = os.environ["PEXELS_API_KEY"]
 
-client       = genai.Client(api_key=GEMINI_API_KEY, http_options={'timeout': 90.0})
+client       = genai.Client(api_key=GEMINI_API_KEY, http_options=HttpOptions(timeout=300000))
 TEXT_MODELS  = ["gemini-2.5-flash", "gemini-3.5-flash"]
 ACCENT_COLOR = (255, 215, 0)  # เหลือง #FFD700
 
