@@ -32,57 +32,46 @@ CHOWCHOW_PEXELS_QUERIES = [
     "chow chow cute",
 ]
 
-# ── Chow Chow knowledge topics — หัวข้อที่คนเลี้ยง Chow Chow อยากรู้ ──
 CHOWCHOW_TOPICS = {
-    "ขน": {
-        "topic": "การดูแลขน Chow Chow",
-        "hook_style": "tip ดูแลขน",
-        "caption_type": "tips",
+    "ขนร่วง": {
+        "topic": "ปัญหาขนร่วงมหันตภัยเต็มบ้านปลิวทั่วตู้เย็น",
+        "hook_style": "บ่นเรื่องขนร่วง",
+        "caption_type": "ระบายความเหนื่อยทาสหมา",
     },
-    "อาหาร": {
-        "topic": "อาหารสำหรับ Chow Chow",
-        "hook_style": "เตือนอาหารต้องห้าม",
-        "caption_type": "ความรู้",
+    "กินยาก": {
+        "topic": "พฤติกรรมกินยากแต่ทวงขนมเก่งสุดเอาแต่ใจ",
+        "hook_style": "แฉนิสัยเลือกกิน",
+        "caption_type": "แฉพฤติกรรมดื้อ",
     },
-    "นิสัย": {
-        "topic": "พฤติกรรมและนิสัย Chow Chow",
-        "hook_style": "เปิดโปงนิสัยจริง",
-        "caption_type": "น่ารู้",
+    "อากาศร้อน": {
+        "topic": "ค่าไฟกระฉูดขีดสุดจากการต้องเปิดแอร์ให้หมา 24 ชั่วโมง",
+        "hook_style": "บ่นค่าไฟ",
+        "caption_type": "ระบายความกระเป๋าฉีก",
     },
-    "สุขภาพ": {
-        "topic": "โรคที่พบบ่อยใน Chow Chow",
-        "hook_style": "เตือนสุขภาพ",
-        "caption_type": "เตือนภัย",
+    "ดื้อมึน": {
+        "topic": "ความดื้อมึนขัดคำสั่งทำหูทวนลมสั่งเรียกชื่อแล้วเฉย",
+        "hook_style": "แฉความมึนสั่งไม่ฟัง",
+        "caption_type": "ระบายความดื้อ",
     },
-    "ฝึก": {
-        "topic": "วิธีฝึก Chow Chow ที่ดื้อ",
-        "hook_style": "tip ฝึกหมา",
-        "caption_type": "tips",
-    },
-    "อากาศ": {
-        "topic": "Chow Chow กับอากาศร้อนของไทย",
-        "hook_style": "เตือนร้อน",
-        "caption_type": "เตือนภัย",
-    },
-    "ลิ้นม่วง": {
-        "topic": "ทำไม Chow Chow ถึงมีลิ้นสีม่วง",
-        "hook_style": "fact แปลก",
-        "caption_type": "น่ารู้",
+    "ขี้งอน": {
+        "topic": "นิสัยขี้งอนเดินหนีเรียกร้องความสนใจแต่พกทิฐิสูง",
+        "hook_style": "บ่นความหยิ่งขี้งอน",
+        "caption_type": "ระบายความดื้อ",
     },
     "ค่าใช้จ่าย": {
-        "topic": "ค่าใช้จ่ายจริงของการเลี้ยง Chow Chow",
-        "hook_style": "เปิดตัวเลขจริง",
-        "caption_type": "ความรู้",
+        "topic": "ค่าใช้จ่ายหาหมอรักษาโรคผิวหนังหรือตัดขนแต่ละครั้งที่แพงหูฉี่",
+        "hook_style": "เปิดค่าใช้จ่ายเลี้ยงหมา",
+        "caption_type": "ระบายความกระเป๋าฉีก",
     },
     "อาบน้ำ": {
-        "topic": "ความถี่และวิธีอาบน้ำ Chow Chow",
-        "hook_style": "tip อาบน้ำ",
-        "caption_type": "tips",
+        "topic": "มหกรรมจับหมาอาบน้ำเป่าขนแห้งยากแห้งเย็นยาวนานกว่า 3 ชั่วโมง",
+        "hook_style": "บ่นเรื่องอาบน้ำเป่าขน",
+        "caption_type": "ระบายความเหนื่อยทาสหมา",
     },
-    "สังคม": {
-        "topic": "Chow Chow กับคนแปลกหน้าและสัตว์อื่น",
-        "hook_style": "เตือนพฤติกรรม",
-        "caption_type": "น่ารู้",
+    "หยิ่ง": {
+        "topic": "พฤติกรรมหยิ่งหน้าตึงกับคนแปลกหน้าไม่ยอมให้จับตัว",
+        "hook_style": "แฉความหยิ่งประธานบริษัท",
+        "caption_type": "แฉพฤติกรรมดื้อ",
     },
 }
 
@@ -305,10 +294,10 @@ def generate_hook(vibe, topic_data, reddit_title=""):
         f"{vibe_line}\n"
         f"{title_line}\n"
         "เขียน hook text สั้นๆ ภาษาไทย สำหรับใส่บนรูป โดยใช้บุคลิกภาพน้องหมา Chow Chow เพศผู้ (ชื่อแอดมินน้องตูบ) ลงท้ายด้วยคำว่า 'ฮะ' หรือ 'ครับ' หรือ 'โฮ่ง'\n"
-        "เขียนเหมือนสุนัขพิมพ์เองใน Facebook ไม่ใช่นักการตลาด\n"
-        "ภาษาพูดธรรมดา ความคิดแรกที่นึกได้ ไม่ประดิษฐ์\n"
-        "บรรทัด 1: hook 3-5 คำ เล่นกับหัวข้อ+สไตล์ที่กำหนด\n"
-        "บรรทัด 2: คำถาม/ประโยคสั้น 4-7 คำ ให้คนอยากอ่านต่อ\n"
+        "เขียนเหมือนสุนัขแอบพิมพ์ระบาย/บ่นขำๆ ให้ทาสฟัง ไม่ใช่นักการตลาด\n"
+        "ภาษาพูดธรรมดา ความคิดแรกในหัวสุนัข ไม่ประดิษฐ์\n"
+        "บรรทัด 1: hook 3-5 คำ บ่นหรือแฉวีรกรรม/พฤติกรรมกวนๆ ของหมาหรือความลำบากของทาส (ลงท้ายด้วย ..)\n"
+        "บรรทัด 2: คำถาม/ประโยคสั้น 4-7 คำ ที่แทงใจทาสหมาให้อยากคลิกอ่านต่อ\n"
         "ตอบแค่ 2 บรรทัด ไม่มี hashtag ไม่มี **\n"
         "ห้ามเขียนคำนำ ห้ามเขียนสรุป ห้ามใส่ป้ายกำกับใดๆ เช่น 'บรรทัด 1:' หรือ 'Hook:' เด็ดขาด"
     )
@@ -332,9 +321,9 @@ def make_caption(vibe, topic_data, reddit_title=""):
         f"รูปแบบ content: {topic_data['caption_type']}\n"
         f"{vibe_line}\n"
         f"{title_line}\n\n"
-        "เขียน Facebook caption ให้ความรู้เรื่อง Chow Chow เป็นข้อความสั้นปกติ 1 ย่อหน้า (ความยาว 2-4 บรรทัด) โดยสวมบทบาทเป็นแอดมินน้องหมา Chow Chow เพศผู้ (ชื่อแอดมินน้องตูบ) เล่าเรื่องภาษาพูดของสุนัขที่แสนน่ารัก ขี้เล่น ดื้อๆ ตลกๆ มีหางเสียงและลงท้ายด้วยคำว่า 'ฮะ' หรือ 'ครับ' หรือมีเสียงร้องบ้างเช่น 'โฮ่ง' หรือเรียกแทนตัวเองว่า 'ผม' หรือ 'น้องตูบ'\n"
+        "เขียน Facebook caption เกี่ยวกับพฤติกรรมและปัญหาการเลี้ยง Chow Chow (เช่น ขนร่วงปลิวเข้าจมูก, ความมึนสั่งแล้วหันหลังให้, ค่าไฟเปิดแอร์ฉีกกระเป๋า, ศึกอาบน้ำ 3 ชม.) เป็นข้อความสั้นปกติ 1 ย่อหน้า (ความยาว 2-4 บรรทัด) โดยสวมบทบาทเป็นแอดมินน้องหมา Chow Chow เพศผู้ (ชื่อแอดมินน้องตูบ) เล่าเรื่องภาษาพูดของสุนัขที่แสนซน มึนๆ ดื้อและขี้บ่น ลงท้ายด้วยคำว่า 'ฮะ' หรือ 'ครับ' หรือ 'โฮ่ง' เรียกแทนตัวเองว่า 'ผม' หรือ 'น้องตูบ'\n"
         "ห้ามเขียนในรูปแบบข้อตกลง หัวข้อย่อย หรือมีสัญลักษณ์นำหน้าบรรทัด เช่น ▪️ หรือ - เด็ดขาด\n"
-        "โครงสร้างเนื้อหาต้องกระชับ: เล่าสถานการณ์ตลกๆ ที่เกี่ยวกับหัวข้อนี้ ให้ข้อมูล/เคล็ดลับที่เป็นประโยชน์ และจบด้วยคำถามชวนให้ทาสหมามาคอมเมนต์แชร์เรื่องราวกัน\n"
+        "โครงสร้างเนื้อหาต้องกระชับ: บ่นแกล้งบ่นวีรกรรมสุดดื้อที่ตรงกับหัวข้อนี้ ให้มุมมองตลกและเข้าใจชีวิตคนเลี้ยงหมา แล้วลงท้ายถามคำถามจี้ใจทาสหมาโดยตรงเพื่อให้มาคอมเมนต์แชร์กัน (เช่น 'บ้านใครเจอขนหมาปลิวเข้าปากแบบผมบ้างฮะ?', 'ค่าไฟบ้านไหนสู้ชีวิตแบบนี้บ้างฮะ?')\n"
         "จบด้วย hashtag 3-4 อัน เช่น #ChowChow #เลี้ยงChowChow #สุนัข\n"
         "ห้ามใช้ ** markdown ตอบเฉพาะ caption ที่จัดเรียงเป็นย่อหน้าสั้นปกติ"
     )
@@ -411,6 +400,8 @@ def generate_meme_caption(subject, vibe, subreddit):
         "สวมบทบาทเป็นสุนัข Chow Chow เพศผู้ (แอดมินน้องตูบ) ที่เขียนแซวหมาแมวในรูป ใช้โทนตลกหน้าตาย ประชดแบบรักๆ แต่อิหยังวะ ภาษาพูดลงท้ายด้วย 'ฮะ' หรือ 'ครับ' หรือมีเสียง 'โฮ่ง' เรียกตัวเองว่า 'ผม' หรือ 'น้องตูบ'\n"
         "บรรทัด 1: แฉวีรกรรมเจ้าของทาส หรือแอบบ่นทาส 1-2 ประโยคสั้นๆ\n"
         "บรรทัด 2: ตั้งคำถามท้าทายชวนให้คนกดแชร์หรือเมนต์ถึงวีรกรรมสัตว์เลี้ยงที่บ้านตัวเอง\n"
+        "ห้ามเขียนในรูปแบบข้อตกลง หัวข้อย่อย หรือมีสัญลักษณ์นำหน้าบรรทัด เช่น ▪️ หรือ - เด็ดขาด "
+        "ข้อความต้องต่อเนื่องกันเป็นย่อหน้าปกติย่อหน้าเดียวเท่านั้น\n"
         "บรรทัด 3: hashtag 2-3 อัน\n"
         "ห้ามใช้ ** ตอบแค่ caption"
     )
@@ -423,7 +414,7 @@ def generate_meme_caption(subject, vibe, subreddit):
     return f"{subject}\n#หมา #สัตว์เลี้ยง"
 
 
-def handle_meme():
+def handle_meme(dry_run=False):
     """Meme mode — ดึงรูปตลกจาก MEME_SUBREDDITS (Chow Chow weighted) → caption ขำ"""
     print("=== Meme Mode ===")
     for attempt in range(5):
@@ -460,6 +451,12 @@ def handle_meme():
         if credit:
             caption += f"\n{credit}"
         print(f"Caption:\n{caption}\n")
+
+        if dry_run:
+            print(f"[DRY RUN] Would post photo. File: {img_path}")
+            if img_path and os.path.exists(img_path):
+                os.unlink(img_path)
+            return
 
         success = post_photo(caption, img_path)
         if success:
@@ -537,11 +534,26 @@ def add_comment(post_id, caption=None, img_path=None):
 
 # ── Main ──────────────────────────────────────────────────────────────
 def main():
-    print("=== Chow Chow Bot ===")
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dry-run", action="store_true", help="Run without posting to Facebook")
+    parser.add_argument("--mode", choices=["breed", "meme"], help="Force specific mode")
+    args = parser.parse_args()
 
-    # 30% meme mode, 70% dog breed knowledge mode
-    if random.random() < 0.30:
-        handle_meme()
+    print("=== Chow Chow Bot ===")
+    if args.dry_run:
+        print("[DRY RUN MODE ACTIVE]")
+
+    # Decide mode
+    if args.mode == "meme":
+        use_meme = True
+    elif args.mode == "breed":
+        use_meme = False
+    else:
+        use_meme = random.random() < 0.30
+
+    if use_meme:
+        handle_meme(dry_run=args.dry_run)
         return
 
     for attempt in range(4):
@@ -588,6 +600,12 @@ def main():
         if credit:
             caption += f"\n{credit}"
         print(f"Caption:\n{caption}\n")
+
+        if args.dry_run:
+            print(f"[DRY RUN] Would post photo. File: {img_path}")
+            if img_path and os.path.exists(img_path):
+                os.unlink(img_path)
+            return
 
         success = post_photo(caption, img_path)
         if success:
