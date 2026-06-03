@@ -2,8 +2,8 @@ name: Chow Chow Bot
 
 on:
   schedule:
-    - cron: "0 3 * * *"
-    - cron: "0 13 * * *"
+    - cron: "30 2 * * *"
+    - cron: "30 12 * * *"
   workflow_dispatch:
 
 jobs:
@@ -25,6 +25,7 @@ jobs:
           CHOWCHOW_PAGE_ACCESS_TOKEN: ${{ secrets.CHOWCHOW_PAGE_ACCESS_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          IMMEDIATE:         ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}
         run: python chowchow.py
 
       - name: Commit and push if history updated
