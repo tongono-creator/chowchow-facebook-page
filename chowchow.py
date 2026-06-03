@@ -1,3 +1,5 @@
+import sys
+import io
 import os
 import re
 import random
@@ -9,11 +11,22 @@ from google import genai
 from google.genai import types
 from google.genai.types import HttpOptions
 
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+
 # ── Config ───────────────────────────────────────────────────────────
 PAGE_ID           = "102319399434080"
-PAGE_ACCESS_TOKEN = os.environ["CHOWCHOW_PAGE_ACCESS_TOKEN"]
+PAGE_ACCESS_TOKEN = os.environ.get("CHOWCHOW_PAGE_ACCESS_TOKEN", "")
 GEMINI_API_KEY    = os.environ.get("GEMINI_API_KEY", "")
-PEXELS_API_KEY    = os.environ["PEXELS_API_KEY"]
+PEXELS_API_KEY    = os.environ.get("PEXELS_API_KEY", "")
+
+if not GEMINI_API_KEY:
+    try:
+        import sys
+        sys.path.append(os.path.join(os.path.dirname(__file__), "..", "rocket-facebook-page"))
+        from config import GOOGLE_API_KEY
+        GEMINI_API_KEY = GOOGLE_API_KEY
+    except Exception:
+        pass
 
 client       = genai.Client(api_key=GEMINI_API_KEY, http_options=HttpOptions(timeout=300000))
 TEXT_MODELS  = ["gemini-2.5-flash", "gemini-3.5-flash"]
@@ -336,86 +349,45 @@ def make_caption(vibe, topic_data, reddit_title=""):
     return "Chow Chow น่ารักมาก\n#ChowChow #สุนัข #เลี้ยงหมา"
 
 
-def analyze_meme_image(img_path, reddit_title=""):
-    """วิเคราะห์รูปตลก/สัตว์ → คืน (subject, vibe) — ไม่จำเป็นต้องเป็นหมา"""
-    with open(img_path, "rb") as f:
-        img_data = f.read()
-    title_ctx = f'ชื่อโพสต์ต้นฉบับ: "{reddit_title}"\n' if reddit_title else ""
-    prompt = (
-        f"{title_ctx}"
-        "ดูรูปนี้เหมือนคนไทยเล่น Facebook ไม่ใช่ AI วิเคราะห์ภาพ\n"
-        "ตอบ 2 อย่าง แยกด้วย | :\n"
-        "1. สัตว์/ตัวละครในรูปคืออะไร เช่น หมา Chow Chow, แมวส้ม, หมาทำหน้าตลก สั้นๆ 1-5 คำ\n"
-        "2. ความตลก/vibe ที่เห็น เช่น: "
-        "'หน้าขำมากดูไม่น่าเชื่อ', 'หน้าเบื่อโลก', 'เจ้าของบ้าน vibes', 'พระเอกที่โดนทิ้ง', "
-        "'กำลังตั้งใจทำอะไรบางอย่าง', 'ไม่รู้ว่าทำไมทำแบบนี้', 'เด็กดื้อที่แม่รัก'\n"
-        "ถ้าไม่มีสัตว์น่าสนใจ: ไม่เกี่ยว|ไม่เกี่ยว"
-    )
-    for model in TEXT_MODELS:
-        try:
-            resp = client.models.generate_content(
-                model=model,
-                contents=[
-                    types.Part.from_bytes(data=img_data, mime_type="image/jpeg"),
-                    types.Part.from_text(text=prompt),
-                ],
-            )
-            result = resp.text.strip()
-            print(f"Meme Vision: {result}")
-            parts = [p.strip() for p in result.split("|")]
-            subject = parts[0] if parts else ""
-            vibe    = parts[1] if len(parts) > 1 else ""
-            return subject, vibe
-        except Exception as e:
-            print(f"[{model}] meme vision failed: {e}")
-    return "", ""
-
-
-def generate_meme_hook(subject, vibe):
-    """hook text แนวตลก/กวน สำหรับ meme mode"""
-    prompt = (
-        f"สัตว์: {subject}\n"
-        f"vibe ที่เห็น: {vibe}\n"
-        "เขียน hook text ภาษาไทยสั้นๆ กวนๆ ตลกๆ ลงบนรูปภาพเสมือนเป็นความคิดในหัวของสัตว์ในภาพ (Pet POV / Inner Monologue) โดยใช้บุคลิกภาพสัตว์เลี้ยง/หมาเพศผู้ ลงท้ายด้วย 'ฮะ' หรือ 'ครับ' หรือ 'โฮ่ง':\n"
-        "บรรทัด 1: สิ่งที่สัตว์คิด/บ่นประชดมนุษย์ หรือพูดกับเจ้าของทาส 3-5 คำ (ลงท้ายด้วย ..)\n"
-        "บรรทัด 2: จุดหักมุม หรือคำพูดกวนๆ 4-6 คำ ที่ทำให้คนเลี้ยงสัตว์รู้สึกขำและโดนใจ\n"
-        "ตอบแค่ 2 บรรทัด ไม่มี hashtag ไม่มี **\n"
-        "ห้ามเขียนคำนำ ห้ามเขียนสรุป ห้ามใส่ป้ายกำกับใดๆ เช่น 'บรรทัด 1:' หรือ 'Hook:' เด็ดขาด"
-    )
-    for model in TEXT_MODELS:
-        try:
-            resp = client.models.generate_content(model=model, contents=prompt)
-            lines = clean_hook_lines(resp.text)
-            return lines[0] if lines else subject[:20], lines[1] if len(lines) > 1 else ""
-        except Exception as e:
-            print(f"[{model}] meme hook failed: {e}")
-    return subject[:20], ""
-
-
-def generate_meme_caption(subject, vibe, subreddit):
-    """caption แนวตลก/แซว สำหรับ meme mode"""
-    prompt = (
-        f"สัตว์: {subject} | vibe: {vibe}\n"
-        "เขียน Facebook caption สั้นๆ แบบกวนๆ เสมือนสัตว์เลี้ยงแอบมาโพสต์บ่น/แฉพฤติกรรมเจ้าของทาส (Pet POV):\n"
-        "สวมบทบาทเป็นสุนัข Chow Chow เพศผู้ (แอดมินน้องตูบ) ที่เขียนแซวหมาแมวในรูป ใช้โทนตลกหน้าตาย ประชดแบบรักๆ แต่อิหยังวะ ภาษาพูดลงท้ายด้วย 'ฮะ' หรือ 'ครับ' หรือมีเสียง 'โฮ่ง' เรียกตัวเองว่า 'ผม' หรือ 'น้องตูบ'\n"
-        "บรรทัด 1: แฉวีรกรรมเจ้าของทาส หรือแอบบ่นทาส 1-2 ประโยคสั้นๆ\n"
-        "บรรทัด 2: ตั้งคำถามท้าทายชวนให้คนกดแชร์หรือเมนต์ถึงวีรกรรมสัตว์เลี้ยงที่บ้านตัวเอง\n"
-        "ห้ามเขียนในรูปแบบข้อตกลง หัวข้อย่อย หรือมีสัญลักษณ์นำหน้าบรรทัด เช่น ▪️ หรือ - เด็ดขาด "
-        "ข้อความต้องต่อเนื่องกันเป็นย่อหน้าปกติย่อหน้าเดียวเท่านั้น\n"
-        "บรรทัด 3: hashtag 2-3 อัน\n"
-        "ห้ามใช้ ** ตอบแค่ caption"
-    )
-    for model in TEXT_MODELS:
-        try:
-            resp = client.models.generate_content(model=model, contents=prompt)
-            return clean_text(resp.text.strip())
-        except Exception as e:
-            print(f"[{model}] meme caption failed: {e}")
-    return f"{subject}\n#หมา #สัตว์เลี้ยง"
+def validate_meme_content(dog_role, line1, line2, caption):
+    full_text = f"{line1} {line2} {caption}"
+    
+    # 1. Reject if caption contains hashtags in a list format, or if there's any list/bullet symbols
+    for char in ["•", "▪️", "✅", "👉", "-", "*"]:
+        if char in full_text:
+            print(f"Meme Validation failed: Contains blacklisted symbol '{char}'")
+            return False
+            
+    # Check for ordered list numbers (e.g. "1.", "2.", "3.")
+    if re.search(r'\b\d+[\.\)\s\u200b]', full_text):
+        print("Meme Validation failed: Contains ordered list numbers")
+        return False
+        
+    # 2. If working_dog, reject if it uses naughty pet words
+    if dog_role == "working_dog":
+        for word in ["ซน", "ดื้อ", "ทำบ้านพัง", "ทาสปวดหัว", "ปวดหัว", "พังบ้าน"]:
+            if word in full_text:
+                print(f"Meme Validation failed: Working dog meme contains naughty pet word '{word}'")
+                return False
+        # Ensure it mentions something about sniffing/inspecting/eating/baggage
+        keywords = ["ดม", "ตรวจ", "งาน", "ของกิน", "ขนม", "กระเป๋า", "หน้าที่", "K9", "สายตรวจ", "ด่าน"]
+        if not any(k in full_text for k in keywords):
+            print("Meme Validation failed: Working dog meme does not contain sniffing/working context keywords")
+            return False
+            
+    # 3. Reject if caption uses broad questions that are not specific to the image
+    broad_patterns = ["วีรกรรมอะไร", "ดื้อแบบไหน", "ทำอะไรกันอยู่", "ทาสปวดหัวกับอะไร"]
+    for pat in broad_patterns:
+        if pat in caption:
+            print(f"Meme Validation failed: Caption contains generic broad question pattern '{pat}'")
+            return False
+            
+    return True
 
 
 def handle_meme(dry_run=False):
     """Meme mode — ดึงรูปตลกจาก MEME_SUBREDDITS (Chow Chow weighted) → caption ขำ"""
+    import json
     print("=== Meme Mode ===")
     for attempt in range(5):
         img_url, credit, reddit_title = get_reddit_image(subreddit_pool=MEME_SUBREDDITS)
@@ -427,16 +399,90 @@ def handle_meme(dry_run=False):
         if not img_path:
             continue
 
-        subject, vibe = analyze_meme_image(img_path, reddit_title=reddit_title)
-        if not subject or "ไม่เกี่ยว" in subject:
-            print("Meme: not interesting, skipping...")
+        with open(img_path, "rb") as f:
+            img_data = f.read()
+
+        mime_type = "image/jpeg"
+        if img_path.lower().endswith(".png"):
+            mime_type = "image/png"
+        elif img_path.lower().endswith(".webp"):
+            mime_type = "image/webp"
+
+        title_ctx = f'ชื่อโพสต์ต้นฉบับ: "{reddit_title}"\n' if reddit_title else ""
+        prompt = (
+            "นี่คือโพสต์รูปสัตว์เลี้ยง (สุนัขหรือแมว) จาก Reddit\n"
+            f"{title_ctx}\n"
+            "งานของคุณคือวิเคราะห์รูปภาพและจัดทำเนื้อหาสำหรับโพสต์บนเพจเฟซบุ๊กสุนัขแอดมินน้องตูบ Chow Chow เพศผู้ (โทนเสียง ขี้เล่น สุภาพ ลงท้าย ฮะ/ครับ/โฮ่ง เรียกตัวเองว่า ผม/น้องตูบ)\n\n"
+            "กรุณาวิเคราะห์และตอบกลับในรูปแบบ JSON ตามกฎที่เคร่งครัดดังต่อไปนี้:\n"
+            "1. **dog_role (การจำแนกบทบาทสุนัขในภาพ)**:\n"
+            "   - 'pet' = สุนัขบ้านทั่วไป\n"
+            "   - 'working_dog' = สุนัขทำงาน (เช่น K9, ด่านตรวจศุลกากร, สุนัขตำรวจ, กู้ภัย, บริการ)\n"
+            "   - 'funny_pet' = สุนัขทำพฤติกรรมตลก/ประหลาดในบ้าน\n"
+            "   - 'unknown' = สัตว์อื่น (แมว ฯลฯ) หรือไม่แน่ใจ\n"
+            "2. **กฎห้ามขัดแย้งกับบทบาท (Role-Consistency Rule)**:\n"
+            "   - หาก `dog_role` คือ `working_dog` ห้ามเขียนมุก/แคปชั่นในทำนอง 'หมาบ้านซน', 'หมาดื้อทำลายข้าวของ', หรือ 'ทาสปวดหัวกับวีรกรรมดื้อในบ้าน' เด็ดขาด! ให้เขียนแนว 'น้องกำลังปฏิบัติหน้าที่จริงจังเกินเหตุ', 'ตรวจหาของกิน', 'เจ้าหน้าที่สี่ขาทำงานสุดตัว'\n"
+            "3. **ข้อความบนภาพ (image_hook_line1 และ image_hook_line2)**:\n"
+            "   - ต้องสั้นมาก เข้าใจใน 1 วินาที (ไม่เกิน 12 คำภาษาไทยรวมกัน)\n"
+            "   - ต้องเจาะจงกับสิ่งสำคัญที่เห็นในภาพและบริบทจริง (เช่น มีกระเป๋า ของกิน ด่านตรวจ ต้องพูดถึงเรื่องนั้น ห้ามพูดเรื่องกว้างๆ)\n"
+            "   - `image_hook_line1`: ปูเรื่อง/Setup 3-5 คำ ลงท้ายด้วย ..\n"
+            "   - `image_hook_line2`: หักมุม/Punchline ตลกกวนๆ 4-6 คำ เป็นเหมือนความคิดในหัวสุนัข/Inner Monologue\n"
+            "   - ห้ามแต่งว่าสุนัขทำผิดหรือซนทำบ้านพังหากภาพคือหมาทำงานกู้ภัยหรือ K9 ทำด่านตรวจ\n"
+            "4. **แคปชั่น (caption)**:\n"
+            "   - ต้องเขียนเป็นย่อหน้าธรรมชาติเท่านั้น (Natural Paragraphs Only, 2-3 ย่อหน้าสั้น)\n"
+            "   - ห้ามใช้ bullet point หรือรายการใดๆ เด็ดขาด (ห้ามมี •, ▪️, -, *, ✅, 👉 หรือตัวเลข 1. 2. 3.)\n"
+            "   - ห้ามขึ้นบรรทัดใหม่ถี่ๆ แบบรายการ ให้เนื้อความยาวต่อเนื่องกันในย่อหน้าแบบที่คนพิมพ์เอง\n"
+            "   - ภาษาที่ใช้เป็นน้องตูบเพศผู้สุภาพ ขี้เล่น เป็นกันเอง ลงท้าย ฮะ/ครับ/โฮ่ง\n"
+            "   - เนื้อเรื่องแคปชั่นต้องเชื่อมโยงโดยตรงกับสถานการณ์ในภาพ ไม่พูดประเด็นกว้าง เช่น 'วีรกรรมของน้อง'\n"
+            "   - ตอนท้ายแคปชั่น ต้องมีคำถามชวนให้ลูกเพจเข้ามาแชร์ประสบการณ์เกี่ยวกับเรื่องนี้ เช่น 'บ้านใครมีหมาดมขนมเก่งกว่าคนบ้างครับ?'\n"
+            "   - จบด้วย hashtag 2-3 อันเกี่ยวเนื่องกันแบบไม่มีสัญลักษณ์ลิสต์นำหน้า\n\n"
+            "กรุณาตอบเป็น JSON ในรูปแบบนี้เท่านั้น (ห้ามมี markdown codeblock หรือคำนำหน้าใดๆ):\n"
+            "{\n"
+            "  \"dog_role\": \"pet / working_dog / funny_pet / unknown\",\n"
+            "  \"image_hook_line1\": \"...\",\n"
+            "  \"image_hook_line2\": \"...\",\n"
+            "  \"caption\": \"...\"\n"
+            "}"
+        )
+
+        success_gen = False
+        for model in TEXT_MODELS:
+            try:
+                resp = client.models.generate_content(
+                    model=model,
+                    contents=[
+                        types.Part.from_bytes(data=img_data, mime_type=mime_type),
+                        types.Part.from_text(text=prompt),
+                    ],
+                    config=types.GenerateContentConfig(
+                        response_mime_type="application/json"
+                    )
+                )
+                res_json = json.loads(resp.text.strip())
+                dog_role = res_json.get("dog_role", "unknown").strip()
+                line1 = res_json.get("image_hook_line1", "").strip()
+                line2 = res_json.get("image_hook_line2", "").strip()
+                caption = res_json.get("caption", "").strip()
+                
+                line1 = clean_text(line1)
+                line2 = clean_text(line2)
+                caption = clean_text(caption)
+                
+                print(f"Generated: Role={dog_role} | Hook='{line1}' / '{line2}'")
+                
+                if validate_meme_content(dog_role, line1, line2, caption):
+                    success_gen = True
+                    break
+                else:
+                    print("Validation failed, trying next model or retry...")
+            except Exception as e:
+                print(f"[{model}] meme generation failed: {e}")
+
+        if not success_gen:
+            print("Meme content generation failed or invalid for this image, skipping...")
             os.unlink(img_path)
             continue
 
-        print(f"Subject: {subject} | Vibe: {vibe}")
-        line1, line2 = generate_meme_hook(subject, vibe)
-        print(f"Hook: {line1} | {line2}")
-
+        # Draw overlays
         try:
             from overlay_utils import add_overlay
             overlaid = add_overlay(img_path, line1, line2, ACCENT_COLOR)
@@ -445,12 +491,11 @@ def handle_meme(dry_run=False):
         except Exception as e:
             print(f"Overlay failed: {e}")
 
-        # ดึง subreddit name จาก credit
-        sub = credit.split("r/")[-1] if credit and "r/" in credit else "animals"
-        caption = generate_meme_caption(subject, vibe, sub)
+        # Post or dry run
+        full_caption = caption
         if credit:
-            caption += f"\n{credit}"
-        print(f"Caption:\n{caption}\n")
+            full_caption += f"\n{credit}"
+        print(f"Caption:\n{full_caption}\n")
 
         if dry_run:
             print(f"[DRY RUN] Would post photo. File: {img_path}")
@@ -458,7 +503,7 @@ def handle_meme(dry_run=False):
                 os.unlink(img_path)
             return
 
-        success = post_photo(caption, img_path)
+        success = post_photo(full_caption, img_path)
         if success:
             save_to_history(img_url)
         return
