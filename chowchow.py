@@ -6,6 +6,7 @@ import random
 import time
 import requests
 import tempfile
+import hashlib
 import xml.etree.ElementTree as ET
 from google import genai
 from google.genai import types
@@ -137,6 +138,14 @@ def save_to_history(item):
     except Exception as e:
         print(f"Error saving history: {e}")
 
+def reddit_title_key(title):
+    """Stable dedup key for a Reddit post's identity (prefix 'title:').
+    Catches reposts that reuse the same title/image under a new URL or headline."""
+    norm = re.sub(r"[^\w฀-๿]+", "", (title or "").strip().lower())
+    if not norm:
+        return ""
+    return "title:" + hashlib.md5(norm.encode("utf-8")).hexdigest()[:16]
+
 
 # ── Pexels ────────────────────────────────────────────────────────────
 def get_pexels_image(query):  # query = ชื่อสายพันธุ์ตรงๆ
@@ -187,7 +196,7 @@ def get_reddit_image(subreddit_pool=None):
             content   = entry.findtext("atom:content", "", ns)
             img_urls  = re.findall(r'https?://[^\s"<>]+\.(?:jpg|jpeg|png|gif|webp)', content or "")
             good_imgs = [u for u in img_urls if ("i.redd.it" in u or "imgur.com" in u) and u not in history]
-            if good_imgs:
+            if good_imgs and reddit_title_key(title_r) not in history:
                 image_posts.append({"url": good_imgs[0], "subreddit": subreddit, "title": title_r})
         if not image_posts:
             return None, None, None
@@ -506,6 +515,8 @@ def handle_meme(dry_run=False):
         success = post_photo(full_caption, img_path)
         if success:
             save_to_history(img_url)
+            if reddit_title:
+                save_to_history(reddit_title_key(reddit_title))
         return
 
     print("Meme mode: no suitable image after 5 attempts")
@@ -655,6 +666,8 @@ def main():
         success = post_photo(caption, img_path)
         if success:
             save_to_history(img_url)
+            if reddit_title:
+                save_to_history(reddit_title_key(reddit_title))
         return
 
     print("Failed after 4 attempts")
