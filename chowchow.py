@@ -30,7 +30,7 @@ if not GEMINI_API_KEY:
         pass
 
 client       = genai.Client(api_key=GEMINI_API_KEY, http_options=HttpOptions(timeout=300000))
-TEXT_MODELS  = ["gemini-2.5-flash", "gemini-3.5-flash"]
+TEXT_MODELS       = ["gemini-1.5-flash", "gemini-1.5-flash"]
 ACCENT_COLOR = (255, 215, 0)  # เหลือง #FFD700
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; ChowChowBot/1.0; +github)"}
@@ -251,7 +251,9 @@ def analyze_image(img_path, reddit_title=""):
         "ถ้าไม่มีสุนัข: no|no|ไม่มีสุนัข"
     )
 
-    for model in TEXT_MODELS:
+    for model_idx, model in enumerate(TEXT_MODELS):
+        if model_idx > 0:
+            import time; time.sleep(2)
         try:
             contents = []
             if reddit_title:
@@ -316,7 +318,9 @@ def generate_hook(vibe, topic_data, reddit_title=""):
         "บรรทัด 2: ประโยคสรุปความรู้หรือคำถามจี้ใจ 4-7 คำ ที่ทำให้อยากอ่านทริกการดูแลในแคปชั่นต่อ\n"
         "ตอบเฉพาะข้อความพาดหัว 2 บรรทัด ไม่มี hashtag ไม่มี ** ไม่มีป้ายกำกับ เช่น 'บรรทัด 1:' หรือ 'Hook:' ใดๆ เด็ดขาด"
     )
-    for model in TEXT_MODELS:
+    for model_idx, model in enumerate(TEXT_MODELS):
+        if model_idx > 0:
+            import time; time.sleep(2)
         try:
             resp = client.models.generate_content(model=model, contents=prompt)
             lines = clean_hook_lines(resp.text)
@@ -342,7 +346,9 @@ def make_caption(vibe, topic_data, reddit_title=""):
         "จบด้วย hashtag 3-4 อัน เช่น #ChowChow #ความรู้เรื่องหมา #ดูแลสุนัข\n"
         "ห้ามใช้ ** markdown ตอบเฉพาะ caption ที่จัดเรียงเป็นย่อหน้าสั้นปกติชวนคุย"
     )
-    for model in TEXT_MODELS:
+    for model_idx, model in enumerate(TEXT_MODELS):
+        if model_idx > 0:
+            import time; time.sleep(2)
         try:
             resp = client.models.generate_content(model=model, contents=prompt)
             return clean_text(resp.text.strip())
@@ -447,7 +453,9 @@ def handle_meme(dry_run=False):
         )
 
         success_gen = False
-        for model in TEXT_MODELS:
+        for model_idx, model in enumerate(TEXT_MODELS):
+            if model_idx > 0:
+                import time; time.sleep(2)
             try:
                 resp = client.models.generate_content(
                     model=model,
