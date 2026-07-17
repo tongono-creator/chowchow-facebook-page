@@ -30,7 +30,7 @@ if not GEMINI_API_KEY:
         pass
 
 client       = genai.Client(api_key=GEMINI_API_KEY, http_options=HttpOptions(timeout=300000))
-TEXT_MODELS       = ["gemini-1.5-flash", "gemini-1.5-flash"]
+TEXT_MODELS       = ["gemini-flash-latest", "gemini-flash-latest"]
 ACCENT_COLOR = (255, 215, 0)  # เหลือง #FFD700
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; ChowChowBot/1.0; +github)"}
