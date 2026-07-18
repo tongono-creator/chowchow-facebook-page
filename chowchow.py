@@ -253,7 +253,7 @@ def analyze_image(img_path, reddit_title=""):
 
     for model_idx, model in enumerate(TEXT_MODELS):
         if model_idx > 0:
-            import time; time.sleep(2)
+            time.sleep(2)
         try:
             contents = []
             if reddit_title:
@@ -320,7 +320,7 @@ def generate_hook(vibe, topic_data, reddit_title=""):
     )
     for model_idx, model in enumerate(TEXT_MODELS):
         if model_idx > 0:
-            import time; time.sleep(2)
+            time.sleep(2)
         try:
             resp = client.models.generate_content(model=model, contents=prompt)
             lines = clean_hook_lines(resp.text)
@@ -348,7 +348,7 @@ def make_caption(vibe, topic_data, reddit_title=""):
     )
     for model_idx, model in enumerate(TEXT_MODELS):
         if model_idx > 0:
-            import time; time.sleep(2)
+            time.sleep(2)
         try:
             resp = client.models.generate_content(model=model, contents=prompt)
             return clean_text(resp.text.strip())
@@ -455,7 +455,7 @@ def handle_meme(dry_run=False):
         success_gen = False
         for model_idx, model in enumerate(TEXT_MODELS):
             if model_idx > 0:
-                import time; time.sleep(2)
+                time.sleep(2)
             try:
                 resp = client.models.generate_content(
                     model=model,
