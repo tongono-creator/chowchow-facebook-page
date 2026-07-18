@@ -1,26 +1,27 @@
 
 --- Post 1/5 (slot 18:40) ---
-Product: Dr.Zkin Pet Spray ผลิตภัณฑ์สำหรับสัตว์เลี้ยง บำรุงขน ดับกลิ่...
+Product: พร้อมส่ง MJ.Kudson อาหารสุนัขพรีเมียมสูตรแกะ (ลดขนร่วง ลดครา...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "สเปรย์สัตว์เลี้ยง",
-  "จุดเด่น": "บำรุงขน ดับกลิ่น",
-  "ราคา": 210
+  "ประเภท": "อาหารสุนัข",
+  "จุดเด่น": "ลดขนร่วง ลดคราบน้ำตา",
+  "ราคา": 542,
+  "รส": "แกะ"
 }
 [System Log] Caption approved on attempt 1!
-[System Log] Chosen Role: สายกิน (R2)
-[System Log] Chosen Persona: คนเล่าเรื่องชีวิตประจำวัน (E)
-[System Log] Chosen Hook: ไม่คิดว่าจะ...
-[System Log] Chosen Style: คำถาม
-Hook: สเปรย์กู้กลิ่นต้าวตัวแสบ | สยบกลิ่นสาบพร้อมบำรุงขน
-Product image downloaded: output/product_20260717_194838.webp
-Overlay done: output/product_20260717_194838_overlay.jpg
+[System Log] Chosen Role: แม่บ้าน (R7)
+[System Log] Chosen Persona: คนแนะนำของให้ครอบครัว (H)
+[System Log] Chosen Hook: ลองแล้วเข้าใจเลยว่าทำไมขายดี
+[System Log] Chosen Style: การบอกต่อเฉยๆ
+Hook: สูตรแกะเพื่อน้องหมา | ช่วยลดขนร่วงและคราบน้ำตา
+Product image downloaded: output/product_20260718_193817.webp
+Card render done: output/product_20260718_193817_card.png
 Caption:
-ไม่คิดว่าจะเจอปัญหากลิ่นตัวแรงจนมนุษย์แม่ส่ายหัว แถมขนยังแห้งฟูจนหมดหล่อ มีบ้านไหนกำลังมองหาวิธีดับกลิ่นตัวสุนัขแบบเร่งด่วนบ้างไหมฮะ? แต่พอผมได้สเปรย์สัตว์เลี้ยงขวดนี้ราคาแค่ 210 บาท มาฉีดปุ๊บก็ช่วยดับกลิ่นสาบได้ทันที แถมยังช่วยบำรุงขนของน้องตูบให้นุ่มสลวยน่ากอดขึ้นเยอะเลยโฮ่ง เซฟเก็บไว้ดูตอนช้อปหรือแชร์ต่อให้เพื่อนที่เจอปัญหานี้ด่วนๆ เลยฮะ กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
-🔥 โปรโมชั่น: ฿210
+ลองแล้วเข้าใจเลยว่าทำไมขายดี ผมเห็นแม่กังวลเรื่องคราบน้ำตากับขนที่ร่วงเต็มบ้าน เลยได้ลองอาหารสุนัขรสแกะถุงนี้ฮะ ตัวนี้ช่วยลดคราบน้ำตาสุนัขและยังเป็นสูตรที่ช่วยลดขนร่วงด้วย ในราคา 542 บาทเองฮะ บ้านไหนที่เจอปัญหานี้เหมือนกันเซฟโพสต์นี้เก็บไว้ไปลองดูนะโฮ่ง กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
+🔥 โปรโมชั่น: ฿542
 
 Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1784374800...
-Scheduled successfully! Photo ID: 1045476961774165
+Scheduling to Facebook for timestamp 1784461200...
+Scheduled successfully! Photo ID: 1046296228358905
 [DB] Successfully saved post memory.
 Marked row 161 as done
