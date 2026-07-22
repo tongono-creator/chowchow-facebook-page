@@ -1,27 +1,29 @@
 
 --- Post 1/5 (slot 18:40) ---
-Product: พร้อมส่ง MJ.Kudson อาหารสุนัขพรีเมียมสูตรแกะ (ลดขนร่วง ลดครา...
+Product: [ประกันศูนย์ไทย] Oneisall Pet Grooming Vacuum Kit 8 in 1 ตัด...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "อาหารสุนัข",
-  "จุดเด่น": "ลดขนร่วงและคราบน้ำตา",
-  "ราคา": 542,
-  "รส": "แกะ"
+  "ประเภท": "เครื่องแต่งขนสัตว์",
+  "จุดเด่น": "8 in 1 ดูดและเป่าขน",
+  "ราคา": 5212,
+  "ขนาด": "2.5L",
+  "รุ่น": "BM1"
 }
 [System Log] Caption approved on attempt 1!
-[System Log] Chosen Role: คนลดน้ำหนัก (R3)
-[System Log] Chosen Persona: คนซื้อมาใช้แล้ว (B)
-[System Log] Chosen Hook: ลองแล้วเข้าใจเลยว่าทำไมขายดี
-[System Log] Chosen Style: คำถาม
-Hook: สูตรแกะของเจ้าตูบ | ช่วยลดขนร่วงและคราบน้ำตา
-Product image downloaded: output/product_20260721_200506.webp
-Card render done: output/product_20260721_200506_card.png
+[System Log] Chosen Role: แม่บ้าน (R7)
+[System Log] Chosen Persona: คนเคยมีปัญหาแล้วสินค้าช่วยแก้ (D)
+[System Log] Chosen Hook: เห็นคนพูดถึงเยอะเลยลอง
+[System Log] Chosen Style: มุกตลก
+Hook: ตัวช่วยตัดแต่งขนสัตว์เลี้ยง | ดูดและเป่าขนจบในเครื่องเดียว
+Product image downloaded: output/product_20260722_201019.webp
+Card render done: output/product_20260722_201019_card.png
 Caption:
-ลองแล้วเข้าใจเลยว่าทำไมขายดี บ้านไหนกำลังเจอปัญหาน้องหมาขนร่วงกับคราบน้ำตากวนใจจนปวดหัวแบบผมบ้างฮะ? ผมได้ลองกินอาหารสุนัขรสแกะราคา 542 บาทตัวนี้มาระยะหนึ่ง มันช่วยลดขนร่วงและคราบน้ำตาได้ตรงจุดมากโฮ่ง ใครเลี้ยงสุนัขอยู่แชร์ต่อให้เพื่อนที่เจอปัญหานี้เก็บไว้ดูได้เลยนะฮะ กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
-🔥 โปรโมชั่น: ฿542
+เห็นคนพูดถึงเยอะเลยลอง เครื่องแต่งขนสัตว์ รุ่น BM1 เพราะปกติผมสู้ชีวิตกับกองขนว่อนเต็มบ้านจนนึกว่าตัวเองเป็นสุนัขพันทางโฮ่ง ตัวนี้มีฟังก์ชัน 8 in 1 ดูดและเป่าขน พร้อมถังเก็บขนาด 2.5L จัดมาในราคา 5212 บาท ช่วยจัดการขนที่ลอยเข้าปากน้องตูบตอนนอนได้สะใจมากฮะ แชร์ต่อให้เพื่อนที่เจอปัญหานี้ หรือเซฟเก็บไว้ดูตอนช้อปได้เลย
+กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
+🔥 โปรโมชั่น: ฿5212
 
 Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1784720400...
-Scheduled successfully! Photo ID: 1048734934781701
+Scheduling to Facebook for timestamp 1784806800...
+Scheduled successfully! Photo ID: 1049554501366411
 [DB] Successfully saved post memory.
-Marked row 161 as done
+Marked row 162 as done
