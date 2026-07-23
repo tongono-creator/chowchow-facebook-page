@@ -1,29 +1,28 @@
 
 --- Post 1/5 (slot 18:40) ---
-Product: [ประกันศูนย์ไทย] Oneisall Pet Grooming Vacuum Kit 8 in 1 ตัด...
+Product: HYKI - NOTTY Global Version - ห้องน้ำแมวอัตโนมัติ NOTTY by H...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "เครื่องแต่งขนสัตว์",
-  "จุดเด่น": "8 in 1 ดูดและเป่าขน",
-  "ราคา": 5212,
-  "ขนาด": "2.5L",
-  "รุ่น": "BM1"
+  "ประเภท": "ห้องน้ำแมวอัตโนมัติ",
+  "รุ่น": "NOTTY Global",
+  "จุดเด่น": "เวอร์ชัน Global",
+  "ราคา": 7888
 }
 [System Log] Caption approved on attempt 1!
-[System Log] Chosen Role: แม่บ้าน (R7)
-[System Log] Chosen Persona: คนเคยมีปัญหาแล้วสินค้าช่วยแก้ (D)
-[System Log] Chosen Hook: เห็นคนพูดถึงเยอะเลยลอง
-[System Log] Chosen Style: มุกตลก
-Hook: ตัวช่วยตัดแต่งขนสัตว์เลี้ยง | ดูดและเป่าขนจบในเครื่องเดียว
-Product image downloaded: output/product_20260722_201019.webp
-Card render done: output/product_20260722_201019_card.png
+[System Log] Chosen Role: คนเลี้ยงสัตว์ (R5)
+[System Log] Chosen Persona: คนสงสัยก่อนซื้อแล้วมาลอง (G)
+[System Log] Chosen Hook: มีใครเป็นเหมือนผมไหม
+[System Log] Chosen Style: การบอกต่อเฉยๆ
+Hook: ตัวช่วยทาสแมวสายสบาย | เก็บอึแมวให้อัตโนมัติไม่ต้องตักเอง
+Product image downloaded: output/product_20260723_201332.webp
+Card render done: output/product_20260723_201332_card.png
 Caption:
-เห็นคนพูดถึงเยอะเลยลอง เครื่องแต่งขนสัตว์ รุ่น BM1 เพราะปกติผมสู้ชีวิตกับกองขนว่อนเต็มบ้านจนนึกว่าตัวเองเป็นสุนัขพันทางโฮ่ง ตัวนี้มีฟังก์ชัน 8 in 1 ดูดและเป่าขน พร้อมถังเก็บขนาด 2.5L จัดมาในราคา 5212 บาท ช่วยจัดการขนที่ลอยเข้าปากน้องตูบตอนนอนได้สะใจมากฮะ แชร์ต่อให้เพื่อนที่เจอปัญหานี้ หรือเซฟเก็บไว้ดูตอนช้อปได้เลย
+มีใครเป็นเหมือนผมไหม ตอนแรกก็ลังเลไม่แน่ใจว่าพวกห้องน้ำแมวอัตโนมัติจะโอเคไหม แต่สุดท้ายผมก็จัด NOTTY Global เวอร์ชัน Global ราคา 7888 บาทมาลองจนได้ฮะ พอได้ลองใช้จริงแล้วถึงได้รู้ว่าเป็นยังไง ใครที่กำลังหาห้องน้ำแมวอัตโนมัติรุ่นนี้อยู่ แชร์ต่อให้เพื่อนทาสแมวหรือเซฟเก็บไว้ดูได้เลยโฮ่ง
 กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
-🔥 โปรโมชั่น: ฿5212
+🔥 โปรโมชั่น: ฿7888
 
 Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1784806800...
-Scheduled successfully! Photo ID: 1049554501366411
+Scheduling to Facebook for timestamp 1784893200...
+Scheduled successfully! Photo ID: 1050363814618813
 [DB] Successfully saved post memory.
-Marked row 162 as done
+Marked row 163 as done
