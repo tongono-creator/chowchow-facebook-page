@@ -1,28 +1,29 @@
 
 --- Post 1/5 (slot 18:40) ---
-Product: HYKI - NOTTY Global Version - ห้องน้ำแมวอัตโนมัติ NOTTY by H...
+Product: ((12ซอง คละรสได้)) Pramy พรามี่ อาหารเปียกแมว หลากหลายรส ขนา...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "ห้องน้ำแมวอัตโนมัติ",
-  "รุ่น": "NOTTY Global",
-  "จุดเด่น": "เวอร์ชัน Global",
-  "ราคา": 7888
+  "ประเภท": "อาหารเปียกแมว",
+  "จุดเด่น": "คละรสได้ ครบทุกช่วงวัย",
+  "ราคา": 265,
+  "ขนาด": "70g (12 ซอง)",
+  "รส": "คละรส"
 }
 [System Log] Caption approved on attempt 1!
-[System Log] Chosen Role: คนเลี้ยงสัตว์ (R5)
-[System Log] Chosen Persona: คนสงสัยก่อนซื้อแล้วมาลอง (G)
-[System Log] Chosen Hook: มีใครเป็นเหมือนผมไหม
-[System Log] Chosen Style: การบอกต่อเฉยๆ
-Hook: ตัวช่วยทาสแมวสายสบาย | เก็บอึแมวให้อัตโนมัติไม่ต้องตักเอง
-Product image downloaded: output/product_20260723_201332.webp
-Card render done: output/product_20260723_201332_card.png
+[System Log] Chosen Role: คนลดน้ำหนัก (R3)
+[System Log] Chosen Persona: คนเจอโปรมาแชร์ (C)
+[System Log] Chosen Hook: อันนี้เกินคาดจริงๆ
+[System Log] Chosen Style: การเปรียบเทียบ (BAB)
+Hook: อาหารเปียกเอาใจเจ้านาย | เลือกรสได้ตามใจกินได้ทุกวัย
+Product image downloaded: output/product_20260724_200635.webp
+Card render done: output/product_20260724_200635_card.png
 Caption:
-มีใครเป็นเหมือนผมไหม ตอนแรกก็ลังเลไม่แน่ใจว่าพวกห้องน้ำแมวอัตโนมัติจะโอเคไหม แต่สุดท้ายผมก็จัด NOTTY Global เวอร์ชัน Global ราคา 7888 บาทมาลองจนได้ฮะ พอได้ลองใช้จริงแล้วถึงได้รู้ว่าเป็นยังไง ใครที่กำลังหาห้องน้ำแมวอัตโนมัติรุ่นนี้อยู่ แชร์ต่อให้เพื่อนทาสแมวหรือเซฟเก็บไว้ดูได้เลยโฮ่ง
+อันนี้เกินคาดจริงๆ เมื่อก่อนบ้านผมปวดหัวกับการเลือกซื้ออาหารเปียกแมวให้แมวต่างวัยมาก แต่พอได้ตัวนี้ที่เป็นแบบคละรส ครบทุกช่วงวัย ขนาด 70g (12 ซอง) ชีวิตสบายขึ้นเยอะ แมวกินหมดทุกซองเลยฮะ สินค้าตัวนี้ช่วยเปลี่ยนชีวิตการดูแลแมวในบ้านให้ง่ายขึ้นมากๆ แถมผมบังเอิญไปเจอราคาโปรโมชั่นมาแค่ 265 บาท เซฟเก็บไว้ดูตอนช้อปหรือแชร์ต่อให้เพื่อนที่เจอปัญหานี้ได้เลย โฮ่ง
 กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
-🔥 โปรโมชั่น: ฿7888
+🔥 โปรโมชั่น: ฿265
 
 Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1784893200...
-Scheduled successfully! Photo ID: 1050363814618813
+Scheduling to Facebook for timestamp 1784979600...
+Scheduled successfully! Photo ID: 1051199661201895
 [DB] Successfully saved post memory.
-Marked row 163 as done
+Marked row 164 as done
