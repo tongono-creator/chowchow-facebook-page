@@ -1,27 +1,26 @@
 
 --- Post 1/5 (slot 18:40) ---
-Product: PANDO Pet Dryer Room PD65 แพนโด้ เครื่องเป่าขน สำหรับสัตว์เล...
+Product: ห้องน้ำแมวอัจฉริยะ ห้องน้ําแมวอัตโนมัติสามารถเก็บอุจจาระได้โ...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "ตู้เป่าขนสัตว์",
-  "จุดเด่น": "เป่าขนสัตว์เลี้ยงอัตโนมัติ",
-  "ราคา": 9990,
-  "รุ่น": "PD65"
+  "ประเภท": "ห้องน้ำแมว",
+  "จุดเด่น": "ตักอึอัตโนมัติ, ลดกลิ่น",
+  "ราคา": 3199
 }
 [System Log] Caption approved on attempt 1!
-[System Log] Chosen Role: คนชอบของถูก (R8)
-[System Log] Chosen Persona: คนเล่าเรื่องชีวิตประจำวัน (E)
-[System Log] Chosen Hook: เมื่อวานเพิ่งเจอ...
-[System Log] Chosen Style: มุกตลก
-Hook: ตู้เป่าขนทาสสบาย | จับน้องใส่ตู้นั่งรอขนแห้ง
-Product image downloaded: output/product_20260725_194411.webp
-Card render done: output/product_20260725_194411_card.png
+[System Log] Chosen Role: นักออกกำลังกาย (R6)
+[System Log] Chosen Persona: คนซื้อมาใช้แล้ว (B)
+[System Log] Chosen Hook: ตอนแรกไม่ได้จะซื้อ
+[System Log] Chosen Style: ประสบการณ์ส่วนตัว (PAS)
+Hook: ส้วมแมวตักอึเอง | เก็บอึให้เองบ้านไม่เหม็น
+Product image downloaded: output/product_20260726_194505.webp
+Card render done: output/product_20260726_194505_card.png
 Caption:
-เมื่อวานเพิ่งเจอศึกหนักตอนโดนจับอาบน้ำ วิ่งหนีไดร์เป่าผมสะบัดน้ำใส่ทาสจนเปียกซกเหมือนโดนพายุเข้าเลยฮะ แต่ตอนนี้ผมรอดแล้วเพราะมี ตู้เป่าขนสัตว์ รุ่น PD65 ที่มาพร้อมระบบเป่าขนสัตว์เลี้ยงอัตโนมัติ นั่งข้างในชิลๆ จนแห้งสนิท ในราคา 9990 บาท ทาสคนไหนปวดหัวกับการเป่าขนหมาแมวอย่าลืมแชร์ต่อให้เพื่อนที่เจอปัญหานี้หรือเซฟเก็บไว้ดูตอนช้อปกันนะโฮ่ง กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
-🔥 โปรโมชั่น: ฿9990
+ตอนแรกไม่ได้จะซื้อ แต่ผมทนก้มตักอึแมวทุกวัน แถมกลิ่นเหม็นคละคลุ้งอึดอัดไปทั่วบ้านไม่ไหวแล้วฮะ พอได้ห้องน้ำแมวราคา 3,199 บาท เครื่องนี้มาช่วยตักอึอัตโนมัติและช่วยลดกลิ่น ชีวิตน้องตูบสบายขึ้นเยอะเลยโฮ่ง แชร์ต่อให้เพื่อนที่เจอปัญหานี้หรือเซฟเก็บไว้ดูตอนช้อปได้เลยฮะ กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
+🔥 โปรโมชั่น: ฿3199
 
 Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1785066000...
-Scheduled successfully! Photo ID: 1052026307785897
+Scheduling to Facebook for timestamp 1785152400...
+Scheduled successfully! Photo ID: 1052862394368955
 [DB] Successfully saved post memory.
-Marked row 165 as done
+Marked row 166 as done
