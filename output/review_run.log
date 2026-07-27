@@ -1,26 +1,26 @@
 
 --- Post 1/5 (slot 18:40) ---
-Product: ห้องน้ำแมวอัจฉริยะ ห้องน้ําแมวอัตโนมัติสามารถเก็บอุจจาระได้โ...
+Product: กล่องเดินทางสัตว์เลี้ยง กรงหิ้วแมว กรงเดินทาง กล่องใส่สัตว์เ...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "ห้องน้ำแมว",
-  "จุดเด่น": "ตักอึอัตโนมัติ, ลดกลิ่น",
-  "ราคา": 3199
+  "ประเภท": "กล่องเดินทางสัตว์เลี้ยง",
+  "จุดเด่น": "พกพาสัตว์เลี้ยงเดินทาง",
+  "ราคา": 973
 }
 [System Log] Caption approved on attempt 1!
-[System Log] Chosen Role: นักออกกำลังกาย (R6)
-[System Log] Chosen Persona: คนซื้อมาใช้แล้ว (B)
-[System Log] Chosen Hook: ตอนแรกไม่ได้จะซื้อ
-[System Log] Chosen Style: ประสบการณ์ส่วนตัว (PAS)
-Hook: ส้วมแมวตักอึเอง | เก็บอึให้เองบ้านไม่เหม็น
-Product image downloaded: output/product_20260726_194505.webp
-Card render done: output/product_20260726_194505_card.png
+[System Log] Chosen Role: คนชอบของถูก (R8)
+[System Log] Chosen Persona: คนแนะนำของให้ครอบครัว (H)
+[System Log] Chosen Hook: กำลังหาของแบบนี้อยู่พอดี
+[System Log] Chosen Style: คำถาม
+Hook: กล่องพาเจ้านายเที่ยว | พาน้องเดินทางสะดวกสบาย
+Product image downloaded: output/product_20260727_205828.webp
+Card render done: output/product_20260727_205828_card.png
 Caption:
-ตอนแรกไม่ได้จะซื้อ แต่ผมทนก้มตักอึแมวทุกวัน แถมกลิ่นเหม็นคละคลุ้งอึดอัดไปทั่วบ้านไม่ไหวแล้วฮะ พอได้ห้องน้ำแมวราคา 3,199 บาท เครื่องนี้มาช่วยตักอึอัตโนมัติและช่วยลดกลิ่น ชีวิตน้องตูบสบายขึ้นเยอะเลยโฮ่ง แชร์ต่อให้เพื่อนที่เจอปัญหานี้หรือเซฟเก็บไว้ดูตอนช้อปได้เลยฮะ กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
-🔥 โปรโมชั่น: ฿3199
+กำลังหาของแบบนี้อยู่พอดี เวลาจะพาเด็กๆ ในบ้านออกเดินทาง มีใครเคยปวดหัวเรื่องการพาเค้าขึ้นรถบ้างไหมฮะ? ผมไปเจอกล่องเดินทางสัตว์เลี้ยงสำหรับพกพาสัตว์เลี้ยงเดินทาง ในราคา 973 บาท เลยรีบเอามาบอกทุกคนโฮ่ง! ใครที่กำลังวางแผนพาแมวหมาเที่ยว ลองเซฟเก็บไว้ดูตอนช้อป หรือแชร์ต่อให้คนในครอบครัวได้เลยฮะ กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
+🔥 โปรโมชั่น: ฿973
 
 Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1785152400...
-Scheduled successfully! Photo ID: 1052862394368955
+Scheduling to Facebook for timestamp 1785238800...
+Scheduled successfully! Photo ID: 1053759444279250
 [DB] Successfully saved post memory.
-Marked row 166 as done
+Marked row 167 as done
