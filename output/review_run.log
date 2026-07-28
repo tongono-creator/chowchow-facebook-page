@@ -1,26 +1,29 @@
 
 --- Post 1/5 (slot 18:40) ---
-Product: กล่องเดินทางสัตว์เลี้ยง กรงหิ้วแมว กรงเดินทาง กล่องใส่สัตว์เ...
+Product: Pramy in Gravy 70g อาหารเปียกแมว แมวโต เกรวี่ 12ซอง สำหรับแม...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "กล่องเดินทางสัตว์เลี้ยง",
-  "จุดเด่น": "พกพาสัตว์เลี้ยงเดินทาง",
-  "ราคา": 973
+  "ประเภท": "อาหารเปียกแมว",
+  "รุ่น": "Pramy Gravy",
+  "จุดเด่น": "สูตรเกรวี่ สำหรับแมว 2 เดือนขึ้นไป",
+  "ขนาด": "70g (12ซอง)",
+  "ราคา": 256
 }
 [System Log] Caption approved on attempt 1!
-[System Log] Chosen Role: คนชอบของถูก (R8)
-[System Log] Chosen Persona: คนแนะนำของให้ครอบครัว (H)
-[System Log] Chosen Hook: กำลังหาของแบบนี้อยู่พอดี
-[System Log] Chosen Style: คำถาม
-Hook: กล่องพาเจ้านายเที่ยว | พาน้องเดินทางสะดวกสบาย
-Product image downloaded: output/product_20260727_205828.webp
-Card render done: output/product_20260727_205828_card.png
+[System Log] Chosen Role: พ่อบ้าน (R1)
+[System Log] Chosen Persona: คนเคยมีปัญหาแล้วสินค้าช่วยแก้ (D)
+[System Log] Chosen Hook: แชร์เผื่อมีคนกำลังหาอยู่
+[System Log] Chosen Style: การบอกต่อเฉยๆ
+Hook: เกรวี่มัดใจเจ้านาย | ซอสฉ่ำหอมแมวเลียหมดจาน
+Product image downloaded: output/product_20260728_201927.webp
+Card render done: output/product_20260728_201927_card.png
 Caption:
-กำลังหาของแบบนี้อยู่พอดี เวลาจะพาเด็กๆ ในบ้านออกเดินทาง มีใครเคยปวดหัวเรื่องการพาเค้าขึ้นรถบ้างไหมฮะ? ผมไปเจอกล่องเดินทางสัตว์เลี้ยงสำหรับพกพาสัตว์เลี้ยงเดินทาง ในราคา 973 บาท เลยรีบเอามาบอกทุกคนโฮ่ง! ใครที่กำลังวางแผนพาแมวหมาเที่ยว ลองเซฟเก็บไว้ดูตอนช้อป หรือแชร์ต่อให้คนในครอบครัวได้เลยฮะ กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
-🔥 โปรโมชั่น: ฿973
+แชร์เผื่อมีคนกำลังหาอยู่ ช่วงนี้เจอปัญหาเจ้านายที่บ้านเมินอาหารเดิมๆ ผมเลยลองหา อาหารเปียกแมว Pramy Gravy สูตรเกรวี่ สำหรับแมว 2 เดือนขึ้นไป มาฮะ ตัวนี้ขนาด 70g ได้ทั้งหมด 12ซอง ราคา 256 บาท เด็กๆ เลียหมดจานเลย เซฟเก็บไว้ดูตอนช้อป หรือแชร์ต่อให้เพื่อนที่เจอปัญหานี้ได้เลยโฮ่ง
+กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
+🔥 โปรโมชั่น: ฿256
 
 Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1785238800...
-Scheduled successfully! Photo ID: 1053759444279250
+Scheduling to Facebook for timestamp 1785325200...
+Scheduled successfully! Photo ID: 1054621010859760
 [DB] Successfully saved post memory.
-Marked row 167 as done
+Marked row 168 as done
