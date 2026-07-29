@@ -1,29 +1,28 @@
 
 --- Post 1/5 (slot 18:40) ---
-Product: Pramy in Gravy 70g อาหารเปียกแมว แมวโต เกรวี่ 12ซอง สำหรับแม...
+Product: navipet Smart Pet Dryer (Thai Version) ตู้เป่า ขนสัตว์เลี้ยง...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "อาหารเปียกแมว",
-  "รุ่น": "Pramy Gravy",
-  "จุดเด่น": "สูตรเกรวี่ สำหรับแมว 2 เดือนขึ้นไป",
-  "ขนาด": "70g (12ซอง)",
-  "ราคา": 256
+  "ประเภท": "ตู้เป่าขนสัตว์",
+  "จุดเด่น": "ฆ่าเชื้อ OZONE",
+  "ราคา": 7900,
+  "ขนาด": "72L",
+  "รุ่น": "Navipet Smart"
 }
 [System Log] Caption approved on attempt 1!
-[System Log] Chosen Role: พ่อบ้าน (R1)
-[System Log] Chosen Persona: คนเคยมีปัญหาแล้วสินค้าช่วยแก้ (D)
-[System Log] Chosen Hook: แชร์เผื่อมีคนกำลังหาอยู่
-[System Log] Chosen Style: การบอกต่อเฉยๆ
-Hook: เกรวี่มัดใจเจ้านาย | ซอสฉ่ำหอมแมวเลียหมดจาน
-Product image downloaded: output/product_20260728_201927.webp
-Card render done: output/product_20260728_201927_card.png
+[System Log] Chosen Role: คนลดน้ำหนัก (R3)
+[System Log] Chosen Persona: คนรีวิวสั้นๆแบบขำๆ (F)
+[System Log] Chosen Hook: โดนป้ายยามาอีกที
+[System Log] Chosen Style: ประสบการณ์ส่วนตัว (PAS)
+Hook: ตู้อบเป่าขนสายสปา | เป่าขนแห้งไวพร้อมอบฆ่าเชื้อ
+Product image downloaded: output/product_20260729_202320.webp
+Card render done: output/product_20260729_202320_card.png
 Caption:
-แชร์เผื่อมีคนกำลังหาอยู่ ช่วงนี้เจอปัญหาเจ้านายที่บ้านเมินอาหารเดิมๆ ผมเลยลองหา อาหารเปียกแมว Pramy Gravy สูตรเกรวี่ สำหรับแมว 2 เดือนขึ้นไป มาฮะ ตัวนี้ขนาด 70g ได้ทั้งหมด 12ซอง ราคา 256 บาท เด็กๆ เลียหมดจานเลย เซฟเก็บไว้ดูตอนช้อป หรือแชร์ต่อให้เพื่อนที่เจอปัญหานี้ได้เลยโฮ่ง
-กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
-🔥 โปรโมชั่น: ฿256
+โดนป้ายยามาอีกที ทุกทีหลังอาบน้ำ น้องตูบสะบัดตัวน้ำกระจายเต็มบ้าน แถมผมต้องถือไดร์เป่าขนจนแขนแทบหลุด หูอื้อ หน้ามืด แถมกลัวขนเปียกอับเชื้อโรคอีกโฮ่ง จนมาจบที่ ตู้เป่าขนสัตว์ Navipet Smart ขนาด 72L ราคา 7,900 บาท ที่มีระบบฆ่าเชื้อ OZONE จับเข้าไปนั่งเป่าแห้งสบายใจเฉิบ แชร์ต่อให้เพื่อนที่เจอปัญหานี้ไว้ดูเป็นตัวช่วยได้เลยฮะ กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
+🔥 โปรโมชั่น: ฿7900
 
 Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1785325200...
-Scheduled successfully! Photo ID: 1054621010859760
+Scheduling to Facebook for timestamp 1785411600...
+Scheduled successfully! Photo ID: 1055539114101283
 [DB] Successfully saved post memory.
-Marked row 168 as done
+Marked row 169 as done
