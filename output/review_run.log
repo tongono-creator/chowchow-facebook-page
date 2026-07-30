@@ -1,28 +1,28 @@
 
 --- Post 1/5 (slot 18:40) ---
-Product: navipet Smart Pet Dryer (Thai Version) ตู้เป่า ขนสัตว์เลี้ยง...
+Product: ห้องน้ำแมวใหญ่ SMART CAT LITTER BO...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "ตู้เป่าขนสัตว์",
-  "จุดเด่น": "ฆ่าเชื้อ OZONE",
-  "ราคา": 7900,
-  "ขนาด": "72L",
-  "รุ่น": "Navipet Smart"
+  "ประเภท": "ห้องน้ำแมว",
+  "จุดเด่น": "ขนาดใหญ่",
+  "ราคา": 1000,
+  "ขนาด": "ใหญ่",
+  "รุ่น": "Smart Cat BO"
 }
 [System Log] Caption approved on attempt 1!
-[System Log] Chosen Role: คนลดน้ำหนัก (R3)
-[System Log] Chosen Persona: คนรีวิวสั้นๆแบบขำๆ (F)
-[System Log] Chosen Hook: โดนป้ายยามาอีกที
-[System Log] Chosen Style: ประสบการณ์ส่วนตัว (PAS)
-Hook: ตู้อบเป่าขนสายสปา | เป่าขนแห้งไวพร้อมอบฆ่าเชื้อ
-Product image downloaded: output/product_20260729_202320.webp
-Card render done: output/product_20260729_202320_card.png
+[System Log] Chosen Role: คนชอบของถูก (R8)
+[System Log] Chosen Persona: คนเคยมีปัญหาแล้วสินค้าช่วยแก้ (D)
+[System Log] Chosen Hook: ไม่คิดว่าจะ...
+[System Log] Chosen Style: การเปรียบเทียบ (BAB)
+Hook: ส้วมแมวไซส์เบิ้ม | แมวอ้วนกลับตัวสบายไม่อึดอัด
+Product image downloaded: output/product_20260730_201527.webp
+Card render done: output/product_20260730_201527_card.png
 Caption:
-โดนป้ายยามาอีกที ทุกทีหลังอาบน้ำ น้องตูบสะบัดตัวน้ำกระจายเต็มบ้าน แถมผมต้องถือไดร์เป่าขนจนแขนแทบหลุด หูอื้อ หน้ามืด แถมกลัวขนเปียกอับเชื้อโรคอีกโฮ่ง จนมาจบที่ ตู้เป่าขนสัตว์ Navipet Smart ขนาด 72L ราคา 7,900 บาท ที่มีระบบฆ่าเชื้อ OZONE จับเข้าไปนั่งเป่าแห้งสบายใจเฉิบ แชร์ต่อให้เพื่อนที่เจอปัญหานี้ไว้ดูเป็นตัวช่วยได้เลยฮะ กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
-🔥 โปรโมชั่น: ฿7900
+ไม่คิดว่าจะต้องคอยเก็บทรายแมวหกเลอะเทอะเต็มบ้านทุกวันเพราะกระบะทรายอันเก่ามันแคบเกินไปฮะ แต่พอผมเปลี่ยนมาใช้ห้องน้ำแมว Smart Cat BO ขนาดใหญ่ ราคา 1000 บาท แล้วชีวิตดีขึ้นเยอะ ทรายไม่หกออกมาข้างนอกอีกเลยโฮ่ง พอได้ห้องน้ำแมวขนาดใหญ่รุ่นนี้มาช่วยแก้ปัญหาตรงจุด พื้นบ้านก็สะอาดขึ้นทันตา แชร์ต่อให้เพื่อนที่เจอปัญหานี้หรือเซฟเก็บไว้ดูตอนช้อปได้เลยฮะ กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
+🔥 โปรโมชั่น: ฿1000
 
 Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1785411600...
-Scheduled successfully! Photo ID: 1055539114101283
+Scheduling to Facebook for timestamp 1785498000...
+Scheduled successfully! Photo ID: 1056449744010220
 [DB] Successfully saved post memory.
-Marked row 169 as done
+Marked row 170 as done
