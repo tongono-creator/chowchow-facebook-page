@@ -1,28 +1,29 @@
 
 --- Post 1/5 (slot 18:40) ---
-Product: ห้องน้ำแมวใหญ่ SMART CAT LITTER BO...
+Product: ขนมแมวเลีย Me-O มีโอ 11 รสชาติ คละรสได้ 11/20/25/36 ซอง | ขน...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "ห้องน้ำแมว",
-  "จุดเด่น": "ขนาดใหญ่",
-  "ราคา": 1000,
-  "ขนาด": "ใหญ่",
-  "รุ่น": "Smart Cat BO"
+  "ประเภท": "ขนมแมวเลีย",
+  "จุดเด่น": "คละรสได้",
+  "รส": "11 รสชาติ",
+  "ขนาด": "11/20/25/36 ซอง",
+  "ราคา": 109
 }
 [System Log] Caption approved on attempt 1!
-[System Log] Chosen Role: คนชอบของถูก (R8)
-[System Log] Chosen Persona: คนเคยมีปัญหาแล้วสินค้าช่วยแก้ (D)
-[System Log] Chosen Hook: ไม่คิดว่าจะ...
-[System Log] Chosen Style: การเปรียบเทียบ (BAB)
-Hook: ส้วมแมวไซส์เบิ้ม | แมวอ้วนกลับตัวสบายไม่อึดอัด
-Product image downloaded: output/product_20260730_201527.webp
-Card render done: output/product_20260730_201527_card.png
+[System Log] Chosen Role: คนเลี้ยงสัตว์ (R5)
+[System Log] Chosen Persona: คนเจอโปรมาแชร์ (C)
+[System Log] Chosen Hook: ลองแล้วเข้าใจเลยว่าทำไมขายดี
+[System Log] Chosen Style: มุกตลก
+Hook: ขนมล่อซื้อเจ้านาย | คละได้หลายรสเจ้านายไม่เบื่อ
+Product image downloaded: output/product_20260731_201949.webp
+Card render done: output/product_20260731_201949_card.png
 Caption:
-ไม่คิดว่าจะต้องคอยเก็บทรายแมวหกเลอะเทอะเต็มบ้านทุกวันเพราะกระบะทรายอันเก่ามันแคบเกินไปฮะ แต่พอผมเปลี่ยนมาใช้ห้องน้ำแมว Smart Cat BO ขนาดใหญ่ ราคา 1000 บาท แล้วชีวิตดีขึ้นเยอะ ทรายไม่หกออกมาข้างนอกอีกเลยโฮ่ง พอได้ห้องน้ำแมวขนาดใหญ่รุ่นนี้มาช่วยแก้ปัญหาตรงจุด พื้นบ้านก็สะอาดขึ้นทันตา แชร์ต่อให้เพื่อนที่เจอปัญหานี้หรือเซฟเก็บไว้ดูตอนช้อปได้เลยฮะ กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
-🔥 โปรโมชั่น: ฿1000
+ลองแล้วเข้าใจเลยว่าทำไมขายดี ตอนแรกน้องตูบกะจะส่องของกินตัวเอง แต่ดันเผลอไปกดเจอโปรโมชั่นขนมแมวเลียราคา 109 บาท ที่เลือกคละรสได้ถึง 11 รสชาติ แถมมีขนาดให้เลือกทั้ง 11/20/25/36 ซอง งานนี้ยอมสละเงินกระปุกไปเอาใจเจ้านายแมวที่บ้านเรียบร้อยโฮ่ง ทาสแมวทั้งหลายเซฟเก็บไว้ดูตอนช้อปหรือแชร์ต่อให้เพื่อนที่เลี้ยงแมวด้วยกันได้เลยฮะ
+กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
+🔥 โปรโมชั่น: ฿109
 
 Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1785498000...
-Scheduled successfully! Photo ID: 1056449744010220
+Scheduling to Facebook for timestamp 1785584400...
+Scheduled successfully! Photo ID: 1057390200582841
 [DB] Successfully saved post memory.
-Marked row 170 as done
+Marked row 171 as done
