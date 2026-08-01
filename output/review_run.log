@@ -1,29 +1,26 @@
 
 --- Post 1/5 (slot 18:40) ---
-Product: ขนมแมวเลีย Me-O มีโอ 11 รสชาติ คละรสได้ 11/20/25/36 ซอง | ขน...
+Product: สเปรย์น้ำหอมระงับกลิ่น แบรนด์พราวพาว สูตรอ่อนโยน สารสกัดจากธ...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "ขนมแมวเลีย",
-  "จุดเด่น": "คละรสได้",
-  "รส": "11 รสชาติ",
-  "ขนาด": "11/20/25/36 ซอง",
-  "ราคา": 109
+  "ประเภท": "สเปรย์ระงับกลิ่น",
+  "จุดเด่น": "สูตรอ่อนโยน สารสกัดธรรมชาติ",
+  "ราคา": 169
 }
 [System Log] Caption approved on attempt 1!
-[System Log] Chosen Role: คนเลี้ยงสัตว์ (R5)
-[System Log] Chosen Persona: คนเจอโปรมาแชร์ (C)
-[System Log] Chosen Hook: ลองแล้วเข้าใจเลยว่าทำไมขายดี
-[System Log] Chosen Style: มุกตลก
-Hook: ขนมล่อซื้อเจ้านาย | คละได้หลายรสเจ้านายไม่เบื่อ
-Product image downloaded: output/product_20260731_201949.webp
-Card render done: output/product_20260731_201949_card.png
+[System Log] Chosen Role: นักออกกำลังกาย (R6)
+[System Log] Chosen Persona: คนแนะนำของให้ครอบครัว (H)
+[System Log] Chosen Hook: เห็นคนพูดถึงเยอะเลยลอง
+[System Log] Chosen Style: คำถาม
+Hook: สเปรย์ตัวหอมสูตรอ่อนโยน | สารสกัดจากธรรมชาติหอมละมุนชื่นใจ
+Product image downloaded: output/product_20260801_193944.webp
+Card render done: output/product_20260801_193944_card.png
 Caption:
-ลองแล้วเข้าใจเลยว่าทำไมขายดี ตอนแรกน้องตูบกะจะส่องของกินตัวเอง แต่ดันเผลอไปกดเจอโปรโมชั่นขนมแมวเลียราคา 109 บาท ที่เลือกคละรสได้ถึง 11 รสชาติ แถมมีขนาดให้เลือกทั้ง 11/20/25/36 ซอง งานนี้ยอมสละเงินกระปุกไปเอาใจเจ้านายแมวที่บ้านเรียบร้อยโฮ่ง ทาสแมวทั้งหลายเซฟเก็บไว้ดูตอนช้อปหรือแชร์ต่อให้เพื่อนที่เลี้ยงแมวด้วยกันได้เลยฮะ
-กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
-🔥 โปรโมชั่น: ฿109
+เห็นคนพูดถึงเยอะเลยลอง เคยแอบกังวลเรื่องกลิ่นเวลาอยู่ใกล้ชิดคนในบ้านกันไหมฮะ? น้องตูบเลยไปซื้อสเปรย์ระงับกลิ่นที่เป็นสูตรอ่อนโยน มีสารสกัดธรรมชาติมาให้คนที่บ้านได้ลองใช้กันในราคา 169 บาท ลองแชร์ต่อให้คนที่รักหรือเซฟเก็บไว้ดูได้เลยฮะ กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
+🔥 โปรโมชั่น: ฿169
 
 Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1785584400...
-Scheduled successfully! Photo ID: 1057390200582841
+Scheduling to Facebook for timestamp 1785670800...
+Scheduled successfully! Photo ID: 1058309030490958
 [DB] Successfully saved post memory.
-Marked row 171 as done
+Marked row 172 as done
