@@ -103,7 +103,7 @@ MEME_SUBREDDITS = [
     "dogmemes",
     "dogswithjobs",
     "rarepuppers",
-    "WhatsWrongWithYourCat",
+    "dogpictures",
     "AnimalsBeingFunny",
     "AnimalsBeingBros",
     "aww",
