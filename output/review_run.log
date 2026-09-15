@@ -1,26 +1,32 @@
 Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
 
 --- Post 1/5 (slot 18:40) ---
-Product: Dr.Zkin Pet Spray ผลิตภัณฑ์สำหรับสัตว์เลี้ยง บำรุงขน ดับกลิ่...
+Product: Prowild โปรไวลด์ ซีเล็คเต็ด อาหารสุนัขทุกสายพันธุ์/ทุกช่วงวั...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "สเปรย์สัตว์เลี้ยง",
-  "จุดเด่น": "บำรุงขน ดับกลิ่น",
-  "ราคา": 210
+  "ประเภท": "อาหารสุนัข",
+  "จุดเด่น": "ทุกสายพันธุ์ทุกวัย",
+  "รุ่น": "ซีเล็คเต็ด",
+  "ขนาด": "15 kg",
+  "ราคา": 1590
 }
 [System Log] Caption approved on attempt 1!
-[System Log] Chosen Role: ทาสหมาหาข้อมูล (R1)
-[System Log] Chosen Persona: ศาลทาสหมา (D)
-[System Log] Chosen Hook: เปิดด้วยราคาเทียบกับฟังก์ชันที่ได้
+[System Log] Chosen Role: ชี้พิกัดของหมา (R4)
+[System Log] Chosen Persona: เพื่อนชี้พิกัด (C)
+[System Log] Chosen Hook: เปิดด้วยจุดเด่นจริงหนึ่งข้อจากข้อมูล
 [System Log] Chosen Style: บอกต่อแบบกลางๆ
-Hook: สเปรย์ตัวหอมหมาแมว | ดับกลิ่นสาบ ขนนุ่มน่ากอด
-Product image downloaded: output/product_20260915_000351.webp
-Card render done: output/product_20260915_000351_card.png
+Hook: อาหารหมาเลี้ยงยกบ้าน | พันธุ์ไหนวัยไหนก็กินได้
+Product image downloaded: output/product_20260915_224154.webp
+Card render done: output/product_20260915_224154_card.png
 Caption:
-จ่าย 210 บาทได้สเปรย์สัตว์เลี้ยงที่มีทั้งฟังก์ชันบำรุงขนและดับกลิ่นในขวดเดียวเลยฮะ พี่ๆ คิดว่าสเปรย์สัตว์เลี้ยงที่ช่วยทั้งบำรุงขนและดับกลิ่นในงบ 210 บาทนี้ ตอบโจทย์การดูแลกลิ่นตัวน้องหมาที่บ้านไหมฮะ? กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
+ผมเห็นว่าตัวนี้สะดวกตรงที่กินได้ทุกสายพันธุ์ทุกวัยเลยฮะ โดยเป็นอาหารสุนัขรุ่นซีเล็คเต็ด ขนาด 15 kg ราคา 1,590 บาท 
+
+มีบ้านไหนกำลังเล็งอาหารสุนัขกระสอบ 15 kg ราคา 1,590 บาทที่แชร์กันกินได้ทุกวัยแบบนี้อยู่บ้างฮะ? 
+
+กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
 
 Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1789472400...
-Scheduled successfully! Photo ID: 1097687633219764
+Scheduling to Facebook for timestamp 1789558800...
+Scheduled successfully! Photo ID: 1098527269802467
 [DB] Successfully saved post memory.
-Marked row 176 as done
+Marked row 177 as done
