@@ -1,27 +1,27 @@
 Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
 
 --- Post 1/5 (slot 18:40) ---
-Product: NaviPet Grooming Vacuum KIT 7 in 1 เครื่องปัตตาเลียนตัดแต่งข...
+Product: PANDO Second Generation Pet Trolleyแพนโด้ รถเข็นสำหรับสัตว์เ...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "เครื่องตัดขนสัตว์เลี้ยง",
-  "รุ่น": "KIT 7 in 1",
-  "จุดเด่น": "ตัดขนพร้อมดูดฝุ่นในตัว 7 in 1",
-  "ราคา": 2590
+  "ประเภท": "รถเข็นสัตว์เลี้ยง",
+  "รุ่น": "Gen 2",
+  "จุดเด่น": "เวอร์ชันอัปเกรด",
+  "ราคา": 3390
 }
 [System Log] Caption approved on attempt 1!
-[System Log] Chosen Role: ทาสหมาหาข้อมูล (R1)
-[System Log] Chosen Persona: เพื่อนชี้พิกัด (C)
-[System Log] Chosen Hook: เปิดด้วยปัญหาของคนเลี้ยงหมาที่สินค้าประเภทนี้เกี่ยวข้อง
-[System Log] Chosen Style: คำถามเฉพาะ
-Hook: เครื่องตัดขนดูดเกลี้ยง | ไถขนพร้อมดูดทันทีไม่ฟุ้งบ้าน
-Product image downloaded: output/product_20260916_223307.webp
-Card render done: output/product_20260916_223307_card.png
+[System Log] Chosen Role: ศาลทาสหมา (R3)
+[System Log] Chosen Persona: ทาสหมาหาข้อมูล (B)
+[System Log] Chosen Hook: เปิดด้วยคำถามเฉพาะถึงบ้านที่เคยใช้จริง
+[System Log] Chosen Style: บอกต่อแบบกลางๆ
+Hook: รถเข็นคุณหนูสี่ขา | เข็นลื่นปรื๊ด ไม่ต้องอุ้มให้เมื่อย
+Product image downloaded: output/product_20260917_223956.webp
+Card render done: output/product_20260917_223956_card.png
 Caption:
-เวลาตัดขนทีไรเศษขนปลิวว่อนเต็มบ้านจนกวาดเหนื่อยเลยฮะ แต่ผมเจอเครื่องตัดขนสัตว์เลี้ยง รุ่น KIT 7 in 1 ที่ตัดขนพร้อมดูดฝุ่นในตัว 7 in 1 ราคา 2,590 บาท พี่ๆ คิดว่าระบบตัดขนพร้อมดูดฝุ่นในตัวของรุ่นนี้จะช่วยให้ตัดขนสุนัขได้สะดวกขึ้นจริงไหมฮะ กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
+บ้านไหนพาน้องๆ นั่งรถเข็นสัตว์เลี้ยง รุ่น Gen 2 ที่เป็นเวอร์ชันอัปเกรด ราคา 3390 บาทกันบ้างฮะ? น้องตูบกำลังเทียบข้อมูลอยู่ อยากถามว่าตัวเวอร์ชันอัปเกรดนี้ตอบโจทย์เวลาพาเที่ยวไหม โฮ่ง? กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
 
 Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1789645200...
-Scheduled successfully! Photo ID: 1099394929715701
+Scheduling to Facebook for timestamp 1789731600...
+Scheduled successfully! Photo ID: 1100290089626185
 [DB] Successfully saved post memory.
-Marked row 178 as done
+Marked row 179 as done
