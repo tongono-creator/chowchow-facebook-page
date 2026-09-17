@@ -12,7 +12,8 @@ from google import genai
 from google.genai import types
 from google.genai.types import HttpOptions
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 # ── Config ───────────────────────────────────────────────────────────
 PAGE_ID           = "102319399434080"
@@ -594,12 +595,17 @@ def main():
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="Run without posting to Facebook")
-    parser.add_argument("--mode", choices=["breed", "meme"], help="Force specific mode")
+    parser.add_argument("--mode", choices=["breed", "meme", "dilemma"], help="Force specific mode")
     args = parser.parse_args()
 
     print("=== Chow Chow Bot ===")
     if args.dry_run:
         print("[DRY RUN MODE ACTIVE]")
+
+    if args.mode == "dilemma":
+        import dilemma
+        dilemma.main(dry_run=args.dry_run)
+        return
 
     # Decide mode
     if args.mode == "meme":
