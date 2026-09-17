@@ -613,7 +613,12 @@ def main():
     elif args.mode == "breed":
         use_meme = False
     else:
-        use_meme = random.random() < 0.30
+        chosen = random.choices(["dilemma", "breed", "meme"], weights=[50, 30, 20])[0]
+        if chosen == "dilemma":
+            import dilemma
+            dilemma.main(dry_run=args.dry_run)
+            return
+        use_meme = (chosen == "meme")
 
     if use_meme:
         handle_meme(dry_run=args.dry_run)
