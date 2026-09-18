@@ -1,27 +1,28 @@
 Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
 
 --- Post 1/5 (slot 18:40) ---
-Product: PANDO Second Generation Pet Trolleyแพนโด้ รถเข็นสำหรับสัตว์เ...
+Product: navipet Smart Pet Dryer (Thai Version) ตู้เป่า ขนสัตว์เลี้ยง...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "รถเข็นสัตว์เลี้ยง",
-  "รุ่น": "Gen 2",
-  "จุดเด่น": "เวอร์ชันอัปเกรด",
-  "ราคา": 3390
+  "ประเภท": "ตู้เป่าขนสัตว์",
+  "รุ่น": "navipet Smart Pet Dryer",
+  "ขนาด": "72 ลิตร",
+  "จุดเด่น": "โอโซนฆ่าเชื้อ ประกันศูนย์ไทย",
+  "ราคา": 7900
 }
 [System Log] Caption approved on attempt 1!
 [System Log] Chosen Role: ศาลทาสหมา (R3)
 [System Log] Chosen Persona: ทาสหมาหาข้อมูล (B)
-[System Log] Chosen Hook: เปิดด้วยคำถามเฉพาะถึงบ้านที่เคยใช้จริง
-[System Log] Chosen Style: บอกต่อแบบกลางๆ
-Hook: รถเข็นคุณหนูสี่ขา | เข็นลื่นปรื๊ด ไม่ต้องอุ้มให้เมื่อย
-Product image downloaded: output/product_20260917_223956.webp
-Card render done: output/product_20260917_223956_card.png
+[System Log] Chosen Hook: เปิดด้วยข้อที่ทาสหมาควรตรวจสอบก่อนซื้อ
+[System Log] Chosen Style: คำถามเฉพาะ
+Hook: ตู้อบขนแห้งไม่ง้อไดร์ | มีโอโซนฆ่าเชื้อประกันศูนย์ไทย
+Product image downloaded: output/product_20260918_220910.webp
+Card render done: output/product_20260918_220910_card.png
 Caption:
-บ้านไหนพาน้องๆ นั่งรถเข็นสัตว์เลี้ยง รุ่น Gen 2 ที่เป็นเวอร์ชันอัปเกรด ราคา 3390 บาทกันบ้างฮะ? น้องตูบกำลังเทียบข้อมูลอยู่ อยากถามว่าตัวเวอร์ชันอัปเกรดนี้ตอบโจทย์เวลาพาเที่ยวไหม โฮ่ง? กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
+เรื่องขนาดตัวของผมกับความจุตู้คือสิ่งที่ทาสหมาต้องเช็กให้ชัวร์ก่อน ซึ่งตู้เป่าขนสัตว์ navipet Smart Pet Dryer มีขนาด 72 ลิตร พร้อมโอโซนฆ่าเชื้อและประกันศูนย์ไทย ในราคา 7,900 บาทฮะ พี่ๆ บ้านไหนเคยพาน้องหมาเข้าไปนั่งเป่าในตู้ขนาด 72 ลิตรนี้แล้วน้องยังกลับตัวได้สะดวกไหมโฮ่ง? กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
 
 Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1789731600...
-Scheduled successfully! Photo ID: 1100290089626185
+Scheduling to Facebook for timestamp 1789818000...
+Scheduled successfully! Photo ID: 1101131956208665
 [DB] Successfully saved post memory.
-Marked row 179 as done
+Marked row 180 as done
