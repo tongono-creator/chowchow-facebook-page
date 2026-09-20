@@ -1,30 +1,29 @@
 Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
 
 --- Post 1/5 (slot 18:40) ---
-[Review Strategy] Prioritizing iPhone review: Apple iPhone 18 Pro Max (เครื่องศูนย์ไทย ประกันศูนย์ 1 ปี) ช
-Product: Apple iPhone 18 Pro Max (เครื่องศูนย์ไทย ประกันศูนย์ 1 ปี) ช...
+[Review Strategy] Alternating to other product: แนะนำ! สมาร์ทฮาร์ท โกลด์ ฟิตแอนด์เฟิร์ม 7+ อาหารสุนัขสูงอายุ
+Product: แนะนำ! สมาร์ทฮาร์ท โกลด์ ฟิตแอนด์เฟิร์ม 7+ อาหารสุนัขสูงอายุ...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "มือถือ",
-  "รุ่น": "iPhone 18 Pro Max",
-  "จุดเด่น": "ชิป A20 Pro ประกันศูนย์ไทย 1 ปี",
-  "ราคา": 48900
+  "ประเภท": "อาหารสุนัข",
+  "รุ่น": "สมาร์ทฮาร์ท โกลด์ 7+",
+  "จุดเด่น": "สำหรับสุนัขสูงอายุ พันธุ์กลาง-ใหญ่",
+  "ขนาด": "20 กก.",
+  "ราคา": 1480
 }
 [System Log] Caption approved on attempt 1!
-[System Log] Chosen Role: ทาสหมาหาข้อมูล (R1)
-[System Log] Chosen Persona: เพื่อนชี้พิกัด (C)
-[System Log] Chosen Hook: เปิดด้วยราคาเทียบกับฟังก์ชันที่ได้
-[System Log] Chosen Style: มุกน้องหมาเบาๆ
-Hook: iPhone เครื่องศูนย์แท้ | สั่งร้าน Mall อุ่นใจไม่เสี่ยงย้อมแมว
-Product image downloaded: output/product_20260919_214814.jpg
-Card render done: output/product_20260919_214814_card.png
+[System Log] Chosen Role: ศาลทาสหมา (R3)
+[System Log] Chosen Persona: ทาสหมาหาข้อมูล (B)
+[System Log] Chosen Hook: เปิดด้วยจุดเด่นจริงหนึ่งข้อจากข้อมูล
+[System Log] Chosen Style: คำถามเฉพาะ
+Hook: เสบียงหมาใหญ่วัยเก๋า | ดูแลตูบตัวโต วัยเจ็ดขวบขึ้นไป
+Product image downloaded: output/product_20260920_215220.webp
+Card render done: output/product_20260920_215220_card.png
 Caption:
-จ่าย 48,900 บาท แลกกับมือถือชิป A20 Pro น้องตูบดมกลิ่นแล้ววางใจได้เพราะเป็นเครื่องศูนย์ไทยแท้ มีประกันศูนย์ 1 ปีเต็มจาก Shopee Mall ไม่ต้องเสี่ยงเจอเครื่องย้อมแมวฮะ พี่ๆ คิดว่าชิป A20 Pro ใน iPhone 18 Pro Max จะตอบโจทย์คนเน้นเล่นเกมกราฟิกหนักๆ ไหมฮะ?
-
-กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
+ตอนนี้ผมกำลังดูอาหารสุนัขสูตรสำหรับสุนัขสูงอายุ พันธุ์กลาง-ใหญ่ อย่าง สมาร์ทฮาร์ท โกลด์ 7+ ขนาด 20 กก. ราคา 1480 บาทอยู่ฮะ มีบ้านไหนเคยซื้อรุ่นนี้ให้สุนัขพันธุ์กลางหรือพันธุ์ใหญ่ที่บ้านกินแล้วชอบไหมโฮ่ง? กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
 
 Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1789904400...
-Scheduled successfully! Photo ID: 1102011279454066
+Scheduling to Facebook for timestamp 1789990800...
+Scheduled successfully! Photo ID: 1102896552698872
 [DB] Successfully saved post memory.
-Marked row 205 as done
+Marked row 181 as done
