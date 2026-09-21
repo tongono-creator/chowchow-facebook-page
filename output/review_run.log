@@ -1,29 +1,30 @@
 Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
 
 --- Post 1/5 (slot 18:40) ---
-[Review Strategy] Alternating to other product: แนะนำ! สมาร์ทฮาร์ท โกลด์ ฟิตแอนด์เฟิร์ม 7+ อาหารสุนัขสูงอายุ
-Product: แนะนำ! สมาร์ทฮาร์ท โกลด์ ฟิตแอนด์เฟิร์ม 7+ อาหารสุนัขสูงอายุ...
+[Review Strategy] Prioritizing iPhone review: Apple iPhone 17 Pro (เครื่องศูนย์ไทย ประกันศูนย์ 1 ปี) ชิป A
+Product: Apple iPhone 17 Pro (เครื่องศูนย์ไทย ประกันศูนย์ 1 ปี) ชิป A...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "อาหารสุนัข",
-  "รุ่น": "สมาร์ทฮาร์ท โกลด์ 7+",
-  "จุดเด่น": "สำหรับสุนัขสูงอายุ พันธุ์กลาง-ใหญ่",
-  "ขนาด": "20 กก.",
-  "ราคา": 1480
+  "ประเภท": "สมาร์ตโฟน",
+  "รุ่น": "iPhone 17 Pro",
+  "จุดเด่น": "ชิป A19 Pro, จอ ProMotion 120Hz",
+  "ราคา": 39900
 }
 [System Log] Caption approved on attempt 1!
-[System Log] Chosen Role: ศาลทาสหมา (R3)
-[System Log] Chosen Persona: ทาสหมาหาข้อมูล (B)
-[System Log] Chosen Hook: เปิดด้วยจุดเด่นจริงหนึ่งข้อจากข้อมูล
+[System Log] Chosen Role: ดูแลความปลอดภัย (R2)
+[System Log] Chosen Persona: น้องตูบคัดของ (A)
+[System Log] Chosen Hook: เปิดด้วยปัญหาของคนเลี้ยงหมาที่สินค้าประเภทนี้เกี่ยวข้อง
 [System Log] Chosen Style: คำถามเฉพาะ
-Hook: เสบียงหมาใหญ่วัยเก๋า | ดูแลตูบตัวโต วัยเจ็ดขวบขึ้นไป
-Product image downloaded: output/product_20260920_215220.webp
-Card render done: output/product_20260920_215220_card.png
+Hook: เครื่องศูนย์แท้ประกันเต็ม | สั่งร้าน Mall มั่นใจไม่โดนย้อมแมว
+Product image downloaded: output/product_20260922_001207.jpg
+Card render done: output/product_20260922_001207_card.png
 Caption:
-ตอนนี้ผมกำลังดูอาหารสุนัขสูตรสำหรับสุนัขสูงอายุ พันธุ์กลาง-ใหญ่ อย่าง สมาร์ทฮาร์ท โกลด์ 7+ ขนาด 20 กก. ราคา 1480 บาทอยู่ฮะ มีบ้านไหนเคยซื้อรุ่นนี้ให้สุนัขพันธุ์กลางหรือพันธุ์ใหญ่ที่บ้านกินแล้วชอบไหมโฮ่ง? กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
+เวลาพ่อแม่หมาเจอปัญหาเครื่องช้าตอนเปิดดูคลิปเจ้าตูบ การซื้อสมาร์ตโฟนราคาสูงผ่านร้านทางการ Shopee Mall ช่วยให้อุ่นใจเรื่องของแท้ ไว้ใจได้ 100% ว่าเป็นเครื่องศูนย์ไทยแท้ มีประกันศูนย์ 1 ปีเต็ม ไม่ต้องเสี่ยงกับเครื่องย้อมแมวหรือโดนโกงฮะ น้องตูบไปเช็กสเปกมา iPhone 17 Pro ให้ชิป A19 Pro พร้อมหน้าจอ ProMotion 120Hz ในราคา 39,900 บาท พี่ๆ คิดว่าสเปกชิป A19 Pro กับจอ ProMotion 120Hz ในราคา 39,900 บาทนี้ตอบโจทย์การใช้งานไหมฮะ?
+
+กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
 
 Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1789990800...
-Scheduled successfully! Photo ID: 1102896552698872
+Scheduling to Facebook for timestamp 1790077200...
+Scheduled successfully! Photo ID: 1103867132601814
 [DB] Successfully saved post memory.
-Marked row 181 as done
+Marked row 206 as done
