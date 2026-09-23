@@ -1,29 +1,28 @@
 Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
 
 --- Post 1/5 (slot 18:40) ---
-[Review Strategy] Alternating to other product: [สินค้าใหม่] PANDO Pet Hair Trimmer 4 in 1 Pro แพนโด้ ชุดอุป
-Product: [สินค้าใหม่] PANDO Pet Hair Trimmer 4 in 1 Pro แพนโด้ ชุดอุป...
+[Review Strategy] Prioritizing iPhone review: Apple iPhone 16 Plus (เครื่องศูนย์ไทย ประกันศูนย์ 1 ปี) จอให
+Product: Apple iPhone 16 Plus (เครื่องศูนย์ไทย ประกันศูนย์ 1 ปี) จอให...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "ปัตตาเลี่ยนสัตว์เลี้ยง",
-  "รุ่น": "4 in 1 Pro",
-  "จุดเด่น": "หัวตัด 4 in 1 ครบชุด",
-  "ราคา": 581
+  "ประเภท": "มือถือ",
+  "รุ่น": "iPhone 16 Plus",
+  "จุดเด่น": "จอใหญ่ แบตอึด",
+  "ราคา": 34900
 }
-[Attempt 1] Caption rejected: unverifiable usage claim or formula hook
-[System Log] Caption approved on attempt 2!
-[System Log] Chosen Role: ดูแลความปลอดภัย (R2)
-[System Log] Chosen Persona: น้องตูบคัดของ (A)
-[System Log] Chosen Hook: เปิดด้วยคำถามเฉพาะถึงบ้านที่เคยใช้จริง
-[System Log] Chosen Style: ปัญหาและทางเลือก
-Hook: ปัตตาเลี่ยนหมาแมวตัวจบ | มีสี่หัวเปลี่ยนไถได้ทั้งตัว
-Product image downloaded: output/product_20260922_224255.webp
-Card render done: output/product_20260922_224255_card.png
+[System Log] Caption approved on attempt 1!
+[System Log] Chosen Role: ศาลทาสหมา (R3)
+[System Log] Chosen Persona: เพื่อนชี้พิกัด (C)
+[System Log] Chosen Hook: เปิดด้วยข้อที่ทาสหมาควรตรวจสอบก่อนซื้อ
+[System Log] Chosen Style: มุกน้องหมาเบาๆ
+Hook: เครื่องศูนย์ไทยประกันเต็ม | สั่งร้าน Mall อุ่นใจไม่เสี่ยงย้อมแมว
+Product image downloaded: output/product_20260923_223525.jpg
+Card render done: output/product_20260923_223525_card.png
 Caption:
-มีบ้านไหนที่เจอปัญหาตัดแต่งขนน้องหมาลำบากแล้วเคยลองปัตตาเลี่ยนสัตว์เลี้ยง รุ่น 4 in 1 Pro กันบ้างฮะ? น้องตูบเห็นข้อมูลว่าตัวนี้มีหัวตัด 4 in 1 ครบชุด ในราคา 581 บาท อยากถามคนที่เคยใช้ว่าหัวตัดทั้ง 4 แบบสลับใช้งานสะดวกไหมฮะ กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
+ก่อนที่เหล่าทาสจะจ่ายเงินซื้อสมาร์ตโฟนราคาสูงต้องตรวจเช็กให้ชัวร์ว่าไม่ใช่เครื่องย้อมแมว น้องตูบเลยพามาดูมือถือ iPhone 16 Plus จุดเด่นจอใหญ่ แบตอึด ราคา 34,900 บาท จากร้าน Apple Flagship Store ใน Shopee Mall ที่ไว้ใจได้ว่าเป็นเครื่องศูนย์ไทยแท้และมีประกันศูนย์ 1 ปีเต็มฮะ มีทาสคนไหนกำลังเล็ง iPhone 16 Plus สเปกจอใหญ่ แบตอึด ในงบ 34,900 บาทนี้อยู่บ้างโฮ่ง? กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
 
 Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1790163600...
-Scheduled successfully! Photo ID: 1104701209185073
+Scheduling to Facebook for timestamp 1790250000...
+Scheduled successfully! Photo ID: 1105578352430692
 [DB] Successfully saved post memory.
-Marked row 182 as done
+Marked row 207 as done
