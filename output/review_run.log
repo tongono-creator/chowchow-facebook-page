@@ -1,28 +1,35 @@
 Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
 
 --- Post 1/5 (slot 18:40) ---
-[Review Strategy] Prioritizing iPhone review: Apple iPhone 16 Plus (เครื่องศูนย์ไทย ประกันศูนย์ 1 ปี) จอให
-Product: Apple iPhone 16 Plus (เครื่องศูนย์ไทย ประกันศูนย์ 1 ปี) จอให...
+[Review Strategy] Alternating to other product: Pawdy อาหารสุนัขเกรดพรีเมียม Holistic สำหรับสุนัขโต อายุ 1-6
+Product: Pawdy อาหารสุนัขเกรดพรีเมียม Holistic สำหรับสุนัขโต อายุ 1-6...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "มือถือ",
-  "รุ่น": "iPhone 16 Plus",
-  "จุดเด่น": "จอใหญ่ แบตอึด",
-  "ราคา": 34900
+  "ประเภท": "อาหารสุนัข",
+  "จุดเด่น": "เกรดโฮลิสติก สำหรับสุนัขโต",
+  "รส": "เนื้อแกะรมควัน",
+  "ขนาด": "8 กก.",
+  "ราคา": 1359
 }
+[gemini-flash-latest] caption generation failed: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently exp
+[gemini-flash-latest] caption generation failed: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently exp
+[Warning] Caption generation failed on all models. Disabling API calls.
+[Warning] Falling back to local heuristic caption.
 [System Log] Caption approved on attempt 1!
-[System Log] Chosen Role: ศาลทาสหมา (R3)
-[System Log] Chosen Persona: เพื่อนชี้พิกัด (C)
-[System Log] Chosen Hook: เปิดด้วยข้อที่ทาสหมาควรตรวจสอบก่อนซื้อ
-[System Log] Chosen Style: มุกน้องหมาเบาๆ
-Hook: เครื่องศูนย์ไทยประกันเต็ม | สั่งร้าน Mall อุ่นใจไม่เสี่ยงย้อมแมว
-Product image downloaded: output/product_20260923_223525.jpg
-Card render done: output/product_20260923_223525_card.png
+[System Log] Chosen Role: ชี้พิกัดของหมา (R4)
+[System Log] Chosen Persona: น้องตูบคัดของ (A)
+[System Log] Chosen Hook: เปิดด้วยราคาเทียบกับฟังก์ชันที่ได้
+[System Log] Chosen Style: คำถามเฉพาะ
+Hook: Pawdy | 
+Product image downloaded: output/product_20260924_225526.webp
+Card render done: output/product_20260924_225526_card.png
 Caption:
-ก่อนที่เหล่าทาสจะจ่ายเงินซื้อสมาร์ตโฟนราคาสูงต้องตรวจเช็กให้ชัวร์ว่าไม่ใช่เครื่องย้อมแมว น้องตูบเลยพามาดูมือถือ iPhone 16 Plus จุดเด่นจอใหญ่ แบตอึด ราคา 34,900 บาท จากร้าน Apple Flagship Store ใน Shopee Mall ที่ไว้ใจได้ว่าเป็นเครื่องศูนย์ไทยแท้และมีประกันศูนย์ 1 ปีเต็มฮะ มีทาสคนไหนกำลังเล็ง iPhone 16 Plus สเปกจอใหญ่ แบตอึด ในงบ 34,900 บาทนี้อยู่บ้างโฮ่ง? กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
+อาหารสุนัข ตัวนี้มีจุดเด่นคือ เกรดโฮลิสติก สำหรับสุนัขโต ราคา 1359 บาทฮะ บ้านไหนเคยใช้ อาหารสุนัข แบบนี้ จุดที่ต้องเช็กก่อนซื้อคืออะไรฮะ?
+
+กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
 
 Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1790250000...
-Scheduled successfully! Photo ID: 1105578352430692
+Scheduling to Facebook for timestamp 1790336400...
+Scheduled successfully! Photo ID: 1106658238989370
 [DB] Successfully saved post memory.
-Marked row 207 as done
+Marked row 183 as done
