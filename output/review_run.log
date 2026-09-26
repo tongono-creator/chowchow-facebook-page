@@ -1,32 +1,28 @@
 Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
 
 --- Post 1/5 (slot 18:40) ---
-[Review Strategy] Prioritizing iPhone review: Apple iPhone 15 (เครื่องศูนย์ไทย ประกันศูนย์ 1 ปี) พอร์ต USB
-Product: Apple iPhone 15 (เครื่องศูนย์ไทย ประกันศูนย์ 1 ปี) พอร์ต USB...
+[Review Strategy] Alternating to other product: พร้อมส่ง MJ.Kudson อาหารสุนัขพรีเมียมสูตรแกะ (ลดขนร่วง ลดครา
+Product: พร้อมส่ง MJ.Kudson อาหารสุนัขพรีเมียมสูตรแกะ (ลดขนร่วง ลดครา...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "มือถือ",
-  "รุ่น": "iPhone 15",
-  "จุดเด่น": "พอร์ต USB-C, กล้อง 48MP",
-  "ราคา": 26900
+  "ประเภท": "อาหารสุนัข",
+  "รส": "แกะ",
+  "จุดเด่น": "ลดขนร่วง ลดคราบน้ำตา",
+  "ราคา": 547
 }
 [System Log] Caption approved on attempt 1!
 [System Log] Chosen Role: ศาลทาสหมา (R3)
-[System Log] Chosen Persona: ศาลทาสหมา (D)
-[System Log] Chosen Hook: เปิดด้วยจุดเด่นจริงหนึ่งข้อจากข้อมูล
-[System Log] Chosen Style: มุกน้องหมาเบาๆ
-Hook: เครื่องศูนย์ไทยประกันเต็ม | สั่งร้าน Mall อุ่นใจไม่เสี่ยงย้อมแมว
-Product image downloaded: output/product_20260925_225604.jpg
-Card render done: output/product_20260925_225604_card.png
+[System Log] Chosen Persona: ทาสหมาหาข้อมูล (B)
+[System Log] Chosen Hook: เปิดด้วยปัญหาของคนเลี้ยงหมาที่สินค้าประเภทนี้เกี่ยวข้อง
+[System Log] Chosen Style: คำถามเฉพาะ
+Hook: อาหารหมาสายกู้ขน | ขนร่วงน้อยลง คราบตาหายเกลี้ยง
+Product image downloaded: output/product_20260926_220626.webp
+Card render done: output/product_20260926_220626_card.png
 Caption:
-การเลือกซื้อมือถือราคาสูงที่มีพอร์ต USB-C อย่าง iPhone 15 ในราคา 26,900 บาท ผ่านร้านค้าทางการ Shopee Mall ถือว่าไว้ใจได้ 100% เพราะได้เครื่องศูนย์ไทยแท้ มีประกันศูนย์ 1 ปีเต็ม ไม่ต้องเสี่ยงกับเครื่องย้อมแมวหรือเครื่องหิ้วให้ปวดหัวฮะ
-
-แล้วถ้าพาน้องตูบไปวิ่งเล่น พี่ๆ คิดว่ากล้อง 48MP จะถ่ายภาพตอนผมสะบัดขนได้คมชัดระดับไหนฮะ?
-
-กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
+เจอปัญหาขนร่วงเต็มบ้านแถมคราบน้ำตาเกรอะกรัง น้องตูบเลยกำลังส่องอาหารสุนัข รสแกะ ราคา 547 บาท ที่ระบุจุดเด่นช่วยลดขนร่วง ลดคราบน้ำตา อยู่ฮะ มีบ้านไหนเคยให้สุนัขกินรสแกะตัวนี้แล้วช่วยลดคราบน้ำตากับปัญหาขนร่วงได้ตามสเปกไหมฮะ โฮ่ง กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
 
 Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1790422800...
-Scheduled successfully! Photo ID: 1107676055554255
+Scheduling to Facebook for timestamp 1790509200...
+Scheduled successfully! Photo ID: 1108633055458555
 [DB] Successfully saved post memory.
-Marked row 208 as done
+Marked row 184 as done
