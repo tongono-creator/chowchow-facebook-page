@@ -206,9 +206,7 @@ def translate_to_thai(text):
         return ""
     if contains_thai(text):
         return text
-    prompt = f"Translate the following dog, pet, or animal story/news text to natural Thai. Only output the translation, no explanation:
-
-{text}"
+    prompt = f"Translate the following dog, pet, or animal story/news text to natural Thai. Only output the translation, no explanation:\n\n{text}"
     for model_idx, model in enumerate(TEXT_MODELS):
         if model_idx > 0:
             time.sleep(2)
@@ -362,7 +360,7 @@ def generate_news_content(img_bytes, reddit_title, sub, original_link):
         "Output format must have exactly 3 sections separated by labels:\n"
         "===HOOK1=== [Hook Line 1: very short, 3-5 Thai words, e.g. 'จะรอดไหม', 'เทคโนโลยีใหม่', 'สุดล้ำ', 'ความจริงวันนี้']\n"
         "===HOOK2=== [Hook Line 2: very short, 4-7 Thai words, describing the core event or a dilemma, e.g. 'เอไอเตรียมแทนที่คน']\n"
-        "===CAPTION=== [Facebook Caption: A detailed, highly engaging explanation structured in 1-2 paragraphs. Reframe the news context around everyday adulting, work-life, productivity, job stability, or financial struggles of 30+ year olds (e.g., if it is AI news, highlight job replacement fears; if it is remote work, compare remote vs office work; if it is gadgets, discuss tech costs/worth). Write in the cute, playful male dog persona 'น้องตูบ' of the page 'Chow Chow'. Use 'ฮะโฮ่ง' or 'ครับโฮ่ง' and 'ตูบ' or 'ผม' (using dog-friendly terms). You MUST end the caption with a direct, reply-eliciting question (e.g., 'น่ารักจนใจเจ็บใช่ไหมฮะโฮ่ง?', 'มีใครเลี้ยงพันธุ์นี้อยู่บ้างไหมครับโฮ่ง?') Absolutely NO markdown bolding (**), NO bullet points, lists, or symbols like ▪️ or - anywhere. Include hashtags and citation.]\n\n"
+        "===CAPTION=== [Facebook Caption: A detailed, highly engaging explanation structured in 1-2 paragraphs. Keep it about dogs and dog owners: say plainly what happened and what it means for everyday dog care, in short sentences anyone understands on first read. Stay faithful to the source; no health claims, no treatment or medicine advice, no scare details, no harsh slang. Write in the cute, playful male dog persona 'น้องตูบ' of the page 'Chow Chow'. Use 'ฮะโฮ่ง' or 'ครับโฮ่ง' and 'ตูบ' or 'ผม' (using dog-friendly terms). You MUST end the caption with a direct, reply-eliciting question (e.g., 'น่ารักจนใจเจ็บใช่ไหมฮะโฮ่ง?', 'มีใครเลี้ยงพันธุ์นี้อยู่บ้างไหมครับโฮ่ง?') Absolutely NO markdown bolding (**), NO bullet points, lists, or symbols like ▪️ or - anywhere. Include hashtags and citation.]\n\n"
         "Requirements:\n"
         "- Write in natural, fluent Thai.\n"
         "- Maintain strict factual accuracy. Do not fabricate or speculate. Use real numbers or data if mentioned.\n"
