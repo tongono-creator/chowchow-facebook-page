@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "channel": "chowchow",
+      "post_id": "102319399434080_1109087842079743",
+      "url": "https://www.facebook.com/1109085462079981/posts/1109087842079743",
+      "state": "live_image_verified",
+      "published_at": "2026-09-27T02:46:25.786448+00:00",
+      "verified_at": "2026-09-27T02:46:26.734911+00:00",
+      "image_sha256": "e53394d1a42e278a66d4163a5ffa19397346ed7217b795401f85b802c185ee4a"
+    }
+  ],
+  "queue_updates": [
+    {
+      "row": 189,
+      "before": null,
+      "after": "done 2026-09-27T02:46:25.786448+00:00 live-graphics 102319399434080_1109087842079743",
+      "channel": "chowchow"
+    }
+  ],
+  "scope": "Image publishing only; no affiliate comments"
+}
