@@ -1,0 +1,30 @@
+{
+  "facebook": {
+    "account_id": "102319399434080",
+    "expected_username": "",
+    "rollout_since": "2026-09-27T02:40:00Z",
+    "approved_fallback": {
+      "name": "แผ่นรองฉี่สุนัข Petcho",
+      "url": "https://s.shopee.co.th/W47w2T99w"
+    },
+    "post_products": {
+      "102319399434080_1109087842079743": {
+        "name": "แผ่นรองฉี่สุนัข Petcho",
+        "url": "https://s.shopee.co.th/W47w2T99w"
+      }
+    },
+    "post_products_file": "affiliate_post_products.json",
+    "catalog": [
+      {
+        "name": "แผ่นรองฉี่สุนัข Petcho",
+        "url": "https://s.shopee.co.th/W47w2T99w",
+        "keywords": [
+          "Petcho",
+          "แผ่นรองฉี่"
+        ]
+      }
+    ],
+    "token_env": "PAGE_ACCESS_TOKEN",
+    "lookback_hours": 72
+  }
+}
