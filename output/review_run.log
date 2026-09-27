@@ -1,28 +1,29 @@
 Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
 
 --- Post 1/5 (slot 18:40) ---
-[Review Strategy] Alternating to other product: พร้อมส่ง MJ.Kudson อาหารสุนัขพรีเมียมสูตรแกะ (ลดขนร่วง ลดครา
-Product: พร้อมส่ง MJ.Kudson อาหารสุนัขพรีเมียมสูตรแกะ (ลดขนร่วง ลดครา...
+[Review Strategy] Alternating to other product: [Doctor By BREATH CARE] อาหารเสริมทางเดินหายใจสุนัข บรรเทาอา
+Product: [Doctor By BREATH CARE] อาหารเสริมทางเดินหายใจสุนัข บรรเทาอา...
 [System Log] Converted Product JSON:
 {
-  "ประเภท": "อาหารสุนัข",
-  "รส": "แกะ",
-  "จุดเด่น": "ลดขนร่วง ลดคราบน้ำตา",
-  "ราคา": 547
+  "ประเภท": "อาหารเสริมสุนัข",
+  "รุ่น": "Doctor By BREATH CARE",
+  "จุดเด่น": "ดูแลทางเดินหายใจ บรรเทาไอ",
+  "ขนาด": "30 บีบ",
+  "ราคา": 1126,
+  "ชื่อสินค้า": "Doctor By BREATH CARE อาหารเสริมทางเดินหายใจสุนัข"
 }
 [System Log] Caption approved on attempt 1!
-[System Log] Chosen Role: ศาลทาสหมา (R3)
-[System Log] Chosen Persona: ทาสหมาหาข้อมูล (B)
-[System Log] Chosen Hook: เปิดด้วยปัญหาของคนเลี้ยงหมาที่สินค้าประเภทนี้เกี่ยวข้อง
-[System Log] Chosen Style: คำถามเฉพาะ
-Hook: อาหารหมาสายกู้ขน | ขนร่วงน้อยลง คราบตาหายเกลี้ยง
-Product image downloaded: output/product_20260926_220626.webp
-Card render done: output/product_20260926_220626_card.png
-Caption:
-เจอปัญหาขนร่วงเต็มบ้านแถมคราบน้ำตาเกรอะกรัง น้องตูบเลยกำลังส่องอาหารสุนัข รสแกะ ราคา 547 บาท ที่ระบุจุดเด่นช่วยลดขนร่วง ลดคราบน้ำตา อยู่ฮะ มีบ้านไหนเคยให้สุนัขกินรสแกะตัวนี้แล้วช่วยลดคราบน้ำตากับปัญหาขนร่วงได้ตามสเปกไหมฮะ โฮ่ง กดลิ้งในคอมเมนต์แรกได้เลยฮะ 👇
-
-Posting to Facebook Page...
-Scheduling to Facebook for timestamp 1790509200...
-Scheduled successfully! Photo ID: 1108633055458555
-[DB] Successfully saved post memory.
-Marked row 184 as done
+[System Log] Chosen Role: ดูแลความปลอดภัย (R2)
+[System Log] Chosen Persona: น้องตูบคัดของ (A)
+[System Log] Chosen Hook: เปิดด้วยคำถามเฉพาะถึงบ้านที่เคยใช้จริง
+[System Log] Chosen Style: บอกต่อแบบกลางๆ
+Traceback (most recent call last):
+  File "/home/runner/work/chowchow-facebook-page/chowchow-facebook-page/review.py", line 1129, in <module>
+    review_img = render_review_card(product_photos, line1_clean, line2_clean,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/chowchow-facebook-page/chowchow-facebook-page/card/render_card.py", line 91, in render_review_card
+    return render_sales_card(photo_path, line1, line2, out_path, theme=THEME,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/chowchow-facebook-page/chowchow-facebook-page/card/sales_card.py", line 98, in render_sales_card
+    raise ValueError('Sales card render rejected: '+str(error))
+ValueError: Sales card render rejected: ข้อความยาวเกินไป กรุณาย่อหัวเรื่องหรือคำอธิบาย
