@@ -6,15 +6,15 @@ Product: [Doctor By BREATH CARE] อาหารเสริมทางเด�
 [System Log] Converted Product JSON:
 {
   "ประเภท": "อาหารเสริมสุนัข",
-  "จุดเด่น": "ดูแลระบบทางเดินหายใจ บรรเทาอาการไอ",
+  "รุ่น": "BREATH CARE",
+  "จุดเด่น": "บำรุงทางเดินหายใจ บรรเทาอาการไอ",
   "ขนาด": "30 บีบ",
   "ราคา": 1126,
   "ชื่อสินค้า": "Doctor By BREATH CARE อาหารเสริมทางเดินหายใจสุนัข"
 }
-[gemini-flash-latest] caption rejected: ['fake_experience:กดสั่ง']
 [System Log] Caption approved on attempt 1!
 [System Log] Chosen Role: ดูแลความปลอดภัย (R2)
-[System Log] Chosen Persona: ทาสหมาหาข้อมูล (B)
+[System Log] Chosen Persona: ศาลทาสหมา (D)
 [System Log] Chosen Hook: เปิดด้วยคำถามเฉพาะถึงบ้านที่เคยใช้จริง
 [System Log] Chosen Style: ปัญหาและทางเลือก
 Traceback (most recent call last):
