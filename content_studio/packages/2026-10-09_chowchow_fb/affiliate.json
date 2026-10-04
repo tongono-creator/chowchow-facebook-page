@@ -1,0 +1,35 @@
+{
+  "product_id": "12333160016",
+  "shop_id": "287201971",
+  "name": "Petcho ผ้ารองสัตว์เลี้ยง ANIMAL 120x90CM",
+  "seller_name": "Petcho Official Shop",
+  "url": "https://s.shopee.co.th/9V1zHYEbjv",
+  "destination_url": "https://shopee.co.th/product/287201971/12333160016",
+  "category": "dog",
+  "eligible_channels": [
+    "chowchow_fb"
+  ],
+  "subids": [
+    "chowchow",
+    "20261009",
+    "rest",
+    "petcho",
+    "comment"
+  ],
+  "variants": [
+    "ANIMAL",
+    "120x90CM"
+  ],
+  "variant_note": "Actual Mall official seller; root selected ANIMAL120x90CM tick and stock300 with purchase enabled. Single cloth mat, not padded bed or bundle. Seller explicitly washable and NOTwaterproof; handmade size tolerance2–3cm. Do not claim anti-slip, calmer sleep, joint support or no pilling based on seller marketing.",
+  "verification_status": "verified",
+  "verified_at": "2026-10-04T19:49:32.444810+00:00",
+  "verification_method": "Root read actual signed-in Affiliate modal with five SubIDs, canonical shop/item, selected variant, stock and complete seller body; reviewed actual product screenshot.",
+  "disclosure": "ลิงก์ Affiliate — เพจอาจได้รับค่าคอมมิชชันจากการซื้อผ่านลิงก์นี้",
+  "comment": "จัดมุมพักให้พ้นทางเดินก่อนเลือกผ้ารองฮะ ตัวเลือกนี้คือผ้ารองสัตว์เลี้ยง Petcho ลาย ANIMAL ขนาด 120×90 ซม. ร้าน Petcho Official Shop ร้านระบุว่าซักได้ แต่ไม่กันน้ำ และขนาดอาจคลาดเคลื่อน 2–3 ซม. เป็นผ้ารองหนึ่งชิ้น ไม่ใช่เตียงบุหนาหรือชุดหมอน วัดพื้นที่กับท่านอนของหมาก่อนซื้อ และถามวิธีซักของรุ่นจริง ภาพโพสต์เป็นฉากอธิบาย ไม่ใช่ผลทดลองผ้ารุ่นนี้\nลิงก์ Affiliate — เพจอาจได้รับค่าคอมมิชชันจากการซื้อผ่านลิงก์นี้\nhttps://s.shopee.co.th/9V1zHYEbjv",
+  "proof_files": [
+    "audience_audit/affiliate/chow-petcho-link/modal.txt",
+    "audience_audit/affiliate/chow-petcho-link/product.txt",
+    "audience_audit/affiliate/chow-petcho-link/product.jpg"
+  ],
+  "price_in_comment": false
+}

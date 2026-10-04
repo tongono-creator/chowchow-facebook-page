@@ -1,0 +1,17 @@
+{
+  "id": "2026-10-09_chowchow_fb",
+  "reviewer": "root-editor",
+  "reviewed_at": "2026-10-04T17:56:03.048108+00:00",
+  "full_image_seen": true,
+  "mobile_seen": true,
+  "visual_status": "passed",
+  "signature_status": "unsigned_pending_evidence_and_affiliate",
+  "hashes": {
+    "card.png": "42d60d5fa435b7b886dc09ad71b551aeeadd5f3ba1873c82628bb4c836d4612c",
+    "mobile.png": "69a66ddee47b5950b522aa0f38b325cf360e6b90ee2bc41563c01d420666cb16"
+  },
+  "notes": "Root actually viewed both saved images. Thai legible; main subject visible and unobscured; no claimed real test; AI disclosure visible. Any minor crop of incidental background props is not used as proof of SKU. Root read complete caption and primary source for this slot; no invented experience or product result. Actual Mall official seller; root selected ANIMAL120x90CM tick and stock300 with purchase enabled. Single cloth mat, not padded bed or bundle. Seller explicitly washable and NOTwaterproof; handmade size tolerance2–3cm. Do not claim anti-slip, calmer sleep, joint support or no pilling based on seller marketing. Actual matching SKU and comment checked from catalog and selected proof files; per-post link uses Root browser verification when provided.",
+  "source_checked": true,
+  "affiliate_checked": true,
+  "status": "signed_approved"
+}
