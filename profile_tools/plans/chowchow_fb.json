@@ -1,0 +1,14 @@
+{
+  "payload": {
+    "channel": "chowchow_fb",
+    "page_id": "102319399434080",
+    "page_name": "Chow Chowขนปุย บรู๊คลิน & จัสมิน",
+    "about_before": {
+      "present": true,
+      "value": "บรู๊คลินและจัสมิน สองเชาว์เชาว์น่ารักและขนปุยติดตามความน่ารักและฟูฟ่องได้ทุกวัน"
+    },
+    "about_after": "บรู๊คลิน & จัสมิน 🐾 แปลภาษาหมาจากท่าทางและบริบท ชวนจัดบ้านให้อยู่ด้วยกันดีขึ้น และเลือกอุปกรณ์ให้เข้ากับตัวหมา ฮะ"
+  },
+  "payload_sha256": "3bdb68bc731dcdfbe201aab798a38adb4716d042a66899b43bf717e384568f65",
+  "root_signature": "yGsg4XpMN/N50J/Kmn6EctamT2cuSAATSnjPaM0FOkvXz3weZUuPRYU8dtNTjdoBhN69teITkEcA3wiGbX/WBg=="
+}
