@@ -1,0 +1,18 @@
+{
+  "entries": [
+    {
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/dogs/diet",
+      "title": "RSPCA — Dog diet",
+      "claim": "การกินหรือดื่มที่เปลี่ยนไปเป็นเหตุให้ติดต่อสัตวแพทย์; คำแนะนำนี้ไม่รับรองระดับชามใด",
+      "checked_at": "2026-10-04T16:43:01+00:00",
+      "source_type": "primary",
+      "verification": "web_source_opened_and_relevant_passage_checked"
+    }
+  ],
+  "fictional": false,
+  "checked_at": "2026-10-04T16:43:01+00:00",
+  "editorial_note": "ข้อสังเกตและคำแนะนำแยกจากข้ออ้างที่แหล่งต้นทางรองรับ ไม่ใช่ประสบการณ์ใช้สินค้าของแอดมิน",
+  "limitations": [
+    "ไม่มีข้ออ้างชามสูงป้องกันโรคหรือดีต่อทุกตัว; หากrootต้องการเพิ่มผลสุขภาพต้องค้นหลักฐานสัตวแพทย์เฉพาะ"
+  ]
+}

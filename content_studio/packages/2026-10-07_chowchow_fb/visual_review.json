@@ -1,0 +1,17 @@
+{
+  "id": "2026-10-07_chowchow_fb",
+  "reviewer": "root-editor",
+  "reviewed_at": "2026-10-04T17:56:03.048108+00:00",
+  "full_image_seen": true,
+  "mobile_seen": true,
+  "visual_status": "passed",
+  "signature_status": "unsigned_pending_evidence_and_affiliate",
+  "hashes": {
+    "card.png": "345f4c4d3f9d862967690c4d8c6b17e5030881a79a9134a17add4da335ee72d7",
+    "mobile.png": "c98c915dad1c433494dd75b71fbaf20d33211e2d1a258a9edc49ea160f947462"
+  },
+  "notes": "Root actually viewed both saved images. Thai legible; main subject visible and unobscured; no claimed real test; AI disclosure visible. Any minor crop of incidental background props is not used as proof of SKU. Root read full caption and RSPCA dog diet primary guidance on changed eating/drinking habits requiring vet advice. Caption and comment do not prescribe bowl height or treatment. Root saw full card/mobile and actual large gray L variant tick, seller @Catcondo.shop, complete dog-use description, canonical IDs and actual five SubIDs. Seller joint/bone claims excluded; dimensions explicitly attributed to seller. Native identity and cooldown gates run before release. Actual matching SKU and comment checked from approved_products proof.",
+  "source_checked": true,
+  "affiliate_checked": true,
+  "status": "signed_approved"
+}
