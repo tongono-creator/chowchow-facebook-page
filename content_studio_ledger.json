@@ -79,6 +79,14 @@
     "status": "verified",
     "updated_at": "2026-10-04T21:44:51.319612+00:00"
   },
+  "2026-10-15_chowchow_fb": {
+    "package_sha256": "2ee06685c9796f9668e6dcffaffdaa99a25a7670b02b96251b2c143d04b902e3",
+    "page_id": "102319399434080",
+    "product_id": "8190883420",
+    "scheduled_at": "2026-10-15T10:30:00+07:00",
+    "status": "publishing",
+    "updated_at": "2026-10-04T21:44:52.350480+00:00"
+  },
   "2026-10-20_chowchow_fb": {
     "package_sha256": "110e4a061e609cf8306e0345679dbb238700fc6ad86a8773e4df61d2b5812132",
     "page_id": "102319399434080",
