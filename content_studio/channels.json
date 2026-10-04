@@ -65,7 +65,9 @@
       "dog",
       "dog_walk",
       "dog_enrichment",
-      "dog_grooming"
+      "dog_grooming",
+      "tools",
+      "organization"
     ],
     "enabled": true,
     "require_signature": true,
