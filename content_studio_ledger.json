@@ -78,5 +78,13 @@
     "scheduled_at": "2026-10-12T10:30:00+07:00",
     "status": "verified",
     "updated_at": "2026-10-04T20:57:16.569257+00:00"
+  },
+  "2026-10-20_chowchow_fb": {
+    "package_sha256": "110e4a061e609cf8306e0345679dbb238700fc6ad86a8773e4df61d2b5812132",
+    "page_id": "102319399434080",
+    "product_id": "28524698481",
+    "scheduled_at": "2026-10-20T10:30:00+07:00",
+    "status": "publishing",
+    "updated_at": "2026-10-04T20:57:17.507413+00:00"
   }
 }
