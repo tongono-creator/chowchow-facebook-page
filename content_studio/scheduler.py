@@ -329,7 +329,7 @@ def main(argv=None):
         api = FacebookApi(channel)
         identity = api.identity()
         if str(identity.get('id'))!=str(channel['page_id']) or identity.get('name')!=channel.get('page_name',channel.get('name')):
-            raise ScheduleError('Audit token belongs to a different page')
+            raise ScheduleError(f"Audit identity mismatch: id={identity.get('id')}, name={identity.get('name')}")
         print(json.dumps({'channel':args.channel,'identity':identity,'scheduled_count':len(list(api.posts())),
                           'followers_count':api.followers(),'checked_at':datetime.now(timezone.utc).isoformat()},ensure_ascii=False))
         return 0
