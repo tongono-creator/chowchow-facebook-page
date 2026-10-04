@@ -1,0 +1,15 @@
+{
+  "reviewer": "root-editor",
+  "reviewed_at": "2026-10-04T16:41:44.107610+00:00",
+  "package_sha256": "05d1a4a36fe8ef0ff2880d42c1a784d12359565af0b4cccac1f317486cac42a0",
+  "notes": "Root opened final 1080x1350 card and 360px mobile preview; Thai text legible, subject unobscured, AI disclosed. Caption and primary-source claims checked. Affiliate generated in logged-in account with page/date/series SubIDs; canonical item and actual choices inspected. No claim of using or testing this product, no price guarantee. ตรวจสี 5 แบบและขนาด S/M/L/XL ที่ปลายทาง; น้ำหนักเป็นช่วงที่ผู้ขายระบุ ไม่ยืนยันความพอดีโดยไม่วัดรอบอก/คอ; ไม่รับรองคำโฆษณากันหลุดหรือกันกระชาก",
+  "checks": {
+    "full_image_seen": true,
+    "mobile_seen": true,
+    "thai_readable": true,
+    "subject_correct": true,
+    "source_checked": true,
+    "affiliate_checked": true
+  },
+  "signature": "wYuMKAAnRrUxCGJ6W9J4jipnJnBubBSskSk/2vWFZV6n4HMCJptIMofoLjXkhIW/4kihE8Y2oir5wnR9q0juBw=="
+}
