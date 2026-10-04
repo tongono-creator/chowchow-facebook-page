@@ -1,0 +1,31 @@
+{
+  "entries": [
+    {
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/dogs/behaviour/understanding",
+      "title": "RSPCA — Understanding a dog's body language",
+      "publisher": "RSPCA",
+      "claim": "ใช้การลงน้ำหนักและความตึงของท่าทางเป็นส่วนหนึ่งของตัวอย่างภาษากาย",
+      "checked_at": "2026-10-04T18:26:22Z",
+      "source_type": "primary",
+      "verification": "web_primary_page_body_read",
+      "access_note": null,
+      "relevant_section": "Happy/Worried/Angry body-language examples and closing vet referral advice"
+    }
+  ],
+  "fictional": false,
+  "checked_at": "2026-10-04T18:26:22Z",
+  "editorial_note": "ข้ออ้างขององค์กรแยกจากข้อสังเกต/เกณฑ์เลือกของบรรณาธิการ; สำนวนหมาและฉากภาพเป็นเรื่องสมมติ ไม่มีประสบการณ์ใช้จริงของแอดมิน",
+  "limitations": [
+    "ไม่วินิจฉัยอาการจากท่ายืน; เสื่อเป็นพื้นที่ให้สังเกตไม่ใช่อุปกรณ์รักษาหรือทดสอบการเดิน"
+  ],
+  "fictional_scene": true,
+  "audit": {
+    "auditor": "production_research_subagent",
+    "root_approval": false,
+    "checked_at": "2026-10-04T18:26:22Z",
+    "exact_supported_proposition": "ตัวอย่างภาษากายรวมการลงน้ำหนักและความตึง; ไม่เป็นการวินิจฉัยขา",
+    "claim_scope": "Specific source proposition; other questions, observation checklists and shopping considerations are editorial suggestions",
+    "static_image_diagnosis_used": false,
+    "therapy_or_disease_prevention_claim_used": false
+  }
+}

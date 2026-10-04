@@ -1,0 +1,31 @@
+{
+  "entries": [
+    {
+      "url": "https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs",
+      "title": "Dogs Trust — Enrichment activities for dogs",
+      "publisher": "Dogs Trust",
+      "claim": "แนะนำเลือกกิจกรรมตามหมาแต่ละตัวและปรับให้ง่ายขึ้นเมื่อดูสับสนหรือหงุดหงิด",
+      "checked_at": "2026-10-04T18:26:22Z",
+      "source_type": "primary",
+      "verification": "web_primary_page_body_read",
+      "access_note": null,
+      "relevant_section": "Choosing enrichment; food-based enrichment; scent; games with toys"
+    }
+  ],
+  "fictional": false,
+  "checked_at": "2026-10-04T18:26:22Z",
+  "editorial_note": "ข้ออ้างขององค์กรแยกจากข้อสังเกต/เกณฑ์เลือกของบรรณาธิการ; สำนวนหมาและฉากภาพเป็นเรื่องสมมติ ไม่มีประสบการณ์ใช้จริงของแอดมิน",
+  "limitations": [
+    "ไม่อ้างแก้พฤติกรรมหรือเพิ่มสติปัญญา; ต้องดูความปลอดภัยและอาหารรายตัว"
+  ],
+  "fictional_scene": true,
+  "audit": {
+    "auditor": "production_research_subagent",
+    "root_approval": false,
+    "checked_at": "2026-10-04T18:26:22Z",
+    "exact_supported_proposition": "กิจกรรมขึ้นกับตัวหมา; ลดความยากเมื่อสับสน; อาหารเล่นหักจากมื้อ",
+    "claim_scope": "Specific source proposition; other questions, observation checklists and shopping considerations are editorial suggestions",
+    "static_image_diagnosis_used": false,
+    "therapy_or_disease_prevention_claim_used": false
+  }
+}
