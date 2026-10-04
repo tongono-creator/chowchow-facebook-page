@@ -1,0 +1,18 @@
+{
+  "entries": [
+    {
+      "url": "https://www.kongcompany.com/faq/",
+      "title": "KONG — FAQ",
+      "claim": "ผู้ผลิตให้เลือกขนาดที่เหมาะ อยู่ดูขณะเล่น ตรวจรอยเสียหายและเปลี่ยนของเล่นที่เสียหาย; no dog toy is indestructible",
+      "checked_at": "2026-10-04T16:43:01+00:00",
+      "source_type": "primary",
+      "verification": "web_source_opened_and_relevant_passage_checked"
+    }
+  ],
+  "fictional": false,
+  "checked_at": "2026-10-04T16:43:01+00:00",
+  "editorial_note": "ข้อสังเกตและคำแนะนำแยกจากข้ออ้างที่แหล่งต้นทางรองรับ ไม่ใช่ประสบการณ์ใช้สินค้าของแอดมิน",
+  "limitations": [
+    "การอ้างKONGไม่โอนสเปกไปของเล่นอื่น; rootต้องตรวจSKUจริงว่าใช้กับสุนัข ไม่รับแมวอย่างเดียว"
+  ]
+}
