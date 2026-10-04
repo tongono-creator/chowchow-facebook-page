@@ -1,8 +1,12 @@
 {
   "3bdb68bc731dcdfbe201aab798a38adb4716d042a66899b43bf717e384568f65": {
-    "state": "written_pending_readback",
+    "state": "verified",
     "channel": "chowchow_fb",
     "page_id": "102319399434080",
-    "updated_at": "2026-10-04T18:56:11.017054+00:00"
+    "updated_at": "2026-10-04T18:56:12.401498+00:00",
+    "readback_about": {
+      "present": true,
+      "value": "บรู๊คลิน & จัสมิน 🐾 แปลภาษาหมาจากท่าทางและบริบท ชวนจัดบ้านให้อยู่ด้วยกันดีขึ้น และเลือกอุปกรณ์ให้เข้ากับตัวหมา ฮะ"
+    }
   }
 }
