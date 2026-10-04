@@ -1,0 +1,17 @@
+{
+  "id": "2026-10-06_chowchow_fb",
+  "reviewer": "root-editor",
+  "reviewed_at": "2026-10-04T17:56:03.048108+00:00",
+  "full_image_seen": true,
+  "mobile_seen": true,
+  "visual_status": "passed",
+  "signature_status": "unsigned_pending_evidence_and_affiliate",
+  "hashes": {
+    "card.png": "56079f961b4f26eb372cd864d9224d24f8954df9fae01d69cd2db6d3b91543e7",
+    "mobile.png": "2246efd62394eb7e570ead934b753f2ab809f4c77211b80ce0b25ddd239554b7"
+  },
+  "notes": "Root actually viewed both saved images. Thai legible; main subject visible and unobscured; no claimed real test; AI disclosure visible. Any minor crop of incidental background props is not used as proof of SKU. Root read full caption and replaced unsupported Dogs Trust attribution with actual Canine Partners primary handbook page8/PDF page5 lines258–263 recommending rugs/non-slip matting in high traffic corridors/kitchen. No disease treatment or universal SKU performance claim. Root saw actual dog-use listing, SKISOPGO seller and selected A#120*60CM tick, canonical ID and five embedded SubIDs. Unavailable body material/care data explicitly limits comment claims; no laboratory slip resistance or material guarantee. Global plan enforces seven-day cooldown. Actual matching SKU and comment checked from approved_products proof.",
+  "source_checked": true,
+  "affiliate_checked": true,
+  "status": "signed_approved"
+}

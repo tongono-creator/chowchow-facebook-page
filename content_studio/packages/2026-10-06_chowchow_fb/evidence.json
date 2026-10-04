@@ -1,0 +1,19 @@
+{
+  "entries": [
+    {
+      "url": "https://caninepartners.org.uk/wp-content/uploads/2024/05/23038_CP_DGN464_Rehoming-handbook_1-6_digital.pdf",
+      "title": "Canine Partners — Rehoming handbook หน้า8 (PDF page5)",
+      "claim": "ผู้จัดคู่มือแนะนำ rugs and non-slip matting ในบริเวณที่หมาใช้เดินผ่านบ่อย เช่นcorridors/kitchen; ไม่มีข้ออ้างรักษาโรคหรือประสิทธิภาพ SKU",
+      "source_type": "primary",
+      "checked_at": "2026-10-04T17:56:02.761077+00:00",
+      "verification": "root_opened_primary_pdf_and_checked_lines258_263",
+      "root_note": "Replaced earlier Dogs Trust citation: root could not find claimed mats recommendation on the current chasing page. Do not repeat unsupported attribution."
+    }
+  ],
+  "fictional": false,
+  "checked_at": "2026-10-04T16:43:01+00:00",
+  "editorial_note": "ข้อสังเกตและคำแนะนำแยกจากข้ออ้างที่แหล่งต้นทางรองรับ ไม่ใช่ประสบการณ์ใช้สินค้าของแอดมิน",
+  "limitations": [
+    "คำแนะนำทั่วไปเรื่องพื้นที่บ้าน ไม่รับรองแผ่นรองทุกสินค้า ไม่ใช่การรักษาโรค"
+  ]
+}
