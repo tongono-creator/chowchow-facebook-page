@@ -1,0 +1,17 @@
+{
+  "id": "2026-10-15_chowchow_fb",
+  "reviewer": "root-editor",
+  "reviewed_at": "2026-10-04T18:16:34.322858+00:00",
+  "full_image_seen": true,
+  "mobile_seen": true,
+  "visual_status": "passed",
+  "signature_status": "unsigned_pending_evidence_and_affiliate",
+  "hashes": {
+    "card.png": "2bf156eb52340bcd17c3fe6e2aedff7904547b623d6b03187c062b6ab166e462",
+    "mobile.png": "c21fe5658acbd4783b111907b32008dfbbb3db4e2341c310d7cef115379b6f4f"
+  },
+  "notes": "Root viewed full-size and mobile. Suitcase/cubes, salad tray, dog bed, desk lamp/book, raw-breaded-chicken bag/tray and toy basket all visible and copy readable. Food images illustrative; no inferred cooking test. Dog has normal paws/body, bed size is a question not universal fit. Captions/evidence/product remain separate gates. Root currentfullcaption and original primarysource previously read with current hashreceipt; source unchanged. Root currentcomplete sellerbody option1 blackMT44V2 x1, actualphoto and all5dated canonical18867903/8190883420 links checked. Selected1.MT44สีดำV2 tick465stock/buyenabled. Standonly notphone/camera/remote/lightsbundle. No auto-level,AntiShake,DualDampening,tracking,impactresistance,authenticity/warranty/universalfit claims. Almost24 is bounded ordinary camera-positioning utility experiment, weak indirect connection explicitlyrecognized; standprovidesnolen/sensor/solarprotection nor guaranteesagainsthistoricalcamera damage. Almost31 ordinary phonecallholder no software/privacyrepair. Chow records naturalpositions/bodycontext, no diagnostic result orprovocation. Root previously verified actualexistingqueue noMT44prioroutside signedOct8Chow. SamepageChow8to15exact7days,15to23eight,23to31eight;Almost24to31exact7days. Actual matching SKU and comment checked from catalog and selected proof files; per-post link uses Root browser verification when provided.",
+  "source_checked": true,
+  "affiliate_checked": true,
+  "status": "signed_approved"
+}
