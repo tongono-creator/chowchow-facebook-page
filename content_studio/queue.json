@@ -3,7 +3,8 @@
   "packages": [
     "packages/2026-10-05_chowchow",
     "packages/2026-10-06_chowchow_fb",
-    "packages/2026-10-07_chowchow_fb"
+    "packages/2026-10-07_chowchow_fb",
+    "packages/2026-10-08_chowchow_fb"
   ],
   "policy": "Only packages with root-editor Ed25519 signatures; production subagents cannot release their own work."
 }

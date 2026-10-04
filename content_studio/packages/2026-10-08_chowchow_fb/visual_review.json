@@ -1,0 +1,17 @@
+{
+  "id": "2026-10-08_chowchow_fb",
+  "reviewer": "root-editor",
+  "reviewed_at": "2026-10-04T17:56:03.048108+00:00",
+  "full_image_seen": true,
+  "mobile_seen": true,
+  "visual_status": "passed",
+  "signature_status": "unsigned_pending_evidence_and_affiliate",
+  "hashes": {
+    "card.png": "36d350bd495996dad57b53cacd670c4850bd06ab7be97aed1cb8a58afeb0b341",
+    "mobile.png": "b11d0d9a53cf02c167db05a544f29dbe3366da76b815ee7dd9c42392be403bc0"
+  },
+  "notes": "Root actually viewed both saved images. Thai legible; main subject visible and unobscured; no claimed real test; AI disclosure visible. Any minor crop of incidental background props is not used as proof of SKU. Root read complete caption and prior actual RSPCA body-language primary page; tail alone is insufficient and AI static curled tail not implied moving in headline. Root saw full/mobile images and inspected MT44V2black actual variant tick and complete ZETASHOPONLINE seller description, canonical IDs and actual five SubIDs. Comment proposes recording full-body context at a respectful distance without provoking the dog, not an emotional/medical diagnosis; seller unverified anti-shake/auto-level claims excluded. Root explicitly allowed tools category for this contextual recording use without reclassifying generic tripod as a dog-specific product. Actual matching SKU and comment checked from approved_products proof.",
+  "source_checked": true,
+  "affiliate_checked": true,
+  "status": "signed_approved"
+}
