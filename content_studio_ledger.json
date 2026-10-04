@@ -53,10 +53,10 @@
     "package_sha256": "51f7454e9e75cb55bbcf7a8bb5aab34288cc9d7a7760a0a93abb20c59b48f4f3",
     "page_id": "102319399434080",
     "photo_id": "1116836754638185",
-    "post_id": null,
+    "post_id": "102319399434080_1116836754638185",
     "product_id": "7391959995",
     "scheduled_at": "2026-10-10T10:30:00+07:00",
-    "status": "publishing",
-    "updated_at": "2026-10-04T20:01:06.889268+00:00"
+    "status": "verified",
+    "updated_at": "2026-10-04T20:01:09.374606+00:00"
   }
 }
