@@ -70,7 +70,8 @@
     "enabled": true,
     "require_signature": true,
     "editor_public_key": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAXpGllY0WdysBzqTWBJ7evbAz13J/DUuGnlrfhzgr4Kg=\n-----END PUBLIC KEY-----\n",
-    "repository_slug": "tongono-creator/chowchow-facebook-page"
+    "repository_slug": "tongono-creator/chowchow-facebook-page",
+    "page_name": "Chow Chowขนปุย บรู๊คลิน & จัสมิน"
   },
   "jaw_x": {
     "channel_key": "jaw_x",
