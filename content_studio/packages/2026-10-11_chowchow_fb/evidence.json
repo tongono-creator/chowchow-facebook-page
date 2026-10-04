@@ -1,0 +1,18 @@
+{
+  "entries": [
+    {
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/dogs/behaviour/understanding",
+      "title": "RSPCA — Understanding dog body language",
+      "claim": "แหล่งยกการหลบสายตาหรือหันหัวร่วมกับสัญญาณอื่นในหมาที่ไม่สบายใจ และแนะนำสัตวแพทย์เมื่อกังวล",
+      "checked_at": "2026-10-04T16:43:01+00:00",
+      "source_type": "primary",
+      "verification": "web_source_opened_and_relevant_passage_checked"
+    }
+  ],
+  "fictional": false,
+  "checked_at": "2026-10-04T16:43:01+00:00",
+  "editorial_note": "ข้อสังเกตและคำแนะนำแยกจากข้ออ้างที่แหล่งต้นทางรองรับ ไม่ใช่ประสบการณ์ใช้สินค้าของแอดมิน",
+  "limitations": [
+    "ไม่สรุปอารมณ์จากภาพเดียว; ประตูกั้นช่วยแบ่งพื้นที่พักไม่ได้รักษาพฤติกรรม ต้องตรวจขนาด ช่องกั้นและวิธีติดตั้งจาก SKU จริง"
+  ]
+}

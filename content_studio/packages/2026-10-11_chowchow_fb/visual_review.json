@@ -1,0 +1,17 @@
+{
+  "id": "2026-10-11_chowchow_fb",
+  "reviewer": "root-editor",
+  "reviewed_at": "2026-10-04T17:56:03.048108+00:00",
+  "full_image_seen": true,
+  "mobile_seen": true,
+  "visual_status": "passed",
+  "signature_status": "unsigned_pending_evidence_and_affiliate",
+  "hashes": {
+    "card.png": "82ae49db972dcc3af339faa1ae140b640daaad6d43f5148b82bd19026695e5b7",
+    "mobile.png": "b163f83ce2092cb7922176edf1ac87e5ebbb0634b27651c0c0c4876d9016214e"
+  },
+  "notes": "Root actually viewed both saved images. Thai legible; main subject visible and unobscured; no claimed real test; AI disclosure visible. Any minor crop of incidental background props is not used as proof of SKU. Root RSPCA relevant passage personally checked; actual full caption retains head-turn with other body/context signals, allow space and choice, consult vet if concerned. Gate only optional space division, no treatment claim. Root actual shop40509859/item49503047919 chishopdogfans, one variant black steel gate. Title75-82cm width, body85cm height and5.5cm bars; actual image shows black main gate with small pet door. Stock1 and buy enabled. No independent50kg impact, SGS certificate, paint safety, lock performance or suitability for any particular dog verified. Not for recommending stair-top pressure installation. Actual fiveSubIDs and redirect utm_content verified. Confirm exact supplied parts with seller. Actual matching SKU and comment checked from catalog and selected proof files; per-post link uses Root browser verification when provided.",
+  "source_checked": true,
+  "affiliate_checked": true,
+  "status": "signed_approved"
+}
