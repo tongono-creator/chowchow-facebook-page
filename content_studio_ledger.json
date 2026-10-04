@@ -22,9 +22,11 @@
   "2026-10-07_chowchow_fb": {
     "package_sha256": "129ae6bb83a3ed1387dfd4befc68c88f0d49ba7a46dc415cea96505736d7f83d",
     "page_id": "102319399434080",
+    "photo_id": "1116783867976807",
+    "post_id": null,
     "product_id": "42352480452",
     "scheduled_at": "2026-10-07T10:30:00+07:00",
     "status": "publishing",
-    "updated_at": "2026-10-04T18:33:20.892838+00:00"
+    "updated_at": "2026-10-04T18:33:24.294633+00:00"
   }
 }
