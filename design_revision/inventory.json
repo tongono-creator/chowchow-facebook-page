@@ -1,0 +1,119 @@
+[
+  {
+    "id": "2026-10-05_chowchow",
+    "channel": "chowchow_fb",
+    "post_id": "102319399434080_1116708511317676",
+    "caption_sha256": "ffecd300e3047c1f7499c24ee50c331cc0b0ea965a1c9743bccba025c54dec72",
+    "scheduled_at": "2026-10-05T10:30:00+07:00",
+    "known_release_proof": "live_release/chow_mt44_batch/content-studio-result/content_studio_result.json",
+    "kind": "root_signed_native_release"
+  },
+  {
+    "id": "2026-10-06_chowchow_fb",
+    "channel": "chowchow_fb",
+    "post_id": "102319399434080_1116760057979188",
+    "caption_sha256": "548cc28e90d5f0c33d726ae2026593a1a368f4256f7c7ca3e1514c3da0fd838d",
+    "scheduled_at": "2026-10-06T10:30:00+07:00",
+    "known_release_proof": "live_release/chow_mt44_batch/content-studio-result/content_studio_result.json",
+    "kind": "root_signed_native_release"
+  },
+  {
+    "id": "2026-10-07_chowchow_fb",
+    "channel": "chowchow_fb",
+    "post_id": "102319399434080_1116783867976807",
+    "caption_sha256": "59c9c33c92e041d5f1aab04f47fe11cc9a3b8f5525da4680ec3b1dca6ae4ddb2",
+    "scheduled_at": "2026-10-07T10:30:00+07:00",
+    "known_release_proof": "live_release/chow_mt44_batch/content-studio-result/content_studio_result.json",
+    "kind": "root_signed_native_release"
+  },
+  {
+    "id": "2026-10-08_chowchow_fb",
+    "channel": "chowchow_fb",
+    "post_id": "102319399434080_1116801614641699",
+    "caption_sha256": "b47e8a3846437d95bad8faa7c92eeda220bd1272744fdc0da6d06a4256576b14",
+    "scheduled_at": "2026-10-08T10:30:00+07:00",
+    "known_release_proof": "live_release/chow_mt44_batch/content-studio-result/content_studio_result.json",
+    "kind": "root_signed_native_release"
+  },
+  {
+    "id": "2026-10-09_chowchow_fb",
+    "channel": "chowchow_fb",
+    "post_id": "102319399434080_1116834454638415",
+    "caption_sha256": "925099d564b106bad2caa167b3b9bfb2bc078bb4c36c85e120c8349460e6780e",
+    "scheduled_at": "2026-10-09T10:30:00+07:00",
+    "known_release_proof": "live_release/chow_mt44_batch/content-studio-result/content_studio_result.json",
+    "kind": "root_signed_native_release"
+  },
+  {
+    "id": "2026-10-10_chowchow_fb",
+    "channel": "chowchow_fb",
+    "post_id": "102319399434080_1116836754638185",
+    "caption_sha256": "91ca9e4b1ef78bfa82fde99b371c0aa704e334dd4a544e2ee92aa7b6ecdc6a61",
+    "scheduled_at": "2026-10-10T10:30:00+07:00",
+    "known_release_proof": "live_release/chow_mt44_batch/content-studio-result/content_studio_result.json",
+    "kind": "root_signed_native_release"
+  },
+  {
+    "id": "2026-10-11_chowchow_fb",
+    "channel": "chowchow_fb",
+    "post_id": "102319399434080_1116851884636672",
+    "caption_sha256": "ec2f0d07a0a403b1cd6577c67260740c3602d25b3ccf7e660843e0746b469ac0",
+    "scheduled_at": "2026-10-11T10:30:00+07:00",
+    "known_release_proof": "live_release/chow_mt44_batch/content-studio-result/content_studio_result.json",
+    "kind": "root_signed_native_release"
+  },
+  {
+    "id": "2026-10-12_chowchow_fb",
+    "channel": "chowchow_fb",
+    "post_id": "102319399434080_1116867277968466",
+    "caption_sha256": "4346567499c4cc69bb3fd11a61aef1209a4f3186e44a6cfc13cb7c0536c2779a",
+    "scheduled_at": "2026-10-12T10:30:00+07:00",
+    "known_release_proof": "live_release/chow_mt44_batch/content-studio-result/content_studio_result.json",
+    "kind": "root_signed_native_release"
+  },
+  {
+    "id": "2026-10-15_chowchow_fb",
+    "channel": "chowchow_fb",
+    "post_id": "102319399434080_1116897357965458",
+    "caption_sha256": "4dd22a9df1e5e6dfb221fd7e36b1602bbda1af6fe1fda32ab16eea35d475185a",
+    "scheduled_at": "2026-10-15T10:30:00+07:00",
+    "known_release_proof": "live_release/chow_mt44_batch/content-studio-result/content_studio_result.json",
+    "kind": "root_signed_native_release"
+  },
+  {
+    "id": "2026-10-20_chowchow_fb",
+    "channel": "chowchow_fb",
+    "post_id": "102319399434080_1116867341301793",
+    "caption_sha256": "316050742ca47e1df0727ea0eb6c14bbeee3eb0feca9998d02eb7dc0e04d0261",
+    "scheduled_at": "2026-10-20T10:30:00+07:00",
+    "known_release_proof": "live_release/chow_mt44_batch/content-studio-result/content_studio_result.json",
+    "kind": "root_signed_native_release"
+  },
+  {
+    "id": "2026-10-23_chowchow_fb",
+    "channel": "chowchow_fb",
+    "post_id": "102319399434080_1116897467965447",
+    "caption_sha256": "347d6ac0c8077dae7b585885c89993f84a4dc800a38df7cfb73e977baa5ba33c",
+    "scheduled_at": "2026-10-23T10:30:00+07:00",
+    "known_release_proof": "live_release/chow_mt44_batch/content-studio-result/content_studio_result.json",
+    "kind": "root_signed_native_release"
+  },
+  {
+    "id": "2026-10-29_chowchow_fb",
+    "channel": "chowchow_fb",
+    "post_id": "102319399434080_1116867411301786",
+    "caption_sha256": "94e4d0419e182343eee6819bede7fb6c123b9470754b1d07cfdbab5fef552ba9",
+    "scheduled_at": "2026-10-29T10:30:00+07:00",
+    "known_release_proof": "live_release/chow_mt44_batch/content-studio-result/content_studio_result.json",
+    "kind": "root_signed_native_release"
+  },
+  {
+    "id": "2026-10-31_chowchow_fb",
+    "channel": "chowchow_fb",
+    "post_id": "102319399434080_1116897581298769",
+    "caption_sha256": "54a7cf0173279bdcf6fb8e100e3c445bcb2e6a1fdadde0437c50aa5c19634f6d",
+    "scheduled_at": "2026-10-31T10:30:00+07:00",
+    "known_release_proof": "live_release/chow_mt44_batch/content-studio-result/content_studio_result.json",
+    "kind": "root_signed_native_release"
+  }
+]

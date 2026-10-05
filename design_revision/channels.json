@@ -1,0 +1,11 @@
+{
+  "chowchow_fb": {
+    "platform": "facebook",
+    "name": "Chow Chow",
+    "page_name": "Chow Chowขนปุย บรู๊คลิน & จัสมิน",
+    "page_id": "102319399434080",
+    "editor_public_key": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAXpGllY0WdysBzqTWBJ7evbAz13J/DUuGnlrfhzgr4Kg=\n-----END PUBLIC KEY-----\n",
+    "repository_slug": "tongono-creator/chowchow-facebook-page",
+    "token_env": "PAGE_ACCESS_TOKEN"
+  }
+}
