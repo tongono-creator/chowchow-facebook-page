@@ -1,0 +1,33 @@
+{
+  "oct07_newcommercial_chow_petcho_20261017": {
+    "state": "reserved_create",
+    "plan_sha256": "9532ed7bbb00c13b0abb5b42c5f7e69b1db3590501f7d08f43f5b79ebd09faa6",
+    "package_id": "oct07_newcommercial_chow_petcho_20261017",
+    "page_id": "102319399434080",
+    "updated_at": "2026-10-07T14:24:36.135615+00:00",
+    "slot": 1792240200,
+    "caption_sha256": "de845685b3842fe7f9dacb3e59f7b902452bd38e9910feb6e45505bf46cce7cc",
+    "canonical_sku": "287201971/12333160016",
+    "product_reservation": {
+      "canonical_sku": "287201971/12333160016",
+      "shop_id": "287201971",
+      "product_id": "12333160016",
+      "name": "Petcho ผ้ารองสัตว์เลี้ยง ANIMAL 120×90 ซม.",
+      "url": "https://s.shopee.co.th/1LgLxinvnu",
+      "comment": "ตัวเลือกที่คัดคือ ANIMAL ขนาด 120x90CM ก่อนซื้อวัดพื้นที่ปูจริงและเช็กทั้งลายกับขนาดอีกครั้งฮะ\nลิงก์ Affiliate — เพจอาจได้รับค่าคอมมิชชันจากการซื้อผ่านลิงก์นี้\nhttps://s.shopee.co.th/1LgLxinvnu",
+      "subids": [
+        "chowchow",
+        "20261017",
+        "petchoanimal",
+        "facebook",
+        "reviewA"
+      ],
+      "variants": [
+        "ANIMAL",
+        "120x90CM"
+      ]
+    },
+    "package_sha256": "790cbbc2daacb652d7a1d02410e9e0f56cace267f334dccab43efdda0ac53ce0",
+    "month": "2026-10"
+  }
+}
