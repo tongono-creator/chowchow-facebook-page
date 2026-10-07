@@ -133,6 +133,50 @@
       "comment": "ถ้าจะเริ่มจดเวลา สิ่งที่เกิดก่อน และท่าทางของหมา คลิปที่เห็นทั้งตัวช่วยเก็บรายละเอียดไว้เล่าต่อได้ฮะ ลองดูขาตั้งมือถือ Ulanzi MT44 V2 สีดำ เลือก “1. MT44 สีดำ V2” แบบขาตั้ง 1 ตัว เช็กมือถือกับหัวจับและตั้งพ้นทางหมา บันทึกพฤติกรรมตามธรรมชาติ ไม่เรียกหรือยั่วเพื่อให้ได้คลิป และใช้บันทึกเป็นบริบท ไม่สรุปสุขภาพจากคลิปเดียว\n\nภาพในโพสต์เป็นภาพประกอบ AI ไม่ใช่ภาพสินค้าหรือผลทดลองขาตั้งรุ่นนี้\n\nรายการนี้อยู่ใน Shopee ประเทศไทย ก่อนซื้อเช็กการจัดส่งถึงที่อยู่ของคุณและตัวเลือกที่เลือกล่าสุดฮะ\n\nลิงก์ Affiliate — เพจอาจได้รับค่าคอมมิชชันจากการซื้อผ่านลิงก์นี้\nhttps://s.shopee.co.th/3B7vs7vUiu",
       "name": "Ulanzi MT44 V2 สีดำ — ZETASHOPONLINE",
       "url": "https://s.shopee.co.th/3B7vs7vUiu"
+    },
+    "1119375964384264": {
+      "canonical_sku": "287201971/12333160016",
+      "shop_id": "287201971",
+      "product_id": "12333160016",
+      "name": "Petcho ผ้ารองสัตว์เลี้ยง ANIMAL 120×90 ซม.",
+      "url": "https://s.shopee.co.th/1LgLxinvnu",
+      "comment": "ตัวเลือกที่คัดคือ ANIMAL ขนาด 120x90CM ก่อนซื้อวัดพื้นที่ปูจริงและเช็กทั้งลายกับขนาดอีกครั้งฮะ\nลิงก์ Affiliate — เพจอาจได้รับค่าคอมมิชชันจากการซื้อผ่านลิงก์นี้\nhttps://s.shopee.co.th/1LgLxinvnu",
+      "subids": [
+        "chowchow",
+        "20261017",
+        "petchoanimal",
+        "facebook",
+        "reviewA"
+      ],
+      "variants": [
+        "ANIMAL",
+        "120x90CM"
+      ],
+      "affiliate_enabled": true,
+      "scheduled_at": "2026-10-17T19:30:00+07:00",
+      "root_package_sha256": "790cbbc2daacb652d7a1d02410e9e0f56cace267f334dccab43efdda0ac53ce0"
+    },
+    "102319399434080_1119375964384264": {
+      "canonical_sku": "287201971/12333160016",
+      "shop_id": "287201971",
+      "product_id": "12333160016",
+      "name": "Petcho ผ้ารองสัตว์เลี้ยง ANIMAL 120×90 ซม.",
+      "url": "https://s.shopee.co.th/1LgLxinvnu",
+      "comment": "ตัวเลือกที่คัดคือ ANIMAL ขนาด 120x90CM ก่อนซื้อวัดพื้นที่ปูจริงและเช็กทั้งลายกับขนาดอีกครั้งฮะ\nลิงก์ Affiliate — เพจอาจได้รับค่าคอมมิชชันจากการซื้อผ่านลิงก์นี้\nhttps://s.shopee.co.th/1LgLxinvnu",
+      "subids": [
+        "chowchow",
+        "20261017",
+        "petchoanimal",
+        "facebook",
+        "reviewA"
+      ],
+      "variants": [
+        "ANIMAL",
+        "120x90CM"
+      ],
+      "affiliate_enabled": true,
+      "scheduled_at": "2026-10-17T19:30:00+07:00",
+      "root_package_sha256": "790cbbc2daacb652d7a1d02410e9e0f56cace267f334dccab43efdda0ac53ce0"
     }
   }
 }

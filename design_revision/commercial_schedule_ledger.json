@@ -1,10 +1,10 @@
 {
   "oct07_newcommercial_chow_petcho_20261017": {
-    "state": "native_verified_pending_mapping",
+    "state": "enabling_verified_exact_mapping",
     "plan_sha256": "9532ed7bbb00c13b0abb5b42c5f7e69b1db3590501f7d08f43f5b79ebd09faa6",
     "package_id": "oct07_newcommercial_chow_petcho_20261017",
     "page_id": "102319399434080",
-    "updated_at": "2026-10-07T14:24:41.919456+00:00",
+    "updated_at": "2026-10-07T14:24:43.320211+00:00",
     "slot": 1792240200,
     "caption_sha256": "de845685b3842fe7f9dacb3e59f7b902452bd38e9910feb6e45505bf46cce7cc",
     "canonical_sku": "287201971/12333160016",
@@ -42,6 +42,12 @@
       "attachment_ids": [
         "1119375964384264"
       ]
-    }
+    },
+    "aliases": [
+      "102319399434080_1119375964384264",
+      "1119375964384264"
+    ],
+    "worker_after_sha256": "34b1fa62477acc49d007a7c441eec4a1f987faac3a77e1564c26ff7046a7395a",
+    "mapping_after_sha256": "d029bb4157302b65d12946e6a6575d4e95c828339ceeaa17df42d7182959a976"
   }
 }
