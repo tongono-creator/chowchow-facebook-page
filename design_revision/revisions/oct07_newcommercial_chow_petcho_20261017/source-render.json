@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-10-07T14:13:48.577697+00:00",
+  "channel_key": "chowchow_fb",
+  "canonical_product_id": "287201971:12333160016",
+  "selected_variant": [
+    "ANIMAL",
+    "120x90CM"
+  ],
+  "source": {
+    "path": "D:\\Projects\\page-content-studio\\design_revision_oct07\\product_cards\\chowchow_fb_petcho_animal_v1\\source.webp",
+    "sha256": "edf78a4d652600a63e049ccf279d56ae8156adacc5ca545e8fe5d0760acd0fb2",
+    "dimensions": [
+      450,
+      450
+    ],
+    "display_rect": {
+      "x": 0,
+      "y": 0,
+      "width": 450,
+      "height": 450
+    },
+    "scale": 1.951111111111111,
+    "proof_path": "D:\\Projects\\page-content-studio\\design_revision_oct07\\chow_petcho_listing_ax.txt",
+    "proof_sha256": "3bb9aba036c4770a1557e4fcf32506f0c9cf1f2f0eaa2b70ae2d0a28b482e7fd",
+    "ai_product_generated": false
+  },
+  "additional_proofs": [
+    {
+      "path": "D:\\Projects\\page-content-studio\\design_revision_oct07\\chow_petcho_link_verified.json",
+      "sha256": "e6881b3dc1dd93f72661f58ef1987127249ec734a48fe4718715e249b73ac394"
+    }
+  ],
+  "native_html_frame_only": true,
+  "copy": [
+    "โซฟาหรือมุมหมา?",
+    "ปูตรงไหนก็วัดก่อน"
+  ],
+  "product_label": "Petcho ANIMAL · 120×90 ซม.",
+  "qa": {
+    "headlineFont": 98,
+    "headlineLineCount": 2,
+    "headlineFits": true,
+    "labelFits": true,
+    "photoCount": 1,
+    "fontsLoaded": true,
+    "decoded": true
+  },
+  "root_approved": false,
+  "root_full_mobile_visual_review_pending": true,
+  "live_mutations": false,
+  "price_shown": false,
+  "personal_test_claimed": false,
+  "artifacts": {
+    "card.html": {
+      "path": "D:\\Projects\\page-content-studio\\design_revision_oct07\\product_cards\\chowchow_fb_petcho_animal_v1\\card.html",
+      "sha256": "9c0cf49b310a6e5ccc8774c2a17f9f5c5a84aaf4bf5c6f5aa3b924cf3759d278"
+    },
+    "card.png": {
+      "path": "D:\\Projects\\page-content-studio\\design_revision_oct07\\product_cards\\chowchow_fb_petcho_animal_v1\\card.png",
+      "sha256": "4fe00687d6a5c880750e7d2e56f7f33e39483aca8512845f2a7fe0334f424f2a"
+    },
+    "mobile.png": {
+      "path": "D:\\Projects\\page-content-studio\\design_revision_oct07\\product_cards\\chowchow_fb_petcho_animal_v1\\mobile.png",
+      "sha256": "bb2ac5b74f8af10443ba102cf527941659070ac5a8b91ebfb0b53aaabaccaffc"
+    }
+  },
+  "original_photo_path": "C:\\Users\\tongo\\Downloads\\4c79cec0c8ee1846006260ba6787dd77@resize_w450_nl.webp",
+  "original_photo_sha256": "edf78a4d652600a63e049ccf279d56ae8156adacc5ca545e8fe5d0760acd0fb2",
+  "original_photo_byte_unchanged": true,
+  "source_photo_byte_identical": true,
+  "producer_actual_full_mobile_visual_review_completed": false
+}

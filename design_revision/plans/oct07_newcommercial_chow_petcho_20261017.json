@@ -1,0 +1,32 @@
+{
+  "payload": {
+    "action": "schedule_new_commercial_product_photo",
+    "channel": "chowchow_fb",
+    "page_id": "102319399434080",
+    "page_name": "Chow Chowขนปุย บรู๊คลิน & จัสมิน",
+    "reviewed_at": "2026-10-07T14:17:35.145373+00:00",
+    "package_id": "oct07_newcommercial_chow_petcho_20261017",
+    "package_path": "design_revision/revisions/oct07_newcommercial_chow_petcho_20261017",
+    "package_sha256": "790cbbc2daacb652d7a1d02410e9e0f56cace267f334dccab43efdda0ac53ce0",
+    "mobile_path": "design_revision/revisions/oct07_newcommercial_chow_petcho_20261017/mobile.png",
+    "mobile_sha256": "bb2ac5b74f8af10443ba102cf527941659070ac5a8b91ebfb0b53aaabaccaffc",
+    "actual_product_photo_path": "design_revision/revisions/oct07_newcommercial_chow_petcho_20261017/actual-product.webp",
+    "actual_product_photo_sha256": "edf78a4d652600a63e049ccf279d56ae8156adacc5ca545e8fe5d0760acd0fb2",
+    "canonical_sku": "287201971/12333160016",
+    "tracking_variant_proof_path": "design_revision/revisions/oct07_newcommercial_chow_petcho_20261017/tracking.json",
+    "tracking_variant_proof_sha256": "6d44243dff76767003a0b92f0fcb9fa1ddfe103ad3e8868f971e089102a03aae",
+    "monthly_plan_path": "design_revision/monthly_commercial_operations_oct07.json",
+    "monthly_plan_sha256": "93952721e68400b8b51628011e09d3eb1a85796c4592bef035e2082b6a1f3c9a",
+    "worker_before_sha256": "1f0614a83a03cbccd3c5903b5762795ac32214fdfc06af2472f188a73c74b979",
+    "mapping_before_sha256": "38cfdc7eb80c8fc185bf18051b8533a1de52a90cf32f099cd9343a0c339ac247",
+    "monthly_sales_limit_after": 2,
+    "root_actual_product_photo_confirmed": true,
+    "root_variant_destination_subids_confirmed": true,
+    "root_existing_single_writer_confirmed": true,
+    "root_whole_page_7day_cooldown_confirmed": true,
+    "root_monthly_sales_plan_confirmed": true,
+    "root_enable_exact_selected_comment_after_native_verified": true
+  },
+  "payload_sha256": "9532ed7bbb00c13b0abb5b42c5f7e69b1db3590501f7d08f43f5b79ebd09faa6",
+  "root_signature": "2NT71pJ1VwK0EUCQE9gEwh7AUPpzj4gzRCrs5bd96GZM/pQPxK+Q1Ep1kHjTCkVNz9L0igZoK06hyKylHKp+Bg=="
+}

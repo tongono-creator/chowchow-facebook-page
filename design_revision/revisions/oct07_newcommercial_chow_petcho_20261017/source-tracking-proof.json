@@ -1,0 +1,21 @@
+{
+  "canonical_sku": "287201971/12333160016",
+  "affiliate_url": "https://s.shopee.co.th/1LgLxinvnu",
+  "destination_url": "https://shopee.co.th/product/287201971/12333160016",
+  "observed_destination_url": "https://shopee.co.th/product/287201971/12333160016",
+  "subids": [
+    "chowchow",
+    "20261017",
+    "petchoanimal",
+    "facebook",
+    "reviewA"
+  ],
+  "observed_utm_content": "chowchow-20261017-petchoanimal-facebook-reviewA",
+  "variants": [
+    "ANIMAL",
+    "120x90CM"
+  ],
+  "actual_product_photo_path": "C:/Users/tongo/Downloads/4c79cec0c8ee1846006260ba6787dd77@resize_w450_nl.webp",
+  "root_actual_destination_variant_subids_verified": true,
+  "verified_at": "2026-10-07T13:57:38.410Z"
+}

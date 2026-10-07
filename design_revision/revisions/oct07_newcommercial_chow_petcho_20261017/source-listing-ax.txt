@@ -1,0 +1,259 @@
+Browser tab: 6, Title: "Petcho เสื่อสัตว์เลี้ยง แผ่นนอนรองกรง เสื่อแมวสุนัข ที่นอนแมวและสุนัข เบาะโซฟา ผ้าปูกรง ผ้าปูกันรอย | Shopee Thailand", URL: "https://shopee.co.th/product/287201971/12333160016".
+1 AXWebArea Petcho เสื่อสัตว์เลี้ยง แผ่นนอนรองกรง เสื่อแมวสุนัข ที่นอนแมวและสุนัข เบาะโซฟา ผ้าปูกรง ผ้าปูกันรอย | Shopee Thailand, URL: shopee.co.th/product/287201971/12333160016
+	2 container
+		3 container main
+			4 button ข้ามไปที่เนื้อหาหลัก
+			5 container
+				6 container
+					7 link Description: Shopee Home, Value: shopee.co.th/
+					8 link Description: เปิดร้านค้า, Value: shopee.co.th/seller/signup
+					9 link Description: ดาวน์โหลด, Value: shopee.co.th/web/, ID: temporaryId
+					10 text ติดตามเราบน
+					11 link Description: ติดตามเราบน Facebook, Value: facebook.com/ShopeeTH
+					12 link Description: ติดตามเราบน Instagram!, Value: instagram.com/Shopee_TH
+					13 link Description: ติดตามเราบน Line, Value: line.me/R/ti/p/@shopeeth
+					14 content list
+						15 link Description: 9+ การแจ้งเตือน, Value: shopee.co.th/user/notifications/order
+						16 link Description: ช่วยเหลือ, Value: help.shopee.co.th/th/s
+						17 button ไทย
+							18 image
+							19 text ไทย
+						20 button profile tongono21
+							21 container
+								22 image
+								23 image profile
+							24 text tongono21
+				25 link shopee.co.th/
+				26 link shopee.co.th/mall
+				27 link shopee.co.th/mall
+				28 container
+					29 combo box (collapsed, settable) Description: ค้นหาใน Shopee Mall, Secondary Actions: Expand
+					30 button search
+						31 image
+					32 link Description: Shopping Cart Icon Shopping Cartnumber of items in cart 18, Value: shopee.co.th/cart, ID: cart_drawer_target_id
+				33 container sll2-normal-pdp-main
+					34 container
+						35 link Description: Shopee, Value: shopee.co.th/
+						36 image icon arrow right
+						37 link Description: สัตว์เลี้ยง, Value: shopee.co.th/%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7…
+						38 image icon arrow right
+						39 link Description: อุปกรณ์สำหรับสัตว์เลี้ยง, Value: shopee.co.th/%E0%B8%AD%E0%B8%B8%E0%B8%9B%E0%B8%81…
+						40 image icon arrow right
+						41 link Description: เฟอร์นิเจอร์สำหรับสัตว์เลี้ยง, Value: shopee.co.th/%E0%B9%80%E0%B8%9F%E0%B8%AD%E0%B8%A3…
+						42 image icon arrow right
+						43 text Petcho เสื่อสัตว์เลี้ยง แผ่นนอนรองกรง เสื่อแมวสุนัข ที่นอนแมวและสุนัข เบาะโซฟา ผ้าปูกรง ผ้าปูกันรอย
+						44 container
+							45 image Product image Petcho เสื่อสัตว์เลี้ยง แผ่นนอนรองกรง เสื่อแมวสุนัข ที่นอนแมวและสุนัข เบาะโซฟา ผ้าปูกรง ผ้าปูกันรอย 
+							46 container
+								47 image
+								48 image icon video play
+							49 button icon arrow left bold
+								257 image icon arrow left bold
+							51 button icon arrow right bold
+								258 image icon arrow right bold
+							53 text แชร์ :
+							54 button Share on Messenger
+							55 button Share on Facebook
+							56 button Share on Pinterest
+							57 button Share on Twitter
+							58 button Favorite (10.3k)
+								59 image
+								60 text Favorite (10.3k)
+						61 container
+							62 image mall inline badge
+							63 heading Petcho เสื่อสัตว์เลี้ยง แผ่นนอนรองกรง เสื่อแมวสุนัข ที่นอนแมวและสุนัข เบาะโซฟา ผ้าปูกรง ผ้าปูกันรอย, Value: 1
+								64 text Petcho เสื่อสัตว์เลี้ยง แผ่นนอนรองกรง เสื่อแมวสุนัข ที่นอนแมวและสุนัข เบาะโซฟา ผ้าปูกรง ผ้าปูกันรอย
+							65 button 4.9
+								66 text 4.9
+							67 button 9.5k รีวิว
+								68 text 9.5k
+								69 text รีวิว
+							70 container
+								71 text ขายแล้ว  30k+  ชิ้น
+							72 button รายงานสินค้า
+							73 container
+								74 text ฿315 ฿399 -21%
+							75 link Description: VIP Price | สมัครสมาชิก VIP ซื้อได้ในราคา ฿273, Value: u.shopee.co.th/share-shopee-vip
+							76 heading Bundle Deals, Value: 2
+								77 text Bundle Deals
+							78 text ซื้อ 2 ชิ้น ลด 1%
+							79 heading การจัดส่ง, Value: 2
+								80 text การจัดส่ง
+							81 image fast green truck icon
+							82 text 9 ต.ค. - 11 ต.ค.
+							83 text ส่งฟรี
+							84 container
+								85 text รับโค้ดส่วนลด  ฿30  หากได้รับสินค้าล่าช้า
+							86 heading ช้อปปี้การันตี, Value: 2
+								87 text ช้อปปี้การันตี
+							88 container pc-drawer-id-0
+								89 image service entrance icon
+								90 text คืนเงิน/สินค้าฟรีใน 15 วัน • ของแท้ 100% • ดีลพิเศษแบรนด์ชั้นนำ • ช้อปปี้ถูกชัวร์ • เก็บเงินปลายทาง • ความคุ้มครองสินค้า
+							91 heading ลาย, Value: 2
+								92 text ลาย
+							93 button ANIMAL 
+								94 image
+								95 text ANIMAL
+								96 image icon-tick-bold
+							97 button ELEPHANT 
+								98 image
+								99 text ELEPHANT
+							100 button RAINBOWCAR 
+								101 image
+								102 text RAINBOWCAR
+							103 button PENGUIN 
+								104 image
+								105 text PENGUIN
+							106 button CHERRY 
+								107 image
+								108 text CHERRY
+							109 button PETSTERN 
+								110 image
+								111 text PETSTERN
+							112 button (disabled) DINOSAUR 
+								113 image
+								114 text DINOSAUR
+							115 heading ชนาด, Value: 2
+								116 text ชนาด
+							117 button (disabled) 70x50CM 
+							118 button 70x70CM 
+							119 button 90x90CM 
+							120 button 120x90CM 
+								121 text 120x90CM
+								122 image icon-tick-bold
+							123 button 180x90CM 
+							124 heading จำนวน, Value: 2
+								125 text จำนวน
+							126 button (disabled) Decrease
+								127 image
+							128 stepper (settable, integer) 1
+							129 button Increase
+								130 image
+							131 text มีสินค้าทั้งหมด 294 ชิ้น
+							132 button icon-add-to-cart เพิ่มไปยังรถเข็น
+								133 image icon-add-to-cart
+								134 text เพิ่มไปยังรถเข็น
+							135 button ซื้อสินค้า
+						136 heading Bundle Deals, Value: 3
+							137 text Bundle Deals
+						138 text ซื้อ 2 ชิ้น ลด 1%
+						139 text ซื้อ 3 ชิ้น ลด 2%
+						140 link Description: ดูทั้งหมด, Value: shopee.co.th/bundle-deal/464458514641262
+						141 content list Bundle Deals
+							142 link Help: Petcho แผ่นลับเล็บแมว ที่ลับเล็บแมว ที่นอนแมว กันข่วน ของเล่นแมว ลับเล็บแมว คอนโดแมว Natural Cat Scratcher Mat, Value: shopee.co.th/product/287201971/5845707907, Description: Petcho แผ่นลับเล็บแมว ที่ลับเล็บแมว ที่นอนแมว กันข่วน ของเล่นแมว ลับเล็บแมว คอนโดแมว Natural Cat Scratcher Mat current price ฿139
+							143 link Help: Petcho ที่นอนสุนัข ที่นอนเย็น สำหรับตว์เลี้ยง ผ้าระบายความเย็น ที่นอนสัตว์เลี้ยง เบาะแมวเบาะสุนัข แผ่นลเย็นPet Cool mat, Value: shopee.co.th/product/287201971/6746837225, Description: Petcho ที่นอนสุนัข ที่นอนเย็น สำหรับตว์เลี้ยง ผ้าระบายความเย็น ที่นอนสัตว์เลี้ยง เบาะแมวเบาะสุนัข แผ่นลเย็นPet Cool mat current price ฿149
+							144 link Help: Petcho Pet Cool Mat แผ่นเจลเย็น ที่นอนเย็น แผ่นเย็นแมว เบาะเย็นแมว เจลเย็นหมา แผ่นเย็นหมา ที่นอนแมว ที่นอนหมา, Value: shopee.co.th/product/287201971/7090407025, Description: Petcho Pet Cool Mat แผ่นเจลเย็น ที่นอนเย็น แผ่นเย็นแมว เบาะเย็นแมว เจลเย็นหมา แผ่นเย็นหมา ที่นอนแมว ที่นอนหมา current price ฿69
+							145 link Description: Petcho กระเป๋าแมว สำหรับเดินทางสัตว์เลี้ยงใบใหญ่มาก กระเป๋าใส่แมวแบบพับได้ current price ฿389, Help: Petcho กระเป๋าแมว สำหรับเดินทางสัตว์เลี้ยงใบใหญ่มาก กระเป๋าใส่แมวแบบพับได้, Value: shopee.co.th/product/287201971/12530769438
+							146 link Description: Petcho กระเป๋าใส่แมว กระเป๋าใส่สุนัข กระเป๋าสัตว์เลี้ยง current price ฿435, Help: Petcho กระเป๋าใส่แมว กระเป๋าใส่สุนัข กระเป๋าสัตว์เลี้ยง, Value: shopee.co.th/product/287201971/13550970479
+							147 link Help: Petcho กระเป๋าแมว Size L กระเป๋าสัตว์เลี้ยง กระเป๋าใส่สัตว์เลี้ยง แบบพกพา สะพายข้างได้ ระบายอากาศได้ พับได้ มี 4 สี, Value: shopee.co.th/product/287201971/14190679831, Description: Petcho กระเป๋าแมว Size L กระเป๋าสัตว์เลี้ยง กระเป๋าใส่สัตว์เลี้ยง แบบพกพา สะพายข้างได้ ระบายอากาศได้ พับได้ มี 4 สี current price ฿178
+						148 container
+							149 link Description: icon head shot click here to visit shop mall shop badge, Value: shopee.co.th/petcho01
+							150 text Petcho Official Shop ออนไลน์
+							151 button แชทเลย
+								152 text แชทเลย
+							153 link Description: icon shop ดูร้านค้า, Value: shopee.co.th/petcho01
+							154 text คะแนน
+							155 text 636.5k
+							156 text อัตราการตอบกลับ
+							157 text 93%
+							158 text เข้าร่วมเมื่อ
+							159 text 6 ปี ที่ผ่านมา
+							160 link Description: รายการสินค้า 359, Value: shopee.co.th/petcho01
+							161 text เวลาในการตอบกลับ
+							162 text ภายในไม่กี่นาที
+							163 text ผู้ติดตาม
+							164 text 395.4k
+				165 text ศูนย์ช่วยเหลือ
+				166 content list
+					167 link Description: Help Centre, Value: help.shopee.co.th/th/s
+					168 link Description: สั่งซื้อสินค้าอย่างไร, Value: help.shopee.co.th/th/s/article/%E0%B8%89%E0%B8%B1…
+					169 link Description: เริ่มขายสินค้าอย่างไร, Value: seller.shopee.co.th/edu/category
+					170 link Description: ช่องทางการชำระเงินใน Shopee, Value: help.shopee.co.th/th/s/article/%E0%B8%8A%E0%B9%88…
+					171 link Description: Shopee Coins, Value: help.shopee.co.th/th/s/topic/0TO6F000000Qz7XWAS/s…
+					172 link Description: การจัดส่งสินค้า, Value: help.shopee.co.th/portal/category/46-%E0%B8%81%E0…
+					173 link Description: การคืนเงินและคืนสินค้า, Value: help.shopee.co.th/portal/category/47-%E0%B8%81%E0…
+					174 link Description: การันตีโดย Shopee คืออะไร?, Value: help.shopee.co.th/th/s/article/%E0%B8%81%E0%B8%B2…
+					175 link Description: ติดต่อ Shopee, Value: help.shopee.co.th/portal/article/85193-%E0%B8%89%…
+				176 text เกี่ยวกับ SHOPEE
+				177 content list
+					178 link Description: เกี่ยวกับเรา, Value: careers.shopee.com/about
+					179 link Description: โปรแกรม Affiliate, Value: shopee.co.th/m/affiliate-program
+					180 link Description: ร่วมงานกับเรา, Value: careers.shopee.com/jobs
+					181 link Description: นโยบาย, Value: help.shopee.co.th/portal/4/category/17578-%2525E0…
+					182 link Description: นโยบายความเป็นส่วนตัวของ Shopee, Value: help.shopee.co.th/portal/4/article/77248-%E0%B8%9…
+					183 link Description: Shopee Blog, Value: shopee.co.th/blog
+					184 link Description: Shopee Mall, Value: shopee.co.th/mall/
+					185 link Description: Seller Centre, Value: seller.shopee.co.th/
+					186 link Description: Flash Deals, Value: shopee.co.th/flash_sale/
+					187 link Description: ผู้ติดต่อออนไลน์, Value: mailto:media.th@shopee.com
+				188 text วิธีการชำระเงิน
+				189 content list
+					190 link logo
+						191 image logo
+					192 link logo
+						193 image logo
+					194 link logo
+						195 image logo
+					196 link logo
+						197 image logo
+					198 link logo
+						199 image logo
+					200 link logo
+						201 image logo
+					202 link logo
+						203 image logo
+					204 link logo
+						205 image logo
+					206 link logo
+						207 image logo
+					208 link logo
+						209 image logo
+					210 link logo
+						211 image logo
+					212 link logo
+						213 image logo
+					214 link logo
+						215 image logo
+					216 link logo
+						217 image logo
+					218 link logo
+						219 image logo
+				220 text บริการจัดส่ง
+				221 content list
+					222 link Description: logo, Value: spx.co.th/th
+					223 link logo
+						224 image logo
+					225 link logo
+						226 image logo
+					227 link logo
+						228 image logo
+					229 link logo
+						230 image logo
+					231 link logo
+						232 image logo
+				233 text ติดตามเรา
+				234 content list
+					235 link Description: Facebook, Value: facebook.com/ShopeeTH
+					236 link Description: Instagram, Value: instagram.com/Shopee_TH
+					237 link Description: Line, Value: line.me/R/ti/p/@shopeeth
+					238 link Description: LinkedIn, Value: linkedin.com/company/shopee
+				239 text ดาวน์โหลดแอปพลิเคชั่น
+				240 link Description: download_qr_code, Value: linkedin.com/company/shopee
+				241 link Description: app, Value: linkedin.com/company/shopee
+				242 link Description: app, Value: linkedin.com/company/shopee
+				243 link Description: app, Value: linkedin.com/company/shopee
+				244 text © 2026 Shopee. All Rights Reserved
+				245 text Country & Region:
+				246 link Description: อาร์เจนตินา, Value: shopee.com.ar/
+				247 link Description: สิงคโปร์, Value: shopee.sg/
+				248 link Description: อินโดนีเซีย, Value: shopee.co.id/
+				249 link Description: ไทย, Value: shopee.co.th/
+				250 link Description: มาเลเซีย, Value: shopee.com.my/
+				251 link Description: เวียดนาม, Value: shopee.vn/
+				252 link Description: ฟิลิปปินส์, Value: shopee.ph/
+				253 link Description: บราซิล, Value: shopee.com.br/
+				254 link Description: เม็กซิโก, Value: shopee.com.mx/
+				255 link Description: ไต้หวัน, Value: shopee.tw/
+		256 image
+
+The focused UI element is 120 button 120x90CM 

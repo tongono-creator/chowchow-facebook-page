@@ -1,0 +1,49 @@
+{
+  "channel_key": "chowchow_fb",
+  "canonical_sku": "287201971/12333160016",
+  "selected_variant": "ANIMAL + 120x90CM",
+  "card_headline": [
+    "โซฟาหรือมุมหมา?",
+    "ปูตรงไหนก็วัดก่อน"
+  ],
+  "caption_path": "D:\\Projects\\page-content-studio\\design_revision_oct07\\commercial_review_briefs\\chowchow_fb\\caption_selected_oct07.txt",
+  "caption_sha256": "d220316cd46448b90cad0ab6b13d6641d35358fcd7e3581fcd4691d7334baa55",
+  "proof_path": "D:\\Projects\\page-content-studio\\design_revision_oct07\\chow_petcho_listing_ax.txt",
+  "proof_sha256": "3bb9aba036c4770a1557e4fcf32506f0c9cf1f2f0eaa2b70ae2d0a28b482e7fd",
+  "checked_on": "2026-10-07",
+  "main_copy_characters": 672,
+  "claim_review": {
+    "both_variant_ticks_verified_in_saved_AX": true,
+    "listing_rating": "4.9",
+    "listing_reviews_label": "9.5k",
+    "listing_sold_label": "30k+",
+    "scope": "Listingheader acrossvariants; no trend/selectedvariant/pageorderclaim",
+    "current_saved_AX_body_description_loaded": false,
+    "fabric_sofa_coverage_photo": "Rootactual cleanselectedsellerphotograph view PASS; sofa demonstration is not bundled furniture",
+    "material_washing_waterproof_antislip_claims_in_caption": false,
+    "fitted_all_sofas_or_breeds_guarantee": false,
+    "actual_pet_testimonial": false
+  },
+  "root_reported_affiliate_short_url": "https://s.shopee.co.th/1LgLxinvnu",
+  "root_reported_tracking_subids": [
+    "chowchow",
+    "20261017",
+    "petchoanimal",
+    "facebook",
+    "reviewA"
+  ],
+  "affiliate_link_verification_by_this_agent": false,
+  "affiliate_link_source": "Root explicit livecookieverifiedcanonical/tracking report; this agent has not browserverified",
+  "source_is_root_logged_in_Shopee_capture": true,
+  "root_reported_actual_selected_clean_photo_viewed_PASS": true,
+  "personal_use_claim": false,
+  "performance_guarantee": false,
+  "current_price_or_stock_in_caption": false,
+  "actual_photo_credit_condition": "Use Rootreviewed actual ANIMAL120x90sellerphoto; do not insertAI product/dogtestimonial",
+  "root_approved": false,
+  "signed": false,
+  "scheduled_at": null,
+  "external_writes": 0,
+  "prior_caption_archived": "D:\\Projects\\page-content-studio\\design_revision_oct07\\commercial_review_briefs\\version_history\\chowchow_fb\\caption_selected_oct07.8c91dd75ec6357f6.txt",
+  "caption_version": 2
+}

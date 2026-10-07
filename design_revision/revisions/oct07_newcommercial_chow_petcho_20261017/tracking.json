@@ -1,0 +1,24 @@
+{
+  "canonical_sku": "287201971/12333160016",
+  "affiliate_url": "https://s.shopee.co.th/1LgLxinvnu",
+  "destination_url": "https://shopee.co.th/product/287201971/12333160016",
+  "observed_destination_url": "https://shopee.co.th/product/287201971/12333160016",
+  "subids": [
+    "chowchow",
+    "20261017",
+    "petchoanimal",
+    "facebook",
+    "reviewA"
+  ],
+  "observed_utm_content": "chowchow-20261017-petchoanimal-facebook-reviewA",
+  "variants": [
+    "ANIMAL",
+    "120x90CM"
+  ],
+  "actual_product_photo_path": "actual-product.webp",
+  "root_actual_destination_variant_subids_verified": true,
+  "verified_at": "2026-10-07T13:57:38.410Z",
+  "actual_product_photo_sha256": "edf78a4d652600a63e049ccf279d56ae8156adacc5ca545e8fe5d0760acd0fb2",
+  "source_tracking_proof_file": "source-tracking-proof.json",
+  "source_tracking_proof_sha256": "e6881b3dc1dd93f72661f58ef1987127249ec734a48fe4718715e249b73ac394"
+}

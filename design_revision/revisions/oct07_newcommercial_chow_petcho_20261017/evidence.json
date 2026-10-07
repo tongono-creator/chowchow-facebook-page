@@ -1,0 +1,18 @@
+{
+  "entries": [
+    {
+      "url": "https://shopee.co.th/product/287201971/12333160016",
+      "claim": "Selected variant [\"ANIMAL\", \"120x90CM\"]. Caption claim review: {\"actual_pet_testimonial\": false, \"both_variant_ticks_verified_in_saved_AX\": true, \"current_saved_AX_body_description_loaded\": false, \"fabric_sofa_coverage_photo\": \"Rootactual cleanselectedsellerphotograph view PASS; sofa demonstration is not bundled furniture\", \"fitted_all_sofas_or_breeds_guarantee\": false, \"listing_rating\": \"4.9\", \"listing_reviews_label\": \"9.5k\", \"listing_sold_label\": \"30k+\", \"material_washing_waterproof_antislip_claims_in_caption\": false, \"scope\": \"Listingheader acrossvariants; no trend/selectedvariant/pageorderclaim\"}",
+      "checked_at": "2026-10-07T14:15:00+00:00",
+      "source_file": "source-listing-ax.txt",
+      "source_sha256": "3bb9aba036c4770a1557e4fcf32506f0c9cf1f2f0eaa2b70ae2d0a28b482e7fd"
+    }
+  ],
+  "source_caption_audit_file": "source-caption-audit.json",
+  "source_caption_audit_sha256": "bb1c33a7acba4cb2ee36e82966c9b14c6ac9578d166a62e0dbdf76681fbf1554",
+  "source_tracking_proof_file": "source-tracking-proof.json",
+  "source_tracking_proof_sha256": "e6881b3dc1dd93f72661f58ef1987127249ec734a48fe4718715e249b73ac394",
+  "actual_product_photo_file": "actual-product.webp",
+  "actual_product_photo_sha256": "edf78a4d652600a63e049ccf279d56ae8156adacc5ca545e8fe5d0760acd0fb2",
+  "source_review_scope": "Root actual current listing/caption audit, not hands-on product testing; upstream audit flags are preserved as historical source."
+}
