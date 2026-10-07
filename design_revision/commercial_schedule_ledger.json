@@ -1,10 +1,10 @@
 {
   "oct07_newcommercial_chow_petcho_20261017": {
-    "state": "enabling_verified_exact_mapping",
+    "state": "verified",
     "plan_sha256": "9532ed7bbb00c13b0abb5b42c5f7e69b1db3590501f7d08f43f5b79ebd09faa6",
     "package_id": "oct07_newcommercial_chow_petcho_20261017",
     "page_id": "102319399434080",
-    "updated_at": "2026-10-07T14:24:43.320211+00:00",
+    "updated_at": "2026-10-07T14:24:46.314971+00:00",
     "slot": 1792240200,
     "caption_sha256": "de845685b3842fe7f9dacb3e59f7b902452bd38e9910feb6e45505bf46cce7cc",
     "canonical_sku": "287201971/12333160016",
