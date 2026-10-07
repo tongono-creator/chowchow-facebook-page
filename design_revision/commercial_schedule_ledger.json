@@ -1,10 +1,10 @@
 {
   "oct07_newcommercial_chow_petcho_20261017": {
-    "state": "created_pending_readback",
+    "state": "native_verified_pending_mapping",
     "plan_sha256": "9532ed7bbb00c13b0abb5b42c5f7e69b1db3590501f7d08f43f5b79ebd09faa6",
     "package_id": "oct07_newcommercial_chow_petcho_20261017",
     "page_id": "102319399434080",
-    "updated_at": "2026-10-07T14:24:39.958072+00:00",
+    "updated_at": "2026-10-07T14:24:41.919456+00:00",
     "slot": 1792240200,
     "caption_sha256": "de845685b3842fe7f9dacb3e59f7b902452bd38e9910feb6e45505bf46cce7cc",
     "canonical_sku": "287201971/12333160016",
@@ -30,6 +30,18 @@
     "package_sha256": "790cbbc2daacb652d7a1d02410e9e0f56cace267f334dccab43efdda0ac53ce0",
     "month": "2026-10",
     "photo_id": "1119375964384264",
-    "new_post_id": null
+    "new_post_id": "102319399434080_1119375964384264",
+    "after": {
+      "post_id": "102319399434080_1119375964384264",
+      "is_published": false,
+      "schedule": {
+        "present": true,
+        "value": 1792240200
+      },
+      "message_sha256": "de845685b3842fe7f9dacb3e59f7b902452bd38e9910feb6e45505bf46cce7cc",
+      "attachment_ids": [
+        "1119375964384264"
+      ]
+    }
   }
 }
