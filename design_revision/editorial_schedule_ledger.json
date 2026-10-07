@@ -168,13 +168,15 @@
     }
   },
   "oct07_newimg_2026-10-26_chowchow_fb": {
-    "state": "reserved_create",
+    "state": "created_pending_readback",
     "package_id": "oct07_newimg_2026-10-26_chowchow_fb",
     "page_id": "102319399434080",
     "plan_sha256": "8e886ebd90bd24ec70eebbb03ef39e5692716aa95133ac12aa9057e26cd255dd",
-    "updated_at": "2026-10-07T13:46:15.679954+00:00",
+    "updated_at": "2026-10-07T13:46:18.778963+00:00",
     "slot": 1793017800,
     "caption_sha256": "173b454102ea5943af5b288cddf8259d1018270e6afe52b46b36b2e3731ee619",
-    "package_sha256": "018ac6dad40380dd1c6c7eb4ce8babffa9c06e8cd8105075ae189503ba601db3"
+    "package_sha256": "018ac6dad40380dd1c6c7eb4ce8babffa9c06e8cd8105075ae189503ba601db3",
+    "photo_id": "1119346377720556",
+    "new_post_id": null
   }
 }
