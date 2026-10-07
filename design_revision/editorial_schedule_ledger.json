@@ -48,15 +48,27 @@
     }
   },
   "oct07_newimg_2026-10-13_chowchow_fb": {
-    "state": "created_pending_readback",
+    "state": "verified",
     "package_id": "oct07_newimg_2026-10-13_chowchow_fb",
     "page_id": "102319399434080",
     "plan_sha256": "fc0bc97da84d62b080c1c9282d4937e0a756b1061429ce583f7e7689c497d92c",
-    "updated_at": "2026-10-07T13:45:46.783715+00:00",
+    "updated_at": "2026-10-07T13:45:48.578266+00:00",
     "slot": 1791894600,
     "caption_sha256": "d7bf7cb0ec9c1bb11454eb1ab518802d6aa2fca6a5b094f0e97ed14b0f26ad3a",
     "package_sha256": "282348b11ce759a611fda0548865b4e203dc5431ed6b998cea169bed13c521f7",
     "photo_id": "1119345707720623",
-    "new_post_id": null
+    "new_post_id": "102319399434080_1119345707720623",
+    "after": {
+      "post_id": "102319399434080_1119345707720623",
+      "is_published": false,
+      "schedule": {
+        "present": true,
+        "value": 1791894600
+      },
+      "message_sha256": "d7bf7cb0ec9c1bb11454eb1ab518802d6aa2fca6a5b094f0e97ed14b0f26ad3a",
+      "attachment_ids": [
+        "1119345707720623"
+      ]
+    }
   }
 }
