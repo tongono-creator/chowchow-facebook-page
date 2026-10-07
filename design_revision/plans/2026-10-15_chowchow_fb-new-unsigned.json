@@ -1,0 +1,22 @@
+{
+  "payload": {
+    "action": "schedule_new_editorial_image",
+    "channel": "chowchow_fb",
+    "page_id": "102319399434080",
+    "page_name": "Chow Chowขนปุย บรู๊คลิน & จัสมิน",
+    "reviewed_at": "2026-10-07T13:34:35.773093+00:00",
+    "package_id": "oct07_newimg_2026-10-15_chowchow_fb",
+    "package_path": "design_revision/revisions/oct07_newimg_2026-10-15_chowchow_fb",
+    "package_sha256": "a1814ee11353525edba76a6cac16075b7c538da192eaed303130a0c1a2019b2b",
+    "mobile_path": "design_revision/revisions/oct07_newimg_2026-10-15_chowchow_fb/mobile.png",
+    "mobile_sha256": "3c6063ac3c1885ceaa8594ef4e0d91c7ca449763bdb0d364bb7e0183087f2a1d",
+    "monthly_plan_path": "design_revision/monthly_operations_oct07.json",
+    "monthly_plan_sha256": "4c722e604c400adec5a9c64cb01ca6661b4d84d8976aefb3d91e771971b56548",
+    "root_full_mobile_confirmed": true,
+    "root_monthly_plan_confirmed": true,
+    "root_new_slot_confirmed": true,
+    "root_optional_affiliate_policy_confirmed": true
+  },
+  "payload_sha256": "32cce63d76855530dcc1778330fc0404041d824db08a95d5d8402140a7a4e3a8",
+  "root_signature": "l6PWkfrbDI3lZE+a5HZcijAI0aw+5vlnNinwmUXTpsEIN1KQIrsB1neBxPQbxvoL4Dq6Tda9+tEagKcx6t13Cw=="
+}

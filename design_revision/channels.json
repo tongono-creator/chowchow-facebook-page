@@ -1,11 +1,24 @@
 {
   "chowchow_fb": {
-    "platform": "facebook",
+    "channel_key": "chowchow_fb",
     "name": "Chow Chow",
-    "page_name": "Chow Chowขนปุย บรู๊คลิน & จัสมิน",
     "page_id": "102319399434080",
+    "repository": "chowchow-facebook-page",
+    "platform": "facebook",
+    "timezone": "Asia/Bangkok",
+    "token_env": "PAGE_ACCESS_TOKEN",
+    "allowed_categories": [
+      "dog",
+      "dog_walk",
+      "dog_enrichment",
+      "dog_grooming",
+      "tools",
+      "organization"
+    ],
+    "enabled": true,
+    "require_signature": true,
     "editor_public_key": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAXpGllY0WdysBzqTWBJ7evbAz13J/DUuGnlrfhzgr4Kg=\n-----END PUBLIC KEY-----\n",
     "repository_slug": "tongono-creator/chowchow-facebook-page",
-    "token_env": "PAGE_ACCESS_TOKEN"
+    "page_name": "Chow Chowขนปุย บรู๊คลิน & จัสมิน"
   }
 }

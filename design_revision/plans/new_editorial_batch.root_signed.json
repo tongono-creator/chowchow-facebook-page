@@ -1,0 +1,50 @@
+{
+  "payload": {
+    "action": "schedule_new_editorial_batch",
+    "channel": "chowchow_fb",
+    "page_id": "102319399434080",
+    "page_name": "Chow Chowขนปุย บรู๊คลิน & จัสมิน",
+    "reviewed_at": "2026-10-07T13:34:35.773093+00:00",
+    "plans": [
+      {
+        "path": "design_revision/plans/2026-10-09_chowchow_fb-new-unsigned.json",
+        "plan_sha256": "efcb314b99c035c366f347fa1788b124021fd2b6339cc360ecdc33c8f7b4e392"
+      },
+      {
+        "path": "design_revision/plans/2026-10-12_chowchow_fb-new-unsigned.json",
+        "plan_sha256": "c793fd9965364de58d348a144fd0c93f913735215f07826f16458a651481c7f2"
+      },
+      {
+        "path": "design_revision/plans/2026-10-13_chowchow_fb-new-unsigned.json",
+        "plan_sha256": "5baeafa9b0cb66fb5f9df542a0c8b3b4c4ca2e4f643a0c8f68e76c3dd05d001b"
+      },
+      {
+        "path": "design_revision/plans/2026-10-15_chowchow_fb-new-unsigned.json",
+        "plan_sha256": "4f24d1a3c99f441b9adf00eb1e36ba226f8ea622f8660cf970b59cbca6cc1f95"
+      },
+      {
+        "path": "design_revision/plans/2026-10-16_chowchow_fb-new-unsigned.json",
+        "plan_sha256": "7a512c0e4502e63bb203348aa5316fdd86b35ab2c38d3845f73cef0fd604d692"
+      },
+      {
+        "path": "design_revision/plans/2026-10-19_chowchow_fb-new-unsigned.json",
+        "plan_sha256": "73fb3db38f094fa838a60ca49b82b8b7d402a80e978a9c9e899d48cdfa42f3a3"
+      },
+      {
+        "path": "design_revision/plans/2026-10-22_chowchow_fb-new-unsigned.json",
+        "plan_sha256": "199e57134c2abe452abe3581beec33a7884bbb26d40c4c952856d24c41e9f7d2"
+      },
+      {
+        "path": "design_revision/plans/2026-10-26_chowchow_fb-new-unsigned.json",
+        "plan_sha256": "ce7da0d9bf69c9c6ae4419eb3f04e9ba18886321a967f8719f561c29b2375c96"
+      },
+      {
+        "path": "design_revision/plans/2026-10-31_chowchow_fb-new-unsigned.json",
+        "plan_sha256": "23e7b8903161ac4d0ae9bfccebd6f75c2b85cccd61e38f55b067dd443db5e588"
+      }
+    ],
+    "root_batch_new_posts_only_confirmed": true
+  },
+  "payload_sha256": "77fb90dc0107b4856258d7fb4db8577773668edee76de1dffbf1b9359e7fbf21",
+  "root_signature": "3GxjZqxNgpHRNZdaYd4g9gDBL/B9dgxcGjPxP8HO/WFCbXJm16F6JSQFC1L1aTDADYBzo8aTjjHqlkFDxAwiDA=="
+}

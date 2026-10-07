@@ -1,0 +1,33 @@
+{
+  "entries": [
+    {
+      "url": "https://www.reddit.com/r/DOG/comments/1p9hnbs/has_your_dog_ever_photobombed_a_picture/",
+      "claim": "Broad creative inspiration only; final comic/dialogue fictional and original, not a factual report.",
+      "checked_at": "2026-10-05T13:19:30Z",
+      "source_access_as_reported_by_editorial_writer": "primary_post_body_read",
+      "producer_rechecked": false
+    }
+  ],
+  "oct07_caption_source_check": {
+    "package_id": "oct07_newimg_2026-10-31_chowchow_fb",
+    "source_draft_id": "2026-10-31_chowchow_fb",
+    "channel_key": "chowchow_fb",
+    "caption": {
+      "path": "D:\\Projects\\page-content-studio\\design_revision_oct07\\new_image_packages\\oct07_newimg_2026-10-31_chowchow_fb\\caption.txt",
+      "exists": true,
+      "sha256": "b409e18a0260716f36ea3fe56680a16c0e7286eb26b7dc0b175c05ba51129a38"
+    },
+    "checked_on": "2026-10-07",
+    "primary_source_access_method": "fictional_comic",
+    "claim_checked": "New fictional dialogue for recurring white maleบรู๊ครีน/brown femaleจัสมีน.",
+    "limits": "No claim about actual pets, true events or universal dog behavior. Actual cast/dialogue/tails require Root visual review.",
+    "caption_source_urls": [],
+    "all_caption_sources_primary_except_named_participant_interview": false,
+    "original_caption_path": "D:\\Projects\\page-content-studio\\design_revision_oct05\\chow_comics\\2026-10-31_chowchow_fb\\caption.txt",
+    "original_signed_package_modified": false,
+    "new_lead_reframing": false,
+    "root_visual_and_final_caption_approval": false
+  },
+  "source_evidence_wrapper_file": "source-evidence-wrapper.json",
+  "source_evidence_wrapper_sha256": "12b62fd35d4ce94a85dd4c8dcc15e18a6b9c082b2ac45fdb917106c340dc42fe"
+}

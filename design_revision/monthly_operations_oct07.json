@@ -1,0 +1,57 @@
+{
+  "status": "ROOT_REVIEWED_NEW_POSTS_ONLY",
+  "source_calendar_path": "D:\\Projects\\page-content-studio\\monthly_plan_oct07_candidates.json",
+  "source_calendar_sha256": "3a8a1e62300372338bc960415afaaf457d2ce7a95313b48058c8e42fe13cff09",
+  "operations": [
+    {
+      "action": "schedule_new_editorial_image",
+      "package_id": "oct07_newimg_2026-10-09_chowchow_fb",
+      "after_schedule": 1791549000
+    },
+    {
+      "action": "schedule_new_editorial_image",
+      "package_id": "oct07_newimg_2026-10-12_chowchow_fb",
+      "after_schedule": 1791808200
+    },
+    {
+      "action": "schedule_new_editorial_image",
+      "package_id": "oct07_newimg_2026-10-13_chowchow_fb",
+      "after_schedule": 1791894600
+    },
+    {
+      "action": "schedule_new_editorial_image",
+      "package_id": "oct07_newimg_2026-10-15_chowchow_fb",
+      "after_schedule": 1792067400
+    },
+    {
+      "action": "schedule_new_editorial_image",
+      "package_id": "oct07_newimg_2026-10-16_chowchow_fb",
+      "after_schedule": 1792153800
+    },
+    {
+      "action": "schedule_new_editorial_image",
+      "package_id": "oct07_newimg_2026-10-19_chowchow_fb",
+      "after_schedule": 1792413000
+    },
+    {
+      "action": "schedule_new_editorial_image",
+      "package_id": "oct07_newimg_2026-10-22_chowchow_fb",
+      "after_schedule": 1792672200
+    },
+    {
+      "action": "schedule_new_editorial_image",
+      "package_id": "oct07_newimg_2026-10-26_chowchow_fb",
+      "after_schedule": 1793017800
+    },
+    {
+      "action": "schedule_new_editorial_image",
+      "package_id": "oct07_newimg_2026-10-31_chowchow_fb",
+      "after_schedule": 1793449800
+    }
+  ],
+  "latest_user_scope": "Existing images/posts untouched; prepare new illustrated posts only",
+  "old_native_operations": 0,
+  "root_native_slot_collision_check_confirmed": true,
+  "affiliate_comment_action": "none; editorial opt-out; optional sales reviewed separately",
+  "root_reviewed_at": "2026-10-07T13:34:35.773093+00:00"
+}
