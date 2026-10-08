@@ -69,6 +69,28 @@
       "name": "Ulanzi MT44 V2 สีดำ — ZETASHOPONLINE",
       "url": "https://s.shopee.co.th/3B7vs7vUiu"
     },
+    "102319399434080_1119375964384264": {
+      "affiliate_enabled": true,
+      "canonical_sku": "287201971/12333160016",
+      "comment": "ตัวเลือกที่คัดคือ ANIMAL ขนาด 120x90CM ก่อนซื้อวัดพื้นที่ปูจริงและเช็กทั้งลายกับขนาดอีกครั้งฮะ\nลิงก์ Affiliate — เพจอาจได้รับค่าคอมมิชชันจากการซื้อผ่านลิงก์นี้\nhttps://s.shopee.co.th/1LgLxinvnu",
+      "name": "Petcho ผ้ารองสัตว์เลี้ยง ANIMAL 120×90 ซม.",
+      "product_id": "12333160016",
+      "root_package_sha256": "790cbbc2daacb652d7a1d02410e9e0f56cace267f334dccab43efdda0ac53ce0",
+      "scheduled_at": "2026-10-17T19:30:00+07:00",
+      "shop_id": "287201971",
+      "subids": [
+        "chowchow",
+        "20261017",
+        "petchoanimal",
+        "facebook",
+        "reviewA"
+      ],
+      "url": "https://s.shopee.co.th/1LgLxinvnu",
+      "variants": [
+        "ANIMAL",
+        "120x90CM"
+      ]
+    },
     "1116708511317676": {
       "comment": "ถ้ากำลังหาชุดสายรัดอกพร้อมสายจูงสำหรับพาเดิน ลองดูรายการนี้ฮะ มีขนาด S–XL ให้เลือก ก่อนซื้อวัดรอบอกและคอเทียบตารางร้านด้วย น้ำหนักอย่างเดียวบอกความพอดีไม่ได้ สายรัดอกไม่ได้แทนการฝึกเดินและการดูแลจากเจ้าของ ภาพหมาในโพสต์เป็นภาพประกอบ ไม่ใช่ภาพสาธิตสินค้ารุ่นนี้\nลิงก์ Affiliate — เพจอาจได้รับค่าคอมมิชชันจากการซื้อผ่านลิงก์นี้\nhttps://s.shopee.co.th/8fSs5Yhm7c",
       "name": "ชุดสายรัดอกสุนัขแบบ H พร้อมสายจูง 1.5 ม. สำหรับสุนัขกลาง–ใหญ่",
@@ -135,12 +157,14 @@
       "url": "https://s.shopee.co.th/3B7vs7vUiu"
     },
     "1119375964384264": {
+      "affiliate_enabled": true,
       "canonical_sku": "287201971/12333160016",
-      "shop_id": "287201971",
-      "product_id": "12333160016",
-      "name": "Petcho ผ้ารองสัตว์เลี้ยง ANIMAL 120×90 ซม.",
-      "url": "https://s.shopee.co.th/1LgLxinvnu",
       "comment": "ตัวเลือกที่คัดคือ ANIMAL ขนาด 120x90CM ก่อนซื้อวัดพื้นที่ปูจริงและเช็กทั้งลายกับขนาดอีกครั้งฮะ\nลิงก์ Affiliate — เพจอาจได้รับค่าคอมมิชชันจากการซื้อผ่านลิงก์นี้\nhttps://s.shopee.co.th/1LgLxinvnu",
+      "name": "Petcho ผ้ารองสัตว์เลี้ยง ANIMAL 120×90 ซม.",
+      "product_id": "12333160016",
+      "root_package_sha256": "790cbbc2daacb652d7a1d02410e9e0f56cace267f334dccab43efdda0ac53ce0",
+      "scheduled_at": "2026-10-17T19:30:00+07:00",
+      "shop_id": "287201971",
       "subids": [
         "chowchow",
         "20261017",
@@ -148,35 +172,11 @@
         "facebook",
         "reviewA"
       ],
-      "variants": [
-        "ANIMAL",
-        "120x90CM"
-      ],
-      "affiliate_enabled": true,
-      "scheduled_at": "2026-10-17T19:30:00+07:00",
-      "root_package_sha256": "790cbbc2daacb652d7a1d02410e9e0f56cace267f334dccab43efdda0ac53ce0"
-    },
-    "102319399434080_1119375964384264": {
-      "canonical_sku": "287201971/12333160016",
-      "shop_id": "287201971",
-      "product_id": "12333160016",
-      "name": "Petcho ผ้ารองสัตว์เลี้ยง ANIMAL 120×90 ซม.",
       "url": "https://s.shopee.co.th/1LgLxinvnu",
-      "comment": "ตัวเลือกที่คัดคือ ANIMAL ขนาด 120x90CM ก่อนซื้อวัดพื้นที่ปูจริงและเช็กทั้งลายกับขนาดอีกครั้งฮะ\nลิงก์ Affiliate — เพจอาจได้รับค่าคอมมิชชันจากการซื้อผ่านลิงก์นี้\nhttps://s.shopee.co.th/1LgLxinvnu",
-      "subids": [
-        "chowchow",
-        "20261017",
-        "petchoanimal",
-        "facebook",
-        "reviewA"
-      ],
       "variants": [
         "ANIMAL",
         "120x90CM"
-      ],
-      "affiliate_enabled": true,
-      "scheduled_at": "2026-10-17T19:30:00+07:00",
-      "root_package_sha256": "790cbbc2daacb652d7a1d02410e9e0f56cace267f334dccab43efdda0ac53ce0"
+      ]
     }
   }
 }
