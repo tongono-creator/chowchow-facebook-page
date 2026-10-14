@@ -26,13 +26,6 @@
     ],
     "token_env": "PAGE_ACCESS_TOKEN",
     "lookback_hours": 72,
-    "affiliate_mode": "selected_only",
-    "monthly_sales_limit": 2,
-    "selected_affiliate_posts": {
-      "2026-10": [
-        "102319399434080_1119375964384264"
-      ],
-      "2026-11": []
-    }
+    "affiliate_mode": "legacy"
   }
 }
